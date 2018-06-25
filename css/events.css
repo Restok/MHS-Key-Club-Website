@@ -1,0 +1,30 @@
+/* CSS Document */
+body{
+	padding-top: 75px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 170%;
+}
+
+.clean-button{
+	border-style: none;
+	border-radius: 15px;
+	background:linear-gradient(to bottom right, #40ef69, #3bdb90);
+	width: 130px;
+	height: 45px;
+	font-weight: 300;
+}
+
+.clean-button:hover{
+	cursor:pointer;
+	background:linear-gradient(to bottom right, #3ad85f, #3bcc88);
+	transition: background, 500ms;
+
+}
