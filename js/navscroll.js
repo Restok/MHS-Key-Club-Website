@@ -45,7 +45,6 @@ function check_if_in_view() {
       $element.addClass('in-view');
 
     } else {
-      $element.removeClass('in-view');
     }
   });
 }

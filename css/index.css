@@ -257,11 +257,11 @@ body{
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
-  -moz-transform: translate3d(0px, 400px, 0px);
-  -webkit-transform: translate3d(0px, 400px, 0px);
-  -o-transform: translate(0px, 400px);
-  -ms-transform: translate(0px, 400px);
-  transform: translate3d(0px, 400, 0px);
+  -moz-transform: translate3d(0px, 300px, 0px);
+  -webkit-transform: translate3d(0px, 300px, 0px);
+  -o-transform: translate(0px, 300px);
+  -ms-transform: translate(0px, 300px);
+  transform: translate3d(0px, 300, 0px);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -418,13 +418,15 @@ body{
 	.about{
 		top: 650px;	}
 }
+
 @media screen and (max-width : 767px ){
 	.col-ctrl{
 		margin-left: 1rem !important;
 		margin-right: 1rem !important;
-		margin-top: 1rem !important;
+		margin-top: 2rem !important;
 	}
 	.firstimg{
+		top: 20px;
 		height: 400px;
 	}
 	.h-resize{
@@ -433,6 +435,13 @@ body{
 	.headingtxt{
 		font-size: 27px;
 	}
+	.shad{
+		box-shadow: 0px 0px 90px -40px #000000;
+	}
+	.pad{
+		margin:0; 
+	}
+}
 @media screen and (max-width : 674px ){
 	.txtadj{
 		font-size:2.5rem !important;
