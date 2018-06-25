@@ -1,8 +1,8 @@
 var extended = false;
 var center = document.getElementById("control");
 function popUp(){
-	
-	if(extended == false){
+	$("#clickpls").fadeOut(100)
+	if(extended === false){
 		document.getElementById("op1").classList.remove("menuC");
 		document.getElementById("op2").classList.remove("menuC");
 		document.getElementById("op3").classList.remove("menuC");
@@ -14,8 +14,6 @@ function popUp(){
 		
 		document.getElementById("control").style.transform= "translate(-50%, -50%) scale(1)";
 
-
-		
 		extended = true;
 	}
 	else{

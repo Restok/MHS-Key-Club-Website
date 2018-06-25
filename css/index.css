@@ -96,6 +96,17 @@ body{
 	transition: all 0.7s;
 
 }
+
+.clickpls{
+	border-radius: 0;
+	transform: translate(-50%, -50%) scale(0.5);
+	width:30%;
+	height:auto;
+	top: 45%;
+    left: 35%;
+	opacity: 1;
+}
+
 .mcenter:hover{
 	cursor: pointer;
 	transform: translate(-50%, -50%) scale(1);
@@ -401,13 +412,9 @@ body{
 
 	}
 	.mcenter{
-		background-color: transparent;
-		top: 50%;
-		left: 50%;
 		width: 180px;
 		height: 180px;
-		transform: translate(-50%, -50%) scale(0.7);
-		transition: all 0.7s;
+
 
 	}
 	.mcenter:hover{
@@ -416,14 +423,21 @@ body{
 		transition: all 0.7s;
 	}
 	.about{
-		top: 650px;	}
+		top: 650px;	
+	}
+	.clickpls{
+	width:30%;
+	height:auto;
+	top: 45%;
+    left: 35%;
+}
 }
 
 @media screen and (max-width : 767px ){
 	.col-ctrl{
 		margin-left: 1rem !important;
 		margin-right: 1rem !important;
-		margin-top: 2rem !important;
+		margin-top: 3rem !important;
 	}
 	.firstimg{
 		top: 20px;
@@ -497,20 +511,16 @@ body{
 
 	}
 	.mcenter{
-		background-color: transparent;
-		top: 50%;
-		left: 50%;
 		width: 130px;
 		height: 130px;
-		transform: translate(-50%, -50%) scale(0.7);
-		transition: all 0.7s;
 
 	}
-	.mcenter:hover{
-		cursor: pointer;
-		transform: translate(-50%, -50%) scale(1);
-		transition: all 0.7s;
-	}
+	.clickpls{
+		width:30%;
+		height:auto;
+		top: 45%;
+		left: 35%;
+}
 }
 
 
@@ -628,9 +638,14 @@ body{
 		top: 150px;
 	}
 	.header{
-		height: 250px;
+		height: 300px;
 		width: 100%;
+		box-shadow: 0 0 0 0 black;
+		border-style: solid;
+		border-color: transparent;
+		border-bottom: 10px solid #E3C134;
 	}
+
 	.moption1{
 		width:70px;
 		height: 70px;
@@ -665,7 +680,7 @@ body{
 
 	}
 	.headingtxt{
-		font-size:23px;
+		font-size:7vw;
 		top:100px;
 	}
 }
