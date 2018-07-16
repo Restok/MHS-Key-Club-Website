@@ -1,0 +1,2458 @@
+/*------------------------------Start Intro Box shortcode style-----------------------------*/
+/*-------common style for intro section --------*/
+.color_2c3{
+    color: #2c3e50;
+}
+.color_7c7{
+    color: #7c7c7c;
+}
+
+
+/*-----------------intro box / welcome style-1-----------------*/
+.welcome1 .intro_common span{
+    height: 100px;
+    width: 100px;
+    padding: 13px;
+    border: 2px solid #f5f5f5; 
+    position: relative;
+    background: #fff;
+}
+.welcome1 .intro_common span i {
+    background: #f5f5f5;
+    border-radius: 100%;
+    color: #1d2b44;
+    display: block;
+    font-size: 35px;
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+    width: 70px;
+}
+.welcome1 .intro_common span::before {
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    border: 2px solid #00b4e1;
+}
+.welcome1 .intro_common:hover span:before {
+    -webkit-animation: scaleAnimation1 0.8s 0s;    
+    -moz-animation: scaleAnimation1 0.8s 0s;    
+    -ms-animation: scaleAnimation1 0.8s 0s;    
+    -o-animation: scaleAnimation1 0.8s 0s;    
+    animation: scaleAnimation1 0.8s 0s;    
+}
+.welcome1 .intro_common h5 a:hover {
+    color: #00b4e1;
+}
+.welcome1 .intro_common:hover span {
+    border-color: #00b4e1;
+}
+.welcome1 .intro_common:hover span i {
+    background: #00b4e1;
+    color: #fff;
+}
+
+
+@-webkit-keyframes scaleAnimation1 {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.45);
+        -moz-transform: scale(1.45);
+        -ms-transform: scale(1.45);
+        -o-transform: scale(1.45);
+        transform: scale(1.45);
+        opacity: 0;
+    }
+}
+@keyframes scaleAnimation1 {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.45);
+        -moz-transform: scale(1.45);
+        -ms-transform: scale(1.45);
+        -o-transform: scale(1.45);
+        transform: scale(1.45);
+        opacity: 0;
+    }
+}
+
+
+/*-------------------intro box / welcome style-2-------------------*/
+
+.welcome2 .intro_common span {
+    background: #fff0;
+    border: 2px solid #eaeaea;
+    height: 80px;
+    padding: 8px;
+    position: relative;
+    width: 80px;
+}
+.welcome2 .intro_common span i {
+    background: #1d2b44;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 25px;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    width: 60px;
+}
+
+.welcome2 .intro_common h5 a:hover {
+    color: #8354a8;
+}
+.welcome2 .intro_common:hover span {
+    border-color: #8354a8;
+}
+.welcome2 .intro_common:hover span i {
+    background: #8354a8;
+}
+
+
+/*-------------------intro box / welcome style-3-------------------*/
+.welcome3 .intro_common {
+  border: 1px solid #ededed;
+  padding: 25px;
+}
+.welcome3 .intro_common:hover {
+  border-color:#3168ca;
+  background: #3168ca;
+}
+.welcome3 .intro_common span i {
+    background: #3b4658;
+    color: #fff;
+    font-size: 35px;
+    height: 70px;
+    padding: 17px 21px;
+    width: 70px;
+}
+.welcome3 .intro_common::after,
+.welcome3 .intro_common::before {
+    border: 1px solid #ededed;
+    content: "";
+    height: 10px;
+    left: -1px;
+    position: absolute;
+    width: 100.5%;
+}
+.welcome3 .intro_common::before {
+    top: -10px;
+}
+.welcome3 .intro_common::after {
+    bottom: -10px;
+}
+
+.welcome3 .intro_common:hover .intro_text h5 a,
+.welcome3 .intro_common:hover .intro_text p {
+    color: #fff
+}
+.welcome3 .intro_common:hover span i{
+    background: #4378d6;
+}
+
+
+/*-------------------intro box / welcome style-4-------------------*/
+.welcome4{
+    background: #2a2935;
+}
+.welcome4 .intro_common span i {
+    background: #4c4a6d;
+    color: #fff;
+    font-size: 22px;
+    height: 40px;
+    padding: 11px;
+    width: 40px;
+}
+.welcome4 .intro_common .intro_hedding h5 a {
+    color: #676587;
+}
+.welcome4 .intro_common .intro_text p {
+    color: #4c4a6d;
+}
+
+.welcome4 .intro_common:hover .intro_text p,
+.welcome4 .intro_common:hover .intro_hedding h5 a {
+    color: #fff;
+}
+.welcome4 .intro_common:hover span i {
+    background: #fff;
+    color: #4c4a6d;
+}
+
+
+
+/*-------------------intro box / welcome style-5-------------------*/
+.welcome5 .intro_common span i {
+    color: #000;
+    font-size: 45px;
+    left: 0;
+    line-height: normal;
+    position: absolute;
+    top: -5px;
+}
+.welcome5 .intro_common .intro_text h5::before {
+    background: #333 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: -50px;
+    top: 15px;
+    width: 30px;
+}
+.welcome5 .intro_common .intro_text h5:hover a {
+    color: #16d3a9;
+}
+.welcome5 .intro_common .intro_text h5:hover:before {
+    background: #16d3a9;
+}
+
+.welcome5 .intro_common:hover span i {
+    color: #16d3a9;
+}
+
+
+/*-------------------intro box / welcome style-6-------------------*/
+.welcome6 .intro_common {
+    padding: 40px 30px 35px;
+}
+.welcome6 .intro_common:before {
+    background: transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 0%;
+}
+.welcome6 .intro_common span {
+    font-size: 45px;
+    height: 100px;
+    line-height: normal;
+    padding: 32px;
+    width: 100px;
+    border: 2px solid transparent;
+}
+.welcome6 .intro_common .intro_text h5:before {
+    background: #09a5cc;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+}
+.welcome6 .intro_common .intro_text h5:hover a{
+    color: #09a5cc;
+}
+.welcome6 .intro_common:hover{
+    background: #f6f6f6;
+}
+.welcome6 .intro_common:hover span{
+    background: #fff;
+    border-color: #09a5cc;
+}
+.welcome6 .intro_common:hover:before{
+    background: #09a5cc;
+    width: 100%;
+}
+
+
+
+/*-------------------intro box / welcome style-7-------------------*/
+.welcome7 .intro_common .intro_text h5:hover a{
+    color: #24c693;
+}
+.welcome7 .intro_common span {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #24c693;
+    height: 100px;
+    padding: 16px;
+    position: relative;
+    width: 100px;
+}
+
+.welcome7 .intro_common span i {
+    font-size: 38px;
+    padding: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome7 .intro_common span::after {
+    background: #24c693;
+    border-radius: 100%;
+    content: "";
+    height: 70px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70px;
+    z-index: 1;
+}
+
+.welcome7 .intro_common:hover span:after {
+    height: 100%;
+    width: 100%;
+}
+
+.welcome7 .intro_common span:before {
+    border: 2px solid #24c693;
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.welcome7 .intro_common:hover span:before {
+    -webkit-animation: scaleAnimation2 0.8s 0s;    
+    -moz-animation: scaleAnimation2 0.8s 0s;    
+    -ms-animation: scaleAnimation2 0.8s 0s;    
+    -o-animation: scaleAnimation2 0.8s 0s;    
+    animation: scaleAnimation2 0.8s 0s;    
+}
+
+@-webkit-keyframes scaleAnimation2 {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.45);
+        -moz-transform: scale(1.45);
+        -ms-transform: scale(1.45);
+        -o-transform: scale(1.45);
+        transform: scale(1.45);
+        opacity: 0;
+    }
+}
+
+@keyframes scaleAnimation2 {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.45);
+        -moz-transform: scale(1.45);
+        -ms-transform: scale(1.45);
+        -o-transform: scale(1.45);
+        transform: scale(1.45);
+        opacity: 0;
+    }
+}
+
+
+/*-------------------intro box / welcome style-8-------------------*/
+.welcome8 {
+    background: #554173;
+}
+.welcome8 .intro_common .intro_text h5 a {
+    color: #d4cde0;
+}
+.welcome8 .intro_common .intro_text p {
+    color: #b1a1c9;
+}
+.welcome8 .intro_common:hover .intro_text h5 a,
+.welcome8 .intro_common:hover .intro_text p {
+    color: #fff;
+}
+
+.welcome8 .intro_common span {
+    background: #554173;
+    border: 1px solid #fff;
+    height: 110px;
+    padding: 26px;
+    position: relative;
+    width: 110px;
+    z-index: 1;
+}
+.welcome8 .intro_common span i {
+    color: #fff;
+    font-size: 40px;
+    display: block;
+}
+.welcome8 .intro_common:before {
+    background: #735d95;
+    content: "";
+    height: 1px;
+    left: -261px;
+    margin-top: -0.5px;
+    position: absolute;
+    top: 56px;
+    width: 100%;
+}
+.welcome8 .intro_box1:first-child:before {
+   display: none;
+}
+
+
+
+/*-------------------intro box / welcome style-9-------------------*/
+.welcome9 .intro_hedding span i {
+    color: #51dba5;
+    font-size: 40px;
+}
+.welcome9 .intro_common .intro_count {
+    color: #f4f4f4;
+    font-size: 150px;
+    left: 0;
+    line-height: 114px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.welcome9 .intro_common .intro_hedding h5:hover a{
+    color: #51dba5;
+}
+
+
+
+/*-------------------intro box / welcome style-10-------------------*/
+.welcome10 .intro_common {
+    border: 1px solid #ededed;
+    padding: 30px 20px 40px;
+}
+.welcome10 .intro_common:hover {
+    background: #ededed;
+}
+.welcome10 .intro_common span i {
+    color: #b7b7b7;
+    font-size: 30px;
+}
+.welcome10 .intro_common::before {
+  border: 1px solid #ededed;
+  content: "";
+  height: 10px;
+  left: -1px;
+  position: absolute;
+  top: -10px;
+  width: 100.6%;
+}
+.welcome10 .intro_common .intro_text h5 a{
+    color: #1d2b44;
+}
+
+
+
+/*-------------------intro box / welcome style-11-------------------*/
+.welcome11 {
+  background: #16d3a9;
+}
+.welcome11 .intro_common {
+    padding: 52px 20px 30px;
+}
+.welcome11 .intro_common:hover {
+    background: #17c7a0;
+}
+.welcome11 .intro_common span i {
+    color: #000;
+    font-size: 26px;
+}
+.welcome11 .intro_common span {
+    background: #eef4a8;
+    height: 32px;
+    padding: 3px;
+    width: 60px;
+}
+.welcome11 .intro_common span.d_block:before {
+    border-bottom: 17px solid #eef4a8;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -17px;
+    width: 0;
+}
+.welcome11 .intro_common span.d_block:after {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 17px solid #eef4a8;
+    bottom: -17px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.welcome11 .intro_common .intro_text h5 a {
+    color: #ecefc9;
+}
+.welcome11 .intro_common .intro_text p {
+    color: #e6e6e6;
+}
+.welcome11 .intro_common:hover .intro_text p,
+.welcome11 .intro_common:hover .intro_text h5 a {
+    color: #fff;
+}
+.welcome11 .intro_common:hover span {
+    background: #fff;
+}
+.welcome11 .intro_common:hover span.d_block:before {
+    border-bottom-color: #fff
+}
+.welcome11 .intro_common:hover span.d_block:after {
+    border-top-color: #fff
+}
+
+
+/*-------------------intro box / welcome style-12-------------------*/
+.welcome12 .intro_common{
+    background: #f7f7f7;  
+    padding: 40px 30px 50px;
+    border-bottom: 2px solid #e3e3e3;
+}
+.welcome12 .intro_common:hover {
+    background: #282828;  
+}
+.welcome12 .intro_common::before {
+    border: 1px solid #f7f7f7;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+}
+.welcome12 .intro_common>span {
+    background: #282828;
+    color: #fff;
+    font-size: 37px;
+    height: 80px;
+    padding: 21px;
+    width: 80px;
+}
+.welcome12 .intro_common:hover>span {
+    background: #fff;
+	color:#333;
+}
+.welcome12 .intro_common:hover .intro_text p,
+.welcome12 .intro_common:hover .intro_text h5 a {
+    color: #fff;
+}
+
+
+
+
+/*-------------------intro box / welcome style-13-------------------*/
+.welcome13 .intro_common > span {
+    border: 2px solid #fdcb61;
+    height: 86px;
+    padding: 9px;
+    width: 86px;
+}
+.welcome13 .intro_common > span i {
+    background: #f3f3f3;
+    color: #fdcb61;
+    font-size: 36px;
+    height: 65px;
+    padding: 17px;
+    width: 65px;
+}
+.welcome13 .intro_common .intro_text h5:hover a {
+    color: #fdcb61;
+}
+.welcome13 .intro_common .intro_count {
+    bottom: 0;
+    color: #f4f4f4;
+    font-size: 150px;
+    left: -20px;
+    line-height: 114px;
+    position: absolute;
+    z-index: -1;
+}
+
+/*-------------------intro box / welcome style-14-------------------*/
+.welcome14{
+    background: #f7f7f7;
+}
+.welcome14 .intro_common span.d_block {
+    background: #3469c1;
+    height: 170px;
+    width: 170px;
+    padding: 40px;
+}
+
+.welcome14 .intro_common span.d_block:before {
+    border-bottom: 60px solid #2e60b3;
+    border-right: 60px solid transparent;
+    bottom: -8px;
+    content: "";
+    height: 0;
+    left: -8px;
+    position: absolute;
+    width: 0;
+}
+.welcome14 .intro_common:hover span.d_block:before {
+    bottom: 0px;
+    left: 0px;
+     border-bottom-color: #214d96;
+}
+.welcome14 .intro_common span.d_block i {
+    font-size: 70px;
+    line-height: normal;
+}
+.welcome14 .intro_common .intro_text {
+  width: 68%;
+}
+.welcome14 .intro_common .intro_text a.read_more {
+    color: #3469c1;
+    margin-top: 10px;
+    display: inline-block;
+}
+.welcome14 .intro_common .intro_text a.read_more:hover {
+    text-decoration: underline;
+}
+.welcome14 .intro_common .intro_text a.read_more:before {
+    background: #3469c1;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: -44px;
+    top: 13px;
+    width: 30px;
+}
+.welcome14 .intro_common .intro_text h5:hover a{
+    color: #3469c1;
+}
+
+
+/*-------------------intro box / welcome style-15-------------------*/
+.welcome15 .intro_common span.d_block {
+    border: 1px solid #f2f2f2;
+    height: 120px;
+    width: 120px;
+    padding: 15px;
+}
+.welcome15 .intro_common:hover span.d_block {
+    border-color:#554173;
+}
+.welcome15 .intro_common .intro_text {
+    width: 68%;
+}
+.welcome15 .intro_common span.d_block i {
+    font-size: 45px;
+    line-height: normal;
+    background: #f2f2f2;
+    color: #554173;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+}
+.welcome15 .intro_common:hover span.d_block i {
+    background: #554173;
+    color: #fff;
+}
+.welcome15 .intro_common .intro_text a.read_more {
+    color: #554173;
+    margin-top: 10px;
+    display: inline-block;
+}
+.welcome15 .intro_common .intro_text a.read_more:before {
+    background: #554173;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: -44px;
+    top: 13px;
+    width: 30px;
+}
+.welcome15 .intro_common .intro_text h5:hover a{
+    color: #554173;
+}
+
+
+/*-------------------intro box / welcome style-16-------------------*/
+.welcome16 .img_area {
+    margin: 0 auto;
+    width: 280px;
+}
+.welcome16 .intro_common span.d_block {
+    color: #000;
+    font-size: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.welcome16 .intro_common.right_align span.d_block {
+    left: 0;
+    right: inherit;
+}
+
+.welcome16 .intro_common .intro_text h5:hover a{
+    color: #3469C1;
+}
+
+
+
+/*-------------------intro box / welcome style-17-------------------*/
+.welcome17 .intro_common span.d_block {
+    color: #000;
+    font-size: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.welcome17 .intro_common.right_align span.d_block {
+    left: 0;
+    right: inherit;
+}
+
+.welcome17 .intro_common .intro_text h5:hover a{
+    color: #3469C1;
+}
+.welcome17 .middle_content {
+  border: 35px solid #f9f9f9;
+  padding: 40px 20px;
+}
+
+
+
+/*-------------------intro box / welcome style-18-------------------*/
+.welcome18 {
+    background: #2a2935;
+}
+.welcome18 .intro_common {
+    padding: 35px 15px;
+}
+.welcome18 .intro_common span.d_block {
+    border: 1px solid #e25252;
+    color: #e25252;
+    font-size: 22px;
+    height: 40px;
+    padding: 6px;
+    width: 40px;
+}
+
+.welcome18 .intro_common .intro_text h5 {
+    font-size: 15px;
+}
+.welcome18 .intro_common .intro_text h5:hover a {
+    color: #ddd;
+}
+.welcome18 .intro_common .intro_text p {
+    color: #b9b9b9;
+    font-size: 14px;
+    line-height: 21px
+}
+.welcome18 .intro_common:hover {
+    background: #e25252;
+}
+.welcome18 .intro_common:hover .intro_text p {
+    color: #fff;
+}
+.welcome18 .intro_common:hover span.d_block {
+    border-color:#fff;
+    background: #fff;
+}
+
+
+/*-------------------intro box / welcome style-19-------------------*/
+.welcome19 .intro_common span {
+    background: #fff;
+    font-size: 30px;
+    height: 65px;
+    padding: 17px;
+    text-align: center;
+    width: 65px;
+}
+.welcome19 .intro_common {
+    width: 25%;
+    padding: 0 30px;
+    min-height: 200px;
+}
+.welcome19 .intro_box1 span {
+    color: #4a547c;
+}
+.welcome19 .intro_box2 span {
+    color: #4e689b;
+}
+.welcome19 .intro_box3 span {
+    color: #5b94bc;
+}
+.welcome19 .intro_box4 span {
+    color: #54abca;
+}
+.welcome19 .intro_text h5 a {
+  color: #fff;
+}
+.welcome19 .intro_text h5 a:hover {
+  text-decoration: underline;
+}
+
+.welcome19 .intro_box1 {
+    background: #4a547c;
+}
+.welcome19 .intro_box2 {
+    background: #4e689b;
+}
+.welcome19 .intro_box3 {
+    background: #5b94bc;
+}
+.welcome19 .intro_box4 {
+    background: #54abca;
+}
+
+
+/*-------------------intro box / welcome style-20-------------------*/
+.welcome20 .intro_common span.d_block {
+    background: #6e5088;
+    color: #fff;
+    height: 107px;
+    padding: 26px 3px 28px 16px;
+    width: 105px;
+}
+.welcome20 .intro_common span.d_block:before {
+    border-right: 16px solid transparent;
+    border-top: 108px solid #6e5088;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -16px;
+    top: 0;
+    width: 0;
+}
+.welcome20 .intro_common span.d_block i {
+    font-size: 46px;
+    z-index: 2;
+    position: relative;
+}
+.welcome20 .intro_common .intro_text {
+    width: 72%;
+}
+.welcome20 .intro_common .intro_text p {
+    line-height: 24px;
+}
+.welcome20 .intro_common span.d_block .intro_count {
+    bottom: 0;
+    color: #66497f;
+    font-size: 82px;
+    left: 7px;
+    line-height: 106px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/*-------------------intro box / welcome style-21-------------------*/
+.welcome21 .intro_common {
+    border: 1px solid #ededed;
+    padding: 0 30px 30px;
+    position: relative;
+}
+.welcome21 .intro_common:before {
+    background: #ededed;
+    bottom: -10px;
+    content: "";
+    height: 1px;
+    left: -1px;
+    position: absolute;
+    width: 100.8%;
+    }
+.welcome21 .intro_common span.d_inline {
+    height: 100px;
+    margin-top: -46px;
+    padding: 32px;
+    top: -4px;
+    width: 100px;
+    background: #fff;
+}
+.welcome21 .intro_common span.d_inline:before {
+    background: #e94c75;
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.welcome21 .intro_common:hover span.d_inline:before {
+    height: 80%;
+    width: 80%;
+}
+
+.welcome21 .intro_common span.d_inline:after {
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 2px solid #e94c75;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.welcome21 .intro_common:hover span.d_inline:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.welcome21 .intro_common span i {
+    color: #fff;
+    font-size: 38px;
+    z-index: 1;
+    position: relative;
+	width:100%;
+	height:100%;
+}
+
+
+/*-------------------intro box / welcome style-22-------------------*/
+.welcome22 .intro_common {
+  padding: 0 20px 35px;
+}
+.welcome22 .intro_common:after,
+.welcome22 .intro_common:before {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 100%;
+}
+.welcome22 .intro_common:before {
+    background: #e4e4e4;
+    left: 0;
+}
+.welcome22 .intro_common:after {
+    background: #5fc8f8;
+    left: 50%;
+    width: 0;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.welcome22 .intro_common:hover:after {
+    width: 100%;
+}
+.welcome22 .intro_common span.d_inline {
+    background: #f5f5f5;
+    color: #000;
+    font-size: 60px;
+    line-height: normal;
+    padding: 24px 30px;
+    border-bottom: 2px solid #5fc8f8;
+}
+.welcome22 .intro_common .intro_text h5:hover a {
+    color: #5fc8f8;
+}
+
+
+/*-------------------intro box / welcome style-23-------------------*/
+.welcome23{
+    background: #f6f6f6;
+}
+.welcome23 .intro_common span i {
+    font-size: 60px;
+    display: inline-block;
+    line-height: normal;
+}
+.welcome23 .intro_common .intro_text .readmore::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: -32px;
+    top: 13px;
+    width: 22px;
+}
+.welcome23 .intro_common:hover span i,
+.welcome23 .intro_common .intro_text .readmore:hover,
+.welcome23 .intro_common .intro_text h5 a:hover {
+    color: #9a61c7;
+}
+.welcome23 .intro_common .intro_text .readmore:hover:before{
+    background: #9a61c7;
+}
+
+
+/*-------------------intro box / welcome style-24-------------------*/
+.welcome24 .intro_common span.d_inline {
+    border: 2px solid #f7f7f7;
+    padding: 15px;
+}.welcome24 .intro_common:hover span.d_inline {
+    border-color:#1d2b44;
+}
+.welcome24 .intro_common span i {
+    background: #1d2b44;
+    color: #fff;
+    display: block;
+    font-size: 35px;
+    height: 100px;
+    padding: 34px;
+    width: 100px;
+}
+.welcome24 .intro_common .intro_text h5 a:hover {
+    color: #1d2b44;
+}
+
+
+/*-------------------intro box / welcome style-25-------------------*/
+.welcome25 {
+    background: #2a2935;
+}
+.welcome25 .intro_common span.d_inline i {
+    font-size: 50px;
+    line-height: normal;
+}
+.welcome25 .intro_common {
+    padding: 35px 20px;
+}
+.welcome25 .intro_common:hover {
+    background: #353343;
+}
+.welcome25 .intro_common .intro_text h5 a:hover{
+    color: #027AEC;
+}
+
+/*-------------------intro box / welcome style-26-------------------*/
+.welcome26 .intro_common span {
+    background: #f8f8f8;
+    padding: 20px 0;
+    
+}.welcome26 .intro_common span i {
+    background: #fff;
+    font-size: 35px;
+    height: 80px;
+    line-height: normal;
+    padding: 21px;
+    width: 80px;
+    margin: 0 auto;
+}
+.welcome26 .intro_common::before {
+    border: 1px solid #f8f8f8;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+}
+.welcome26 .intro_common span:after {
+    background: #1d2b44;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    bottom: -2px;
+    width: 60px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.welcome26 .intro_common:hover span:after {
+    background: #00b4e1;
+    width: 100%;
+}
+.welcome26 .intro_common:hover span i {
+    background: #00b4e1;
+    color: #fff;
+}
+
+.welcome26 .intro_common .intro_text h5 a:hover {
+    color: #00b4e1;
+}
+
+/*-------------------intro box / welcome style-27-------------------*/
+.welcome27{
+    background: #f6f6f6;
+}
+.welcome27 .intro_common span i {
+    color: #ffc13c;
+    font-size: 60px;
+}
+.welcome27 .intro_common span.d_inline {
+  line-height: normal;
+}
+.welcome27 .intro_common span.d_inline:before {
+    background: #bbbbbb;
+    bottom: -40px;
+    content: "";
+    height: 25px;
+    left: 50%;
+    margin-left: -0.5px;
+    position: absolute;
+    width: 1px;
+}
+.welcome27 .intro_common .intro_text h4 a:hover{
+    color: #ffc13c;
+}
+
+
+/*-------------------intro box / welcome style-28-------------------*/
+.welcome28 .intro_common {
+    border: 1px solid #ededed;
+    padding: 30px;
+    position: relative;
+}
+.welcome28 .intro_common .intro_text h5 a {
+    color: #1d2b44;
+}
+.welcome28 .intro_common .intro_text h5 a:hover {
+    color: #027AEC!important;
+}
+.welcome28 .intro_common:hover .intro_text p,
+.welcome28 .intro_common:hover .intro_text h5 a {
+    color: #fff;
+}
+.welcome28 .intro_common:before {
+    background: #ededed;
+    bottom: -10px;
+    content: "";
+    height: 1px;
+    left: -1px;
+    position: absolute;
+    width: 100.8%;
+}
+
+.welcome28 .intro_common span i {
+    background: #5b4fc9 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 38px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 22px;
+    position: relative;
+    width: 80px;
+    z-index: 1;
+}
+.welcome28 .intro_common:hover span i {
+    background: #5348b2;
+}
+.welcome28 .intro_common:hover {
+    background: #494288;
+}
+
+/*-------------------intro box / welcome style-29-------------------*/
+.welcome29 .intro_common {
+    padding: 40px 20px;
+    border-top: 2px solid transparent;
+}
+.welcome29 .intro_common:hover {
+    background: #fff;
+    border-color: #1d2b44;
+}
+.welcome29 .intro_common span.d_inline {
+    background: #fff;
+    border: 2px solid transparent;
+    color: #80de24;
+    font-size: 35px;
+    height: 100px;
+    padding: 32px;
+    width: 100px;
+}
+.welcome29 .intro_common:hover span.d_inline {
+    background: transparent;
+    border: 2px solid #1d2b44;
+    color: #1d2b44;
+}
+
+/*-------------------intro box / welcome style-30-------------------*/
+.welcome30 .intro_common {
+    border: 1px solid #ededed;
+    padding: 50px 20px 30px;
+}
+.welcome30 .intro_common:after,
+.welcome30 .intro_common:before {
+    border: 1px solid #ededed;
+    content: "";
+    height: 10px;
+    left: -1px;
+    position: absolute;
+    width: 100.6%;
+}
+.welcome30 .intro_common:before {
+    top: -10px;
+}
+.welcome30 .intro_common:after{
+    bottom: -10px;
+}
+.welcome30 .intro_common span {
+    background: #ececec;
+    height: 42px;
+    padding: 6px;
+    width: 75px;
+    margin: 0 auto;
+    color: #3168ca;
+}
+.welcome30 .intro_common:hover span.d_block {
+    background: #3168ca;
+    color: #fff;
+}
+.welcome30 .intro_common span.d_block::before {
+    border-bottom: 22px solid #ececec;
+    border-left: 37px solid transparent;
+    border-right: 38px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -22px;
+    width: 0;
+}
+.welcome30 .intro_common:hover span.d_block::before {
+    border-bottom-color: #3168ca;
+}
+.welcome30 .intro_common span.d_block::after {
+    border-left: 37px solid transparent;
+    border-right: 38px solid transparent;
+    border-top: 22px solid #ececec;
+    bottom: -22px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+.welcome30 .intro_common:hover span.d_block::after {
+    border-top-color: #3168ca;
+}
+.welcome30 .intro_common span i{
+    font-size: 30px;
+   
+}
+.welcome30 .intro_common .intro_text h5 a:hover{
+    color: #3168ca;
+   
+}
+
+
+/*-------------------intro box / welcome style-31-------------------*/
+.welcome31 .intro_box_wrapper {
+  border: 1px solid #ededed;
+}
+.welcome31 .intro_common{
+  padding: 60px 20px 50px;
+    float: left;
+    width: 25%;
+}
+.welcome31 .intro_common:nth-child(even){
+    background: #f5f5f5;
+}
+.welcome31 .intro_common span.d_block {
+	border:1px solid #e9e9e9;
+    border-radius: 100%;
+    color: #333;
+    font-size: 40px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px 28px;
+    width: 100px;
+}
+.welcome31 .intro_common:hover span.d_block {
+    background: #f4386d;
+	color:#fff;
+	border:1px solid #f4386d;
+}
+.welcome31 .intro_common .intro_text h5::before {
+    background: #dddddd;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    top: 28px;
+    width: 30px;
+}
+
+
+/*-------------------intro box / welcome style-32-------------------*/
+.welcome32{
+    background: #f6f6f6;
+}
+.welcome32 .intro_common span i {
+    background: #429ae2;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 45px;
+    height: 100px;
+    padding: 32px;
+    width: 100px;
+}
+.welcome32 .intro_common span.d_inline {
+    border: 1px solid #429ae2;
+    border-radius: 100%;
+    line-height: normal;
+    padding: 15px;
+}
+.welcome32 .intro_common span.d_inline:before {
+    background: #bbbbbb;
+    bottom: -40px;
+    content: "";
+    height: 25px;
+    left: 50%;
+    margin-left: -0.5px;
+    position: absolute;
+    width: 1px;
+}
+.welcome32 .intro_common .intro_text h4 a:hover{
+    color: #429ae2;
+}
+
+
+/*-------------------intro box / welcome style-33-------------------*/
+.welcome33 .intro_common {
+    float: left;
+    padding: 51px 20px 37px;
+    width: 25%;
+}
+
+.welcome33 .intro_common:nth-child(odd) {
+  background: #f7f7f7;
+}
+.welcome33 .wrapper2 .intro_common:nth-child(even) {
+  background: #f7f7f7;
+}
+.welcome33 .wrapper2 .intro_common:nth-child(odd) {
+  background: transparent;
+}
+.welcome33 .intro_common:hover {
+  background: #d3ec97!important;
+}
+.welcome33 .intro_common span.d_block {
+    font-size: 28px;
+    height: 59px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 60px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.welcome33 .intro_common:nth-child(even) span.d_block,
+.welcome33 .wrapper2 .intro_common:nth-child(odd) span.d_block{
+    background: #f7f7f7;
+}
+.welcome33 .wrapper2 .intro_common:nth-child(even) span.d_block,
+.welcome33 .intro_common:nth-child(odd) span.d_block {
+  background: #fff;
+}
+.welcome33 .intro_common span.d_block i{
+    display: block;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.welcome33 .intro_common .intro_text h5 a:hover{
+    color: #fff;
+}
+
+
+/*-------------------intro box / welcome style-34-------------------*/
+.welcome34 {
+    background: #675089;
+    padding: 80px 0;
+}
+.welcome34 .intro_box_wrapper {
+    border: 1px solid #735b97;
+}
+.welcome34 .intro_common {
+    border-right: 1px solid #735b97;
+    float: left;
+    padding: 40px 20px;
+    width: 20%;
+}
+.welcome34 .intro_common:last-child {
+    border-right: none;
+}
+.welcome34 .intro_common:before {
+    background: #31b69f;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+    width: 0%;
+    transition: all 0.3s;
+}
+.welcome34 .intro_common:hover:before {
+    width: 100.6%;
+}
+.welcome34 .intro_common span.d_block {
+    background: #735b97 none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 30px;
+    height: 65px;
+    margin: 0 auto;
+    padding: 17px;
+    width: 65px;
+    
+    transition: all 0.3s 0.3s;
+}
+.welcome34 .intro_common:hover span.d_block {
+    background: #31b69f;
+}
+.welcome34 .intro_common span.d_block::after,
+.welcome34 .intro_common span.d_block::before {
+    content: "";
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: -40px;
+    width: 1px;
+}
+.welcome34 .intro_common span.d_block::before {
+    background: #735b97;
+}
+.welcome34 .intro_common span.d_block::after{
+    background: #31b69f;
+    height: 0px;
+    transition: all 0.3s;
+}
+.welcome34 .intro_common:hover span.d_block::after{
+    height: 40px;
+}
+.welcome34 .intro_common .intro_text h5 a:hover{
+    color: #31b69f;
+}
+
+/*-------------------intro box / welcome style-35-------------------*/
+.welcome35 .intro_common {
+    background: #f6f6f6;
+    padding: 30px 20px 40px;
+}
+.welcome35 .col-lg-3:nth-child(odd) .intro_common {
+    border-bottom: 1px solid #29b6f6;
+}
+.welcome35 .col-lg-3:nth-child(even) .intro_common {
+    border-top: 1px solid #29b6f6;
+}
+.welcome35 .intro_common span.d_block i {
+    font-size: 35px;
+    color: #0f0e38;
+}
+.welcome35 .intro_common .intro_text h5 a {
+    color: #0f0e38;
+}
+.welcome35 .intro_common .intro_text h5 a:hover {
+    color: #29b6f6;
+}
+
+
+/*-------------------intro box / welcome style-36-------------------*/
+.welcome36 {
+  background: #16d3a9 none repeat scroll 0 0;
+  padding: 80px 0 30px;
+}
+.welcome36 .intro_common > span i {
+    color: #aaf660;
+    font-size: 50px;
+    line-height: normal;
+}
+.welcome36 .intro_common .intro_text{
+    
+}
+
+.welcome36 .intro_common .intro_text p,
+.welcome36 .intro_common .intro_text h5 {
+   z-index: 2;
+    position: relative;
+}
+.welcome36 .intro_common .intro_count {
+    bottom: 0;
+    color: #15caa2;
+    font-size: 150px;
+    left: -20px;
+    line-height: 114px;
+    position: absolute;
+    z-index: 0;
+}
+.welcome36 .intro_common:hover span.d_block i,
+.welcome36 .intro_common:hover .intro_text h5 a,
+.welcome36 .intro_common:hover .intro_text p{
+    color: #fff;
+}
+.welcome36 .intro_common .intro_text h5:hover a {
+    color: #000;
+}
+
+
+/*-------------------intro box / welcome style-37-------------------*/
+.welcome37 .intro_common {
+    border: 1px solid #e5e5e5;
+    padding: 0 20px 50px;
+}
+.welcome37 .intro_common:hover {
+    border-color: #3e63c0
+}
+.welcome37 .intro_common span i {
+    background: #e5e5e5;
+    color: #333;
+    border-radius: 0 0 5px 5px;
+    display: inline-block;
+    font-size: 50px;
+    line-height: normal;
+    padding: 11px 15px;
+}
+.welcome37 .intro_common:hover span i {
+    background: #3e63c0;
+    color: #fff;
+}
+.welcome37 .intro_common .intro_text a.text-uppercase {
+    border: 1px solid #1a1a1a;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 43px;
+    padding: 0 40px 0 22px;
+    position: relative;
+    margin-top: 27px;
+    color: #1a1a1a;
+}
+.welcome37 .intro_common .intro_text a.text-uppercase:hover {
+    border-color:#3e63c0;
+    background: #3e63c0;
+    color: #fff;
+}
+.welcome37 .intro_common .intro_text a.text-uppercase i {
+    font-size: 22px;
+    position: absolute;
+    right: 22px;
+    top: 10px;
+}
+
+
+/*-------------------intro box / welcome style-38-------------------*/
+.welcome38 .intro_common {
+  padding-bottom: 30px;
+}
+.welcome38 .intro_common:before {
+    background: #f5f5f5;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 15%;
+}
+.welcome38 .intro_common:hover:before {
+    background: #1d2b44;
+    width: 100%;
+}
+.welcome38 .intro_common span.d_block {
+    border: 1px solid #f5f5f5;
+    font-size: 50px;
+    padding: 30px 10px;
+}
+.welcome38 .intro_common:hover span.d_block {
+    border-color:#1fd8cd;
+    background: #1fd8cd;
+    color: #fff;
+}
+
+.welcome38 .intro_common .intro_text h5 a:hover {
+    color:#1fd8cd;
+}
+
+
+
+/*-------------------intro box / welcome style-39-------------------*/
+.welcome39 .intro_common {
+    border-bottom: 2px solid #d9d9d9;
+    border-top: 2px solid #0fb2bc;
+    padding: 0 20px 50px;
+    background: #f9f9f9;
+}
+
+.welcome39 .intro_common span i {
+    background: #0fb2bc;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    display: inline-block;
+    font-size: 50px;
+    line-height: normal;
+    padding: 11px 15px;
+}
+.welcome39 .intro_common .intro_text a.text-uppercase {
+    border: 1px solid #1a1a1a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 43px;
+    padding: 0 40px 0 22px;
+    position: relative;
+    margin-top: 27px;
+    color: #1a1a1a;
+}
+.welcome39 .intro_common .intro_text a.text-uppercase:hover {
+    border-color:#0fb2bc;
+    background: #0fb2bc;
+    color: #fff;
+}
+.welcome39 .intro_common .intro_text a.text-uppercase i {
+    font-size: 22px;
+    position: absolute;
+    right: 22px;
+    top: 11px;
+}
+
+
+/*-------------------intro box / welcome style-40-------------------*/
+.welcome40 .intro_common {
+    padding: 50px 50px;
+    float: left;
+    width: 33.33%;
+}
+
+.welcome40 .intro_box1 {
+  background: #2474ce;
+}
+.welcome40 .intro_box2 {
+  background: #8fd337;
+}
+.welcome40 .intro_box3 {
+  background: #2474ce;
+}
+
+.welcome40 .intro_common span i {
+  font-size: 60px;
+    color: #fff;
+}
+.welcome40 .intro_common .intro_box h5 a:hover {  
+    color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------responsive style----------------------------------*/
+@media (max-width: 1399px) {
+    .welcome19 .intro_common {
+        min-height: 180px;
+        padding: 10px 20px;
+    }
+    .welcome40 .intro_common {
+        padding: 40px 80px;
+    }
+    
+}
+
+
+@media (max-width: 1199px){
+    h5 {
+        line-height: 23px;
+    }
+    /*-----------style-5--------*/
+    .welcome5 .intro_common span i {
+        left: 10px;
+        top: -10px;
+    }
+    .welcome5 .intro_common .intro_text h5::before {
+        right: -38px;
+        top: 12px;
+    }
+    
+    /*-----------style-8-----------*/
+    .welcome8 .intro_common::before {
+        left: -160px;
+    }
+    
+    /*------------style-11-----------*/
+    .welcome11 .intro_common {
+        padding: 52px 10px 30px 15px;
+    }
+    .welcome11 .intro_common .intro_text h5 {
+        font-size: 17px;
+    }
+    
+    /*------------style-12------------*/
+    .welcome12 .intro_common {
+        padding: 40px 20px 50px;
+    }
+    
+    /*------------style-19------------*/
+    .welcome19 .intro_common {
+        display: block;
+        min-height: 220px;
+        padding: 19px 20px;
+        text-align: center;
+    }
+    .welcome19 .intro_common .intro_text {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+    .welcome19 .intro_common .intro_text P {
+        line-height: 23px;
+        margin-top: 4px;
+    }
+    .welcome19 .intro_common span {
+       margin: 0 auto;
+    }
+    
+    /*-------style-40------*/
+    .welcome40 .intro_common {
+        padding: 40px 30px;
+    }
+    
+    
+    
+    
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    
+    /*----------------style-8------------*/
+    .welcome8 .intro_common.intro_box3::before {
+        display: none;
+    }
+    .welcome8 .intro_common::before {
+        left: -265px;
+    }
+    
+    /*--------------style-13--------------*/
+    .welcome13 .intro_common{
+        padding: 0;
+    }
+        
+    /*-------style-15--------*/
+    .welcome15 .intro_common span.d_block {
+        height: 140px;
+        padding: 15px;
+        width: 140px;
+    }
+    .welcome15 .intro_common span.d_block i {
+        font-size: 60px;
+        height: 110px;
+        padding: 19px;
+        width: 110px;
+    }
+    
+    /*---------style-16--------*/
+    .welcome16 .img_area {
+        width: 100%;
+    }
+    .welcome16 .intro_common.right_align .intro_box {
+        padding-left: 50px;
+    }
+    .welcome16 .intro_common.text-right .intro_box {
+        padding-right: 50px;
+    }
+    
+    /*-----style-17-----*/
+    .welcome17 .middle_content {
+        display: none;
+    }
+    .welcome17 .intro_common span.d_block {
+        right: initial;
+        left: 0;
+    }
+    .welcome17 .intro_common.text-right .intro_box {
+        padding-right: 0px;
+        padding-left: 50px;
+    }
+    .welcome17 .intro_common.text-right {
+        text-align: left!important;
+    }
+    .welcome17 .intro_common.right_align .intro_box {
+        padding-left: 50px;
+    }
+    
+    /*------style-19--------*/
+    .welcome19 .intro_common {
+        width: 50%;
+    }
+    
+    /*--------style-21--------*/
+    .welcome21 .intro_common {
+        padding: 0 10px 30px;
+    }
+    .welcome21 .intro_common span.d_inline {
+        height: 90px;
+        padding: 26px;
+        width: 90px;
+    }
+    
+    /*--------style-22----------*/
+    .welcome22 .intro_common {
+        padding: 0 0px 35px;       
+    }
+    
+    /*-------style-24---------*/
+    .welcome24 .intro_common span.d_inline {
+        border-width:4px;
+        padding: 18px;
+    }
+    .welcome24 .intro_common {
+        margin-bottom: 50px;
+    }
+    
+    /*---------style-26-------*/
+    .welcome26 .intro_common {
+        margin-bottom: 60px;
+    }
+    
+    /*------style-28-------*/
+    .welcome28 .intro_common {
+        padding: 30px 10px;
+    }
+    
+    /*--------style-31----------*/
+    .welcome31 .intro_common {
+        padding: 40px 6px 30px;
+    }
+    .welcome31 .intro_common .intro_text h5 {
+        font-size: 17px;
+    }
+    .welcome31 .intro_common span.d_block {
+        font-size: 35px;
+        height: 90px;
+        padding: 29px 26px;
+        width: 90px;
+    }
+    
+    /*--------style-32---------*/
+    .welcome32 .intro_common span i {
+        font-size: 45px;
+        height: 100px;
+        padding: 21px;
+        width: 100px;
+    }
+    
+    /*--------style-33---------*/
+    .welcome33 .intro_common {
+        width: 50%;
+    }
+    .welcome33 .intro_common:nth-child(3) span.d_block {
+        background: #f7f7f7;
+    }
+    .welcome33 .intro_common:nth-child(4) span.d_block {
+        background: #fff;
+    }
+    .welcome33 .intro_common:nth-child(2n+1) {
+        background: transparent;
+    }
+    .welcome33 .intro_common:nth-child(3n+1) {
+        background: #f7f7f7;
+    }
+    .welcome33 .wrapper2 .intro_common:nth-child(2n) {
+        background: transparent;
+    }
+    .welcome33 .wrapper2 .intro_common:nth-child(3n+1) {
+        background: #f7f7f7;
+    }
+    .welcome33 .wrapper2 .intro_common:nth-child(1) span.d_block {
+        background: #fff;
+    }
+    .welcome33 .wrapper2 .intro_common:nth-child(2) span.d_block {
+        background: #f7f7f7;
+    }
+    .welcome33 .intro_common:hover {
+        background: #d3ec97!important;
+    }
+    
+    /*--------style-37---------*/
+    .welcome37 .intro_common {
+        padding: 0 10px 40px;
+    }
+        
+    /*--------style-9---------*/
+    .welcome39 .intro_common {
+        padding: 0 10px 40px;
+    }
+    .welcome39 .intro_common .intro_text a.text-uppercase {
+        line-height: 40px;
+    }
+    .welcome39 .intro_common .intro_text a.text-uppercase i {
+        font-size: 20px;
+        top: 9px;
+    }
+    
+    /*--------style-40---------*/
+    .welcome40 .intro_common {
+        padding: 40px 20px;
+    }
+    
+    
+    /*--------style----------*/
+    /*--------style----------*/
+    /*--------style----------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    .welcome_section .container {
+        width: 450px;
+    }
+    
+    /*--------style-1-----------*/
+    .welcome1 .intro_common {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .welcome1 .intro_common span {
+        margin: 0 auto;
+    }
+    
+    /*-----style-2------*/
+
+    .welcome2 .intro_common .intro_hedding {
+        display: block;
+        text-align:center;
+    }
+    .welcome2 .intro_common .intro_text{
+        text-align: center;
+    }
+    .welcome2 .intro_common span {
+        margin: 0 auto 10px;
+    }
+    
+    /*------style-6-------*/
+    .welcome6 .intro_common span {
+        height: 130px;
+        margin: 0 auto;
+        padding: 25px;
+        width: 130px;
+    }
+    .welcome6 .intro_common{
+        text-align: center;
+    }
+    .welcome6 .intro_common .intro_text h5::before {
+        left: 50%;
+        margin-left: -15px;
+    }
+    
+    /*-------style-8------*/
+    .welcome8 .intro_common {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    .welcome8 .intro_common:before{
+        display: none;
+    }
+    .welcome8 .intro_common span {
+        border: 6px solid #fff;
+        padding: 30px;
+    }
+    .welcome8 .intro_text {
+        padding-left: 30px;
+        width: 72%;
+    }
+    
+    /*-----style-11-----*/
+    .welcome11 .col-lg-3.col-md-4 {
+        float: left;
+        width: 50%;
+    }
+    .welcome11 .col-lg-3.col-md-4 .intro_common {
+        min-height: 320px;
+    }
+    .welcome11 .intro_common .intro_text h5 {
+        font-size: 19px;
+    }
+    
+    /*-------style-12-------*/
+    .welcome12 .intro_common {
+        text-align: center;
+    }
+    .welcome12 .intro_common > span {
+        margin: 0 auto;
+    }
+    
+    /*-----style-13--------*/
+    .welcome13 .intro_common {
+        text-align: center;
+    }
+    .welcome13 .intro_common > span {
+        margin: 0 auto;
+    }
+    .welcome13 .intro_common .intro_count {
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        transform: translate(-50%);
+    }
+    
+    /*---------style-14---------*/
+    .welcome14 .intro_common span.d_block {
+        background: #3469c1 none repeat scroll 0 0;
+        height: 150px;
+        padding: 42px 10px;
+        width: 118px;
+    }
+    .welcome14 .intro_common span.d_block i {
+        font-size: 46px;
+        line-height: normal;
+    }
+    .welcome14 .intro_common .intro_text {
+        padding-left: 20px;
+        width: 71%;
+    }
+    .welcome14 .intro_common span.d_block::before {
+        border-bottom-width: 40px;
+        border-right-width: 40px;
+        bottom: -5px;
+        left: -5px;
+    }
+    
+    /*----------style-15---------*/
+    .welcome15 .intro_common span.d_block {
+        border-radius: 0;
+        height: 140px;
+        padding: 9px;
+        width: 100px;
+    }
+    .welcome15 .intro_common span.d_block i {
+        border-radius: 0;
+        font-size: 47px;
+        height: 120px;
+        padding: 33px 10px;
+        width: 80px;
+    }
+    .welcome15 .intro_common .intro_text {
+        width: 77%;
+    }
+    
+    /*---------style-16--------*/
+    .welcome16 .img_area {
+        display: none;
+    }
+    .welcome16 .intro_common.text-right {
+        padding-top: 0;
+        text-align: left!important;
+    }
+    .welcome16 .intro_common {
+        padding-top: 0;
+    }
+    .welcome16 .intro_common.text-right .intro_box {
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    .welcome16 .intro_common span.d_block {
+        left: 0;
+        right: initial;
+    }
+    
+    /*------style-18-------*/
+    .welcome18 .col-xl-2.col-lg-3 {
+        float: left;
+        width: 50%;
+    }
+    .welcome18 .intro_common .intro_text h5 {
+        font-size: 17px;
+    }
+    .welcome18 .intro_common span.d_block {
+        margin: 0 auto;
+    }
+    .welcome18 .intro_common {
+        text-align: center;
+    }
+    
+    /*------style-19------*/
+    .welcome19 .intro_common {
+        text-align: center;
+    }
+    .welcome19 .intro_common span {
+        margin: 0 auto;
+    }
+    
+    /*------------style-21------------*/
+    .welcome21 .intro_common {
+        margin-bottom: 100px;
+    }
+    .welcome21 .col-md-4:last-child .intro_common {
+        margin-bottom: 0px;
+    }
+    
+    /*------------style-22------------*/
+    .welcome22 .intro_common {
+        margin-bottom: 80px;
+    }
+    .welcome22 .col-md-4:last-child .intro_common {
+        margin-bottom: 0px;
+    }
+    
+    
+    /*------------style-28------------*/
+    .welcome28 .intro_common {
+        margin-bottom: 60px;
+    }
+    .welcome28 .col-md-4:last-child .intro_common {
+        margin-bottom: 60px;
+    }
+    
+    /*------------style-30------------*/
+    .welcome30 .intro_common {
+        margin-bottom: 60px;
+    }
+    .welcome30 .col-lg-3:last-child .intro_common {
+        margin-bottom: 0px;
+    }
+    
+    /*------------style-31------------*/
+    .welcome31 .intro_common {
+        width: 50%;
+    }
+    
+    .welcome31 .intro_common:nth-child(2n) {
+        background: transparent;
+    }
+    .welcome31 .intro_common:nth-child(3n+1) {
+        background: #e9edf5;
+    }
+    
+    /*------------style-32------------*/
+    .welcome32 .intro_common {
+        margin-bottom: 70px;
+    }
+    .welcome32 .col-md-4:last-child .intro_common {
+        margin-bottom: 0px;
+    }
+    
+    /*------------style-33------------*/
+    .welcome33 .intro_common {
+        width: 100%;
+    }
+    .welcome33 .intro_common {
+        background: #f7f7f7!important;
+        margin-bottom: 30px;
+    }
+    .welcome33 .intro_common span.d_block {
+        background: #fff!important;
+    }
+    
+    /*------------style-34------------*/
+    .welcome34 .intro_box_wrapper {
+        border: 0px
+    }
+    .welcome34 .intro_common {
+        border: 1px solid #735b97;
+        width: 100%;
+        float: none;
+    }
+    
+    /*------------style-35------------*/
+    .welcome35 .col-lg-3:nth-child(2n) .intro_common {
+        border-bottom: 3px solid #29b6f6;
+    }
+    .welcome35 .col-lg-3:nth-child(2n) .intro_common {
+        border-top: medium none;
+    }
+    
+    /*------------style-36------------*/
+    .welcome36 .intro_common .intro_count {
+        bottom: -15px;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        transform: translate(-50%);
+    }
+    
+    /*------------style-38------------*/
+    .welcome38 .intro_common {
+        margin-bottom: 70px;
+    }
+    .welcome38 .col-lg-3:last-child .intro_common {
+        margin-bottom: 0px;
+    }
+    
+    /*---------style-40----------*/
+    .welcome40 .intro_common {
+        width: 100%;
+    }.welcome40 .intro_common .intro_text {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .welcome_section .container {
+        width: 100%;
+    }
+    
+    /*------style-3--------*/
+    .welcome3 .intro_common {
+        text-align: center;
+        display: block;
+    }
+    .welcome3 .intro_common .intro_text {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .welcome3 .intro_common span i {
+        margin: 0 auto;
+    }
+    
+    /*-----style-5----*/
+    .welcome5 .intro_common .intro_text h5::before {
+        display: none;
+    }
+    
+    /*------style-6-------*/
+
+    .welcome6 .intro_common span {
+        height: 110px;
+        padding: 14px;
+        width: 110px;
+    }
+    
+    /*-------style-8-------*/
+    .welcome8 .intro_common {
+        display: block;
+        text-align: center;
+    }
+    .welcome8 .intro_text {
+        padding-left: 0;
+        width: 100%;
+    }
+    .welcome8 .intro_common span {
+        border: 5px solid #fff;
+        height: 100px;
+        margin: 0 auto;
+        padding: 25px;
+        width: 100px;
+    }
+    
+    /*--------style-9----------*/
+    .welcome9 .intro_common.pl_70 {
+        padding-left: 40px;
+    }
+    .welcome9 .intro_common .intro_count {
+        font-size: 100px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    /*-------style-10-----*/
+    .welcome10 .intro_common {
+        text-align: center;
+    }
+    
+    /*---------style-11-------*/
+    .welcome11 .col-lg-3.col-md-4 {
+        float: none;
+        width: 100%;
+    }
+    .welcome11 .col-lg-3.col-md-4 .intro_common {
+        margin-bottom: 20px;
+        min-height: 280px;
+    }
+    
+    /*------------style-13--------------*/
+    .welcome13 .intro_common .intro_count {
+        font-size: 100px;
+    }
+    
+    /*---------style-14--------*/
+    .welcome14 .intro_common.align_row_center_left {
+        display: block;
+        text-align: center;
+    }
+    .welcome14 .intro_common .intro_text {
+        padding-left: 0;
+        width: 100%;
+    }
+    .welcome14 .intro_common span.d_block {
+        border-radius: 5px;
+        height: 90px;
+        margin: 0 auto 20px;
+        padding: 13px 10px;
+        width: 160px;
+    }
+    .welcome14 .intro_common span.d_block::before {
+        display: none;
+    }
+    .welcome14 .intro_common .intro_text a.read_more {
+        font-size: 14px;
+    }
+    .welcome14 .intro_common .intro_text a.read_more::before {
+        display: none;
+    }
+    
+    
+    /*---------style-15--------*/
+    .welcome15 .intro_common.align_row_center_left {
+        display: block;
+        text-align: center;
+    }
+    .welcome15 .intro_common span.d_block {
+        border-radius: 5px;
+        height: 90px;
+        margin: 0 auto 20px;
+        padding: 13px 10px;
+        width: 160px;
+    }
+    .welcome15 .intro_common .intro_text {
+        padding-left: 0;
+        width: 100%;
+    }
+    .welcome15 .intro_common .intro_text a.read_more {
+        font-size: 14px;
+    }
+    .welcome15 .intro_common .intro_text a.read_more::before {
+        display: none;
+    }
+    .welcome15 .intro_common span.d_block i {
+        font-size: 37px;
+        height: 62px;
+        padding: 8px 10px;
+        width: 135px;
+        border-radius: 5px;
+    }
+    
+    /*-------style-18-------*/
+    .welcome18 .col-xl-2.col-lg-3 {
+        float: none;
+        width: 100%;
+    }
+    
+    /*---------style-19-------*/
+    .welcome19 .intro_common {
+        width: 100%;
+    }
+    
+    /*--------style-31--------*/
+    .welcome31 .intro_box_wrapper {
+        border: medium none;
+    }
+    .welcome31 .intro_common {
+        width: 100%;
+        background: #e9edf5!important;
+        margin-bottom: 30px;
+    }
+    
+    /*--------style-40--------*/
+    .welcome40 .intro_common {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

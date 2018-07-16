@@ -1,0 +1,114 @@
+
+/*----------------------Header shortcode banner style-------------------------*/
+.shotrtcode_banner {
+    background: #14151b url("../images/shortcode_bannerBg1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.shotrtcode_banner .shortcode_content {
+    height: 520px;
+}
+.shotrtcode_banner .shortcode_content i {
+    color: #fff;
+    display: block;
+    font-size: 70px;
+    line-height: initial;
+}
+.shortcode_content .version-dec {
+    display: block;
+    font-size: 35px;
+    line-height: 53px;
+}
+/*----------section title style------------*/
+.shortcode_section_title h2 {
+    line-height: 40px;
+}
+.shortcode_section_title .d_block {
+    background: #444444 none repeat scroll 0 0;
+    height: 3px;
+    margin: 0 auto;
+    width: 30px;
+}
+.shortcode_section_title .d_block::after,
+.shortcode_section_title .d_block::before {
+    background: #e2e2e2 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 0.5px;
+    width: 30px;
+}
+.shortcode_section_title .d_block::before {
+    left: -48px;
+}
+.shortcode_section_title .d_block::after {
+    right: -48px;
+}
+
+
+
+@media (max-width: 991px) {
+    
+    /*============= banner respnsive style ===============*/
+    .shotrtcode_banner h1.title_60 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .shotrtcode_banner .shortcode_content {
+        height: 480px;
+    }
+    .shotrtcode_banner .shortcode_content i {
+        font-size: 50px;
+    }
+    .shortcode_content .version-dec {
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .shortcode_content .version-dec {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    .search_area_modal {
+        min-width: 440px;
+        padding: 33px 20px 25px;
+    }
+    .shotrtcode_banner .shortcode_content {
+        height: 300px;
+    }
+    .shotrtcode_banner .shortcode_content i {
+        font-size: 40px;
+    }
+    .shotrtcode_banner h1.title_60 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .shortcode_content .version-dec {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .search_area_modal {
+        min-width: 290px;
+        width: 90%;
+    }
+    .shotrtcode_banner .shortcode_content i {
+        font-size: 30px;
+    }
+    .shotrtcode_banner h1.title_60 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .shotrtcode_banner .shortcode_content {
+        height: 200px;
+    }
+}
+
+
+
+

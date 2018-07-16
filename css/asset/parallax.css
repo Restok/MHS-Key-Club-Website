@@ -1,0 +1,243 @@
+
+/*--------------------parallax style-1----------------*/
+.parallax1{
+    background: url(../../img/parallax-bg1.jpg) no-repeat fixed center center / cover;
+}
+.parallax1 .overlay{
+    background: rgba(0,0,0,0.7);
+}
+.parallax1 .parallax_content{
+    min-height: 700px;
+}
+.parallax1 .parallax_content .readmore {
+    background: #8535a2;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+.parallax1 .parallax_content .readmore:hover {
+    background: #fff;
+    color: #8535a2;
+}
+
+
+/*--------------------parallax style-2----------------*/
+.parallax2{
+    background: url(../../img/stil-734877-unsplash.jpg) no-repeat fixed top center / cover;
+}
+.parallax2 .overlay{
+    background: rgba(0,0,0,0.7);
+}
+.parallax2 .parallax_content{
+    min-height: 600px;
+}
+.parallax2 .parallax_content .txt {
+  max-width: 700px;
+}
+.parallax2 .parallax_content .readmore {
+    border: 1px solid #fff;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+.parallax2 .parallax_content .readmore:hover {
+    background: #fff;
+    color: #8535a2;
+}
+
+
+/*--------------------parallax style-3----------------*/
+.parallax3{
+    background: url(../../img/christopher-czermak-732755-unsplash.jpg) no-repeat fixed top center / cover;
+}
+.parallax3 .overlay{
+    background: rgba(0,0,0,0.5);
+}
+.parallax3 .parallax_content{
+    min-height: 600px;
+    max-width: 580px;
+}
+.parallax3 .parallax_content > h2{
+    font-size: 40px;
+    line-height: 48px;
+}
+.parallax3 .parallax_content > p{
+    color: #e8e8e8;
+}
+.parallax3 .parallax_content > a.readmore {
+    color: #fff;
+}
+.parallax3 .parallax_content > a.readmore:hover {
+    color: #ED2553;
+}
+.parallax3 .parallax_content > a.readmore:before {
+    background: #8f8f8f;
+    bottom: 12px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: -38px;
+    width: 25px;
+}
+.parallax3 .parallax_content > a.readmore:hover:before {
+    background: #ED2553;
+}
+.parallax3 .parallax_content .workshop h2 {
+    line-height: 50px;
+}
+.parallax3 .parallax_content .workshop h2:after {
+    background: #666666;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    width: 30px;
+}
+.parallax3 .parallax_content .workshop.pt_40 > li {
+    float: left;
+    margin-left: 50px;
+}
+.parallax3 .parallax_content .workshop > li:first-child {
+    margin-left: 0px;
+}
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){
+    /*------style-2--------*/
+    .parallax2 .parallax_content .txt {
+        max-width: 490px;
+        margin: 0 auto;
+    }
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    /*--------style-1--------*/
+    .parallax2 .parallax_content,
+    .parallax1 .parallax_content {
+        min-height: 450px;
+    }
+    
+    
+    /*--------style-2---------*/
+    .parallax2 .parallax_content {
+        align-items: flex-start;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+    /*-------style-1--------*/
+    .parallax1 .parallax_content h2 {
+        font-size: 31px;
+        line-height: 42px;
+    }
+    .parallax1 .parallax_content .readmore {
+        font-size: 14px;
+        height: 45px;
+        line-height: 44px;
+        padding: 0 20px;
+    }
+    
+    /*------style-2---------*/
+    .parallax2 .parallax_content {
+        text-align: center!important;
+    }
+    .parallax2 .parallax_content h2 {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    .parallax2 .parallax_content .readmore {
+        font-size: 14px;
+        height: 45px;
+        line-height: 44px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    
+    /*-----------style-3-----------*/
+    .parallax3 .parallax_content {
+        text-align: center!important;
+    }
+    .parallax3 .parallax_content > h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .parallax3 .parallax_content > a.readmore {
+        margin: 0 auto;
+    }
+    .parallax3 .parallax_content .workshop.pt_40 > li {
+        margin-left: 23px;
+    }
+    .parallax3 .parallax_content .workshop > li:first-child {
+        margin-left: 0;
+    }
+    .parallax3 .parallax_content {
+        margin: 0 auto;
+    }
+    .parallax3 .parallax_content .workshop {
+        margin: 0 auto;
+    }
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    
+    /*------style-3------*/
+    .parallax3{
+        padding: 40px 0;
+    }
+    .parallax3 .parallax_content .workshop.pt_40 > li {
+        float: none;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    
+    
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
