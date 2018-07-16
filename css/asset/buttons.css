@@ -1,0 +1,460 @@
+/*------------------------------ Start Button shortcode style-----------------------------*/
+/*----------Button Common Style----------*/
+.button_common {
+    margin-left: -25px;
+}
+.button_common > li {
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+.button_common li a {
+    border: 1px solid #77379f;
+    color: #77379f;
+    display: block;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 45px 0 28px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.button_common li a i {
+    overflow: hidden;
+}
+
+
+
+/*---------------btn_style1------------------*/
+.btn_style1 li a i {
+    margin-left: 11px;
+}
+.btn_style1 li a i.flaticon-upload-to-cloud:after{
+    content: "\f1db";
+}
+.btn_style1 li a i.flaticon-arrows-1:after{
+    content: "\f1dd";
+}
+.btn_style1 li a i.flaticon-mail:after{
+    content: "\f182";
+}
+.btn_style1 li a i.flaticon-shopping-cart-1:after{
+    content: "\f1cd";
+}
+.btn_style1 li a i.flaticon-delete:after{
+    content: "\f199";
+}
+.btn_style1 li a i.fa-angle-double-right:after{
+     content: "\f101";
+}
+.btn_style1 li a i.flaticon-stopwatch:after{
+     content: "\f172";
+}
+.btn_style1 li a i.flaticon-shopping-cart-2:after{
+     content: "\f1cc";
+}
+.btn_style1 li a i.fa-long-arrow-right:after{
+     content: "\f178";
+}
+.btn_style1 li a i.flaticon-arrows-1:after{
+     content: "\f1dd";
+}
+
+
+
+.btn_style1 li a i.fa-long-arrow-right,
+.btn_style1 li a i.fa-angle-double-right {
+  font-size: 23px;
+  line-height: 50px;
+  margin-left: 6px;
+}
+
+.btn_style1 li a i:after,
+.btn_style1 li a i:before {
+    color: #77379f;
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+
+.btn_style1 li a i:before{
+    opacity: 0;
+    visibility: hidden;
+}
+.btn_style1 li a:hover i:before{
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn_style1 li a:hover i:after{
+    -webkit-animation: animation1 0.5s linear 1 forwards;
+    -moz-animation: animation1 0.5s linear 1 forwards;
+    -ms-animation: animation1 0.5s linear 1 forwards;
+    -o-animation: animation1 0.5s linear 1 forwards;
+    animation: animation1 0.5s linear 1 forwards;
+}
+
+@-webkit-keyframes animation1 {
+    from {
+        -webkit-transform: translateX(0px) scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translateX(10px) scale(2);
+        opacity: 0;
+    }
+}
+@-moz-keyframes animation1 {
+    from {
+        -moz-transform: translateX(0px) scale(1);
+        opacity: 1;
+    }
+    to {
+        -moz-transform: translateX(10px) scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes animation1 {
+    from {
+        transform: translateX(0px) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(10px) scale(2);
+        opacity: 0;
+    }
+}
+
+.btn_style1.round li a{
+    border-radius: 50px;
+}
+
+
+
+
+
+
+/*---------------btn_style2------------------*/
+.btn_style2 li a {
+    padding: 0 28px 0 50px;
+}
+.btn_style2 li a i.fa {
+  margin-top: 6px;
+}
+.btn_style2 li a > span {
+    color: #77379f;
+    left: 22px;
+    line-height: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.btn_style2 li a i:before {
+    display: inline-block;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+.btn_style2 li a:hover i::before {
+    -webkit-animation: iconTranslateY 0.5s forwards;
+    -moz-animation: iconTranslateY 0.5s forwards;
+    animation: iconTranslateY 0.5s forwards;
+}
+
+@-webkit-keyframes iconTranslateY {
+    49% {
+        -webkit-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes iconTranslateY {
+    49% {
+        -moz-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -moz-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes iconTranslateY {
+    49% {
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+.btn_style2.round li a{
+    border-radius: 50px;
+}
+
+
+
+
+
+/*---------------btn_style3------------------*/
+.btn_style3 li a {
+    overflow: hidden;
+    padding: 0 30px;
+    background: #77379f;
+    color: #fff;
+}
+.btn_style3 li a i {
+    left: 50%;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -130%);
+    opacity: 0;
+    visibility:hidden;
+}
+.btn_style3 li a span {
+    display: block;
+    transform: translateY(0px);
+}
+.btn_style3 li a:hover span {
+    display: block;
+    transform: translateY(33px);
+    opacity: 0;
+    visibility: hidden;
+}
+.btn_style3 li a:hover i {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn_style3.round li a{
+    border-radius: 50px;
+}
+
+
+/*---------------btn_style4------------------*/
+.btn_style4 li a {
+    padding: 0 30px;
+    border-color: #0fba97;
+    color: #0fba97;
+}
+.btn_style4 li a:hover {
+    background: #0fba97;
+    color: #fff;
+}
+.btn_style4 li a i {
+    margin-left: 10px;
+}
+.btn_style4 li a i.fa {
+    font-size: 20px;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.btn_style4.round li a{
+    border-radius: 50px;
+    border-color: #3469c1;
+    color: #3469c1;
+}
+.btn_style4.round li a:hover{
+    background-color: #3469c1;
+    color: #fff;
+}
+
+
+
+
+/*---------------btn style6------------------*/
+/*-----common------*/
+.btn_style6 {
+    margin-left: -70px;
+}
+.btn_style6 > li {
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+
+
+.btn_style6 li a {
+    font-size: 16px;
+}
+
+/*button size style*/
+.btn_style6 li.btn_sm a {
+    line-height: 40px;
+    padding: 0 25px;
+}
+.btn_style6 li.btn_md a {
+    line-height: 45px;
+    padding: 0px 40px;
+}
+.btn_style6 li.btn_lg a {
+    line-height: 53px;
+    padding: 0 45px;
+}
+.btn_style6 li.btn_xl a {
+    line-height: 60px;
+    padding: 0 60px;
+}
+
+/*---button color/background---*/
+.btn_style6.reguler1 li a {
+    background: #984059;
+    color: #fff;
+    border-color: #984059;
+}
+.btn_style6.reguler1 li a:hover {
+    background: transparent;
+    color: #984059;
+}
+
+
+.btn_style6.reguler2 li a {
+    color: #00cee0;
+    border-color: #00cee0;
+}
+.btn_style6.reguler2 li a:hover {
+    background: #00cee0;
+    color: #fff;
+}
+
+
+.btn_style6.reguler3 li a {
+    background: #00b4e1;
+    color: #fff;
+    border-color: #00b4e1;
+    border-radius: 5px;
+}
+.btn_style6.reguler3 li a:hover {
+    background: transparent;
+    color: #00b4e1;
+}
+
+
+.btn_style6.reguler4 li a {
+    color: #7e57c2;
+    border-color: #7e57c2;
+    border-radius: 5px;
+}
+.btn_style6.reguler4 li a:hover {
+    background: #7e57c2;
+    color: #fff;
+}
+
+
+.btn_style6.reguler5 li a {
+    background: #d5419c;
+    color: #fff;
+    border-color: #d5419c;
+    border-radius: 50px;
+}
+.btn_style6.reguler5 li a:hover {
+    background: transparent;
+    color: #d5419c;
+}
+
+
+.btn_style6.reguler6 li a {
+    color: #3a56bc;
+    border-color: #3a56bc;
+    border-radius: 50px;
+}
+.btn_style6.reguler6 li a:hover {
+    background: #3a56bc;
+    color: #fff;
+}
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    
+    /*------------button style-6-----------*/
+    .btn_style6 {
+        margin-left: -12px;
+    }
+    .btn_style6 > li {
+        margin-left: 12px;
+    }
+    .btn_style6 li.btn_lg a {
+        padding: 0 40px;
+    }
+    .btn_style6 li.btn_xl a {
+        line-height: 58px;
+        padding: 0 53px;
+    }
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    .button_common li a {
+        font-size: 16px;
+        line-height: 45px;
+        padding: 0 40px 0 24px;
+    }
+    
+    /*--------button style-2---------*/
+    .btn_style2 li a {
+        padding: 0 28px 0 50px;
+    }
+    
+    .btn_style3 li a {
+        padding: 0 30px;
+    }
+    
+    .btn_style4 li a {
+        padding: 0 30px;
+    }
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

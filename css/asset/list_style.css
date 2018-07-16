@@ -1,0 +1,137 @@
+/*------------------------------Start Typhography shortcode style-----------------------------*/
+/*-----------common style for Typhography section ------------*/
+.list_common{
+    margin-bottom: 30px;
+}
+.list_common > li {
+    color: #777777;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+.list_common > li i {
+    font-size: 18px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+}
+.list_common.border_btm > li i {
+    top: 10px;
+}
+.list_common.border_btm > li {
+    border-bottom: 1px dashed #ececec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.list_common.border_solid > li {
+    border-bottom-style: solid;
+}
+.list_common.border_btm > li:last-child {
+    border-bottom: none;
+}
+/*-----------style-1 ------------*/
+.list_style10 > li i,
+.list_style7 > li i,
+.list_style4 > li i,
+.list_style1 > li i {
+    color: #26d28f;
+}
+
+/*-----------style-2 ------------*/
+.list_style11 > li i,
+.list_style5 > li i,
+.list_style2 > li i {
+    color: #1e77d2;
+}
+
+/*-----------style-3 ------------*/
+.list_style12 > li i,
+.list_style6 > li i,
+.list_style3 > li i {
+    color: #dd434a;
+}
+
+/*-----------style-4 ------------*/
+.list_style4 > li {
+  padding-left: 20px;
+}
+
+/*-----------style-5 ------------*/
+.list_style5 > li i {
+  font-size: 15px;
+}
+.list_style5 > li {
+  padding-left: 25px;
+}
+
+/*-----------style-7 ------------*/
+.list_style7 > li i {
+  font-size: 15px;
+}
+.list_style7 > li {
+  padding-left: 20px;
+}
+
+/*-----------style-8 ------------*/
+.list_style8 > li i {
+  color: #555;
+}
+
+/*-----------style-9 ------------*/
+.list_style9 > li{
+    padding-left: 0;
+}
+.list_style9 > li .number {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    left: 6px;
+    margin-right: 10px;
+    position: absolute;
+}
+.list_style9 > li .number:before {
+    content: "\f400";
+    color: #dd434a;
+    font-family: "Ionicons";
+    font-size: 21px;
+    left: -5px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.list_style9 > li .list {
+    margin-left: 32px;
+}
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    .dropcap_common {
+        margin: 0 0 40px;
+        padding-left: 0;
+    }
+    
+    .threeCol .col-lg-3,
+    .twoCol .col-lg-2 {
+        margin-bottom: 30px;
+    }
+    
+}/*---end 768-991px media query----*/
+
+
+
+
+
+
+
+
+
+
+

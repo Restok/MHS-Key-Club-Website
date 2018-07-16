@@ -1,0 +1,505 @@
+/*------------------------------Start accordion shortcode style-----------------------------*/
+/*-----------common style for accordion section ------------*/
+.accordion_common .card {
+  border-radius: 4px;
+  box-shadow: none;
+}
+.accordion_common .card .title {
+    display: block;
+    font-size: 18px;
+    color: #303030;
+}
+.accordion_common p.card-body {
+    font-size: 15px;
+    line-height: 26px;
+    font-family: "Lato", sans-serif;
+}
+
+/*--------------------style-1------------------------*/
+.accordion_style1 .card {
+    margin-bottom: 20px;
+    border: none;
+}
+.accordion_style1 .card .title {
+    border: 1px solid #dcdcdc;
+    padding: 18px 30px;
+}
+.accordion_style1 p.card-body {
+    border-bottom: 2px solid #dcdcdc;
+    padding: 30px;
+}
+
+/*style-1 dark version*/
+.accordion_style1.dark .card .title {
+    background: #303030;
+    border-color: #303030;
+    color: #fff;
+}
+.accordion_style1.dark p.card-body {
+    background: #f5f5f5;
+}
+
+
+/*--------------------style-2------------------------*/
+.accordion_style2 .card {
+    border-color: #eceef0;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.accordion_style2 .card .title {
+    padding: 12px 70px 12px 20px;
+    position: relative;
+    border-radius: 3px;
+}
+.accordion_style2 .card .title[aria-expanded=true] {
+    padding: 15px 70px 15px 20px;
+    margin-bottom: 15px;
+}
+.accordion_style2 .card span.arrow {
+    border-left: 1px solid #eceef0;
+    color: #a1b1bc;
+    font-size: 17px;
+    height: 100%;
+    padding: 12px 22px 0;
+    position: absolute;
+    right: 0;
+    display: block;
+    top: 0;
+    z-index: 1;
+}
+.accordion_style2 p.card-body {
+    padding-left: 22px;
+    padding-right: 70px;
+    float: right;
+    width: 77.6%;
+    padding-top: 0;
+    margin-top: -5px;
+}
+.accordion_style2 .main_card > img {
+    height: 100px;
+    width: 100px;
+    margin-left: 22px;
+}
+
+/*style-2 dark version*/
+.accordion_style2.dark .card span.arrow {
+    color: #bbbdcd!important;
+    border-color: #eceef0;
+}
+.accordion_style2.dark .card .title {
+    background: #21222f;
+    color: #bbbdcd;
+}
+.accordion_style2.dark  .card .title[aria-expanded=true]{
+    background: transparent;
+    color: #333;
+}
+
+
+/*--------------------style-3------------------------*/
+.accordion_style3 .card {
+    border-radius: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.accordion_style3 .card .title {
+    border-top: 2px solid #735c88;
+    display: block;
+    font-size: 18px;
+    padding: 11px 55px 11px 20px;
+    position: relative;
+}
+.accordion_style3 .card .title i {
+    float: right;
+    font-size: 21px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -13px;
+}
+.accordion_style3 .card .title:hover,
+.accordion_style3 .card .title[aria-expanded=true] {
+    color: #735c88;
+}
+.accordion_style3 .card .title[aria-expanded=true] i {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #735c88;
+}
+.accordion_style3 p.card-body {
+    border-top: 1px solid #dcdcdc;
+    padding: 42px 20px;
+}
+.accordion_style3 .card:last-child p.card-body{
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/*style-3 version-2*/
+.accordion_style3.v2 .card .title i {
+    float: right;
+    font-size: 15px;
+}
+.accordion_style3.v2 .card .title {
+    border-color: #8e8e8e;
+}
+.accordion_style3.v2 .card .title[aria-expanded=true]{
+    border-color: #735c88;
+}
+
+
+
+/*--------------------style-4------------------------*/
+.accordion_common.accordion_style4 .card {
+  border-color: #eceef0;
+    margin-bottom: 20px;
+}
+.accordion_style4 .card .title {
+    padding: 12px 20px 12px 70px;
+    position: relative;
+}
+.accordion_style4 .card .title:before {
+    content: "\f0da";
+    border-right: 1px solid #eceef0;
+    font-family: fontawesome;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    color: #a1b1bc;
+    left: 0;
+    padding: 13px 23px;
+    position: absolute;
+    top: 0;
+}
+.accordion_style4 .card .title[aria-expanded=true]{
+    border-bottom: 1px solid #eceef0;
+    margin-bottom: 30px;
+}
+.accordion_style4 .card .title[aria-expanded=true]:before{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #333;
+    border: none!important;
+}
+
+.accordion_style4 .main_card > img {
+    height: 100px;
+    margin-left: 70px;
+    width: 100px;
+    
+}
+.accordion_style4 p.card-body {
+    float: right;
+    margin-top: -5px;
+    padding-left: 22px;
+    padding-top: 0;
+    width: 69.0%;
+}
+
+/*style-4 version-2*/
+.accordion_style4.v2 .card .title::before {
+    border-right: medium none;
+    right: 0;
+    left: inherit;
+    border-left: 1px solid #09B5C7;
+    color: #fff;
+}
+.accordion_style4.v2 .card .title {
+    background: #00cee0;
+    color: #fff;
+}
+.accordion_style4.v2 .card .title {
+    padding-left: 25px;
+    padding-right: 50px;
+}
+.accordion_style4.v2 .main_card > img {
+    margin-left: 25px;
+}
+.accordion_style4.v2 p.card-body {
+    width: 77%;
+}
+
+
+
+/*--------------------style-5------------------------*/
+.accordion_section5 {
+    background: #F7F7F7;
+}
+.accordion_style5 .card {
+    background: transparent;
+    margin-bottom: 20px;
+    border: none;
+}
+.accordion_style5 .card .title {
+    background: #fff;
+    border-left: 3px solid #343740;
+    padding: 17px 65px 17px 30px;
+    position: relative;
+}
+.accordion_style5 .card .title:after {
+    content: "\f218";
+    background: #35363c;
+    color: #fff;
+    font-family: "Ionicons";
+    font-weight: 400;
+    height: 100%;
+    padding: 17px 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.accordion_style5 p.card-body {
+    background: #fff;
+    border-left: 3px solid #343740;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+.accordion_style5 .card .title[aria-expanded=true]:after{
+    content: "\f209";
+}
+/*style-5 dark version*/
+.accordion_style5.dark .card .title {
+  background: #3f414e;
+  border-left: medium none;
+  color: #fff;
+}
+.accordion_style5.dark p.card-body {
+    border-left: none;
+}
+
+
+/*--------------------style-6------------------------*/
+.accordion_style6 .card{
+    margin-bottom: 20px;
+    border: none;
+}
+.accordion_style6 .card .title {
+    border: 1px solid #e1e1e1;
+    padding: 17px 30px 17px 50px;
+    position: relative;
+}
+.accordion_style6 .card .title:before {
+    content: "\f216";
+    font-family: "Ionicons";
+    left: 20px;
+    position: absolute;
+    top: 17px;
+}
+.accordion_style6 .card .title[aria-expanded=true]:before {
+    content: "\f464";
+}
+.accordion_style6 p.card-body {
+    border: 1px solid #e1e1e1;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+/*style-6 version-2*/
+.accordion_style6.v2 .card .title {
+    padding-left: 20px;
+    padding-right: 55px;
+}
+.accordion_style6.v2 .card .title:before{
+    display: none;
+}
+.accordion_style6.v2 .card .title:after {
+    content: "\f48a";
+    font-family: "Ionicons";
+    margin-top: -12px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.accordion_style6.v2 .card .title[aria-expanded=true]:after {
+    content: "\f463";
+}
+.accordion_style6.v2 p.card-body {
+    border: none;
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+
+/*--------------------style-7------------------------*/
+.accordion_style7 {
+    border: 1px solid #ededed;
+    padding: 20px 50px 20px 0;
+}
+.accordion_style7 .card {
+    margin-bottom: 0px;
+    border: none;
+}
+.accordion_style7 .card .title {
+    padding: 23px 20px 23px 60px;
+    position: relative;
+}
+.accordion_style7 .card .title:before {
+    content: "\f218";
+    background: #ededed;
+    color: #333;
+    font-family: "Ionicons";
+    font-weight: 400;
+    left: -1px;
+    padding: 5px 12px;
+    position: absolute;
+    top: 18px;
+}
+.accordion_style7 .card .title[aria-expanded=true]:before{
+    content: "\f209";
+}
+.accordion_style7 p.card-body {
+  padding: 0 0 0 60px;
+}
+/*------------------------------End accordion shortcode style-----------------------------*/
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+    .accordion_style2 p.card-body {
+        width: 73.0%;
+    }
+    .accordion_style4 p.card-body {
+        width: 62.4%;
+    }
+    .accordion_style4.v2 p.card-body {
+        width: 72.4%;
+    }
+  
+}/*---------992-1199------*/
+
+
+@media (max-width: 991px){
+    .accordion_style2 p.card-body {
+        width: 83%;
+    }
+    .accordion_style4 p.card-body {
+        width: 76%;
+    }
+    .accordion_style4.v2 p.card-body {
+        width: 82.5%;
+    }
+    
+}/*---------768-991------*/
+
+
+@media (max-width: 767px){
+    .accordion_style2 .collapse > img {
+        float: left;
+    }
+    .accordion_style2 p.card-body {
+        float: left;
+        width: 71%;
+    }
+    .accordion_style4 .collapse > img {
+        float: left;
+        margin-left: 20px;
+    }
+    .accordion_style4 p.card-body {
+        float: left;
+        width: 72%;
+    }
+    .accordion_style4.v2 p.card-body {
+        width: 70.5%;
+    }
+    
+}/*---------480-767------*/
+
+@media (max-width: 479px){
+    .accordion_common .card .title {
+        font-size: 16px;
+    }
+    /*----style--1--------*/
+    .accordion_style1 .card .title {
+        padding: 10px 18px;
+    }
+    .accordion_style1 .collapse p.card-body {
+        padding: 10px;
+    }
+    
+    /*----style--2--------*/
+    .accordion_style2 .collapse > img {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .accordion_style2 p.card-body {
+        float: none;
+        width: 100%;
+    }
+    
+    /*----style--3--------*/
+    .accordion_style3 p.card-body {
+        padding: 20px 20px 25px;
+    }
+    
+    /*----style--4--------*/
+    .accordion_style4 .collapse > img {
+        float: none;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .accordion_style4 p.card-body {
+        float: none;
+        width: 100%;
+    }
+    .accordion_style4.v2 p.card-body {
+        width: 100%;
+    }
+    
+    /*----style--5--------*/
+    .accordion_style5 .card .title {
+        padding: 12px 23px;
+    }
+    .accordion_style5 .card .title::after {
+        padding: 12px 18px;
+    }
+    
+    /*----style--6--------*/
+    .accordion_style6 .card .title {
+        padding: 14px 30px 14px 50px;
+    }
+    .accordion_style6 p.card-body {
+        padding-left: 20px;
+        padding-top: 17px;
+    }
+    .accordion_style6 .card .title::before {
+        top: 14px;
+    }
+    
+    /*----style--7--------*/
+    .accordion_style7 p.card-body {
+        padding: 0 0 0 20px;
+    }
+    .accordion_style7 > #accordion13 {
+        padding: 10px 20px 10px 0;
+    }
+    
+    
+    
+}/*---------300-479------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,366 @@
+/*------------------------------ Start video section shortcode style-----------------------------*/
+/*----------video section Common Style----------*/
+
+
+
+
+/*----------video section Style-1----------*/
+.video1 {
+    background: url(../../images/video-bg1.jpg) no-repeat center center / cover;
+}
+.video1 .overlay{
+    background: rgba(0,0,0,0.7);
+}
+
+.video1 .video_content{
+    min-height: 500px;
+}
+.video1 .video_content > span.line {
+    width: 50px;
+    height: 2px;
+}
+.video1 .video_content > p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.video1 .video_content > h1 {
+    max-width: 620px;
+    line-height: 60px;
+}
+.video1 .video_content > a.venobox {
+    color: #fff;
+  border: 2px solid #fff;
+  font-size: 22px;
+  height: 60px;
+  padding: 15px 22px;
+  width: 60px;
+}
+.video1 .video_content > a.venobox:hover {
+    background: #fff;
+    color: #ED2553;
+}
+
+
+/*----------video section Style-2----------*/
+.video2 .video_text > h2 {
+  max-width: 400px;
+}
+.video2 .video_text > h2:before {
+    background: #8f8f8f;
+    bottom: 19px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 15px;
+    width: 150px;
+}
+.video2 .video_text > a.readmore {
+    color: #2e2e2e;
+}
+.video2 .video_text > a.readmore:hover {
+    color: #ED2553;
+}
+.video2 .video_text > a.readmore:before {
+    background: #8f8f8f;
+    bottom: 12px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: -38px;
+    width: 25px;
+}
+.video2 .video_text > a.readmore:hover:before {
+    background: #ED2553;
+}
+.video2 .video_content img{
+    width: 100%;
+}
+.video2 .video_content .overlay{
+    background: rgba(0,0,0,0.6);
+}
+.video2 .video_content > a.venobox {
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 22px;
+    height: 60px;
+    left: 50%;
+    padding: 15px 22px;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+}
+.video2 .video_content > a.venobox:hover {
+    background: #fff;
+    color: #ED2553;
+}
+
+
+
+
+/*----------video section Style-3----------*/
+
+.video3 .overlay{
+    background: rgba(0,0,0,0.6);
+}
+.video3 .video_content{
+    min-height: 550px;
+}
+.video3 .video_content > p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.video3 .video_content > h1 {
+    max-width: 620px;
+    line-height: 60px;
+}
+
+
+
+/*----------video section Style-4----------*/
+.video4 .video_text,
+.video4 .video_content {
+    width: 50%;
+}
+.video4 .container-fluid{
+    padding-right: 0;
+    overflow-x: hidden;
+}
+.video4 .video_text > h2{
+    font-size: 40px;
+    max-width: 580px;
+    line-height: 48px;
+}
+.video4 .video_text > p{
+    max-width: 580px;
+}
+.video4 .video_text > a.readmore {
+    color: #2e2e2e;
+}
+.video4 .video_text > a.readmore:hover {
+    color: #ED2553;
+}
+.video4 .video_text > a.readmore:before {
+    background: #8f8f8f;
+    bottom: 12px;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: -38px;
+    width: 25px;
+}
+.video4 .video_text > a.readmore:hover:before {
+    background: #ED2553;
+}
+.video4 .video_text .workshop h2 {
+    line-height: 50px;
+}
+.video4 .video_text .workshop h2:after {
+    background: #666666;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    width: 30px;
+}
+.video4 .video_text .workshop.pt_40 > li {
+    float: left;
+    margin-left: 50px;
+}
+.video4 .video_text .workshop > li:first-child {
+    margin-left: 0px;
+}
+
+.video4 .video_content img{
+    width: 100%;
+}
+.video4 .video_content .overlay{
+    background: rgba(0,0,0,0.6);
+}
+.video4 .video_content > a.venobox {
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 22px;
+    height: 60px;
+    left: 50%;
+    padding: 15px 22px;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+}
+.video4 .video_content > a.venobox:hover {
+    background: #fff;
+    color: #ED2553;
+}
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){
+    .video4 .video_text {
+        padding: 0 30px 0 10px;
+    }
+    .video4 .video_text > h2 {
+        font-size: 38px;
+    }
+    .video4 .video_text > p {
+        padding: 30px 0;
+    }
+    .video4 .video_text .workshop.pt_40 > li {
+        margin-left: 33px;
+    }
+    .video4 .video_text .workshop P {
+        font-size: 14px;
+    }
+    .video4 .video_text .workshop > li:first-child {
+        margin-left: 0;
+    }
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    
+    /*----style-1-------*/
+    .video1 .video_content {
+        min-height: 430px;
+    }
+    .video1 .video_content > h1 {
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 580px;
+        padding-bottom: 40px;
+    }
+    
+    
+    /*------style-2---------*/
+    .video2 .row.align_row_center_center {
+        display: block;
+    }
+    .video2 .video_text {
+        margin-bottom: 40px;
+    }
+    
+    
+    /*--------style-3-------*/
+    .video3 .video_content {
+        min-height: 350px;
+    }
+    
+    /*------style-4--------*/
+    .video4 .container-fluid {
+        padding-right: 15px;
+    }
+    .video4 .video_content_wrapper {
+        display: block;
+    }
+    .video4 .video_text,
+    .video4 .video_content {
+        width: 100%;
+    }
+    .video4 .video_text {
+        padding: 0 15px 0 0;
+        margin-bottom: 40px;
+    }
+    
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+    /*-----style-1------*/
+    .video1 .video_content > h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    .video1 .video_content {
+        min-height: 350px;
+    }
+    
+    /*------style-2-------*/
+    .video2 .video_text {
+        text-align: center;
+    }
+    .video2 .video_text > h2 {
+        font-size: 33px;
+        line-height: 40px;
+        max-width: 100%;
+    }
+    .video2 .video_text > h2:before{
+        display: none;
+    }
+    
+    /*--------style-3------*/
+    .video3 .video_content > h1 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    
+    /*--------style-4---------*/
+    .video4 .video_text {
+        text-align: center;
+    }
+    .video4 .video_text > h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .video4 .video_text .workshop.pt_40 > li {
+        margin-left: 29px;
+    }
+    .video4 .video_text .workshop > li:first-child {
+        margin-left: 0;
+    }
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .video4 .video_content > a.venobox,
+    .video2 .video_content > a.venobox,
+    .video1 .video_content > a.venobox {
+        font-size: 17px;
+        height: 50px;
+        padding: 9px 19px;
+        width: 50px;
+    }
+    
+    .video4 .video_text .workshop.pt_40 > li {
+        float: none;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

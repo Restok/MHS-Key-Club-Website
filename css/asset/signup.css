@@ -1,0 +1,625 @@
+
+/*------------------signup and sign in form common style--------------*/
+.signup_form_common .input_group {
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    background: #fff;
+}
+.signup_form_common .input_group:before {
+    font-family: "Ionicons";
+    font-size: 18px;
+    left: 1px;
+    position: absolute;
+    top: 11px;
+}
+.signup_form_common .input_group.lname:before,
+.signup_form_common .input_group.fname:before {
+    content: "\f3a0";
+}
+.signup_form_common .input_group.email:before{
+    content: "\f2eb";
+}
+.signup_form_common .input_group.password:before{
+    content: "\f392";
+}
+.signup_form_common .input_group > input {
+    border: medium none;
+    height: 100%;
+    padding: 10px 20px 10px 30px;
+    width: 100%;
+    background: none;
+}
+.signup_form_common form button{
+    border: none;
+    height: 60px;
+    width: 100%;
+}
+
+/*--------------checkbox common style----------------*/
+.checkbox_common label {
+    color: #777777;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 300;
+}
+.checkbox_common input[type="checkbox"] {
+    display: none;
+}
+.checkbox_common input[type="checkbox"]+label span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: -1px 15px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #777;
+    position: relative;
+}
+
+.checkbox_common input[type="checkbox"]+label span:before {
+    color: #777;
+    content: "\f00c";
+    font-family: "FontAwesome";
+    font-size: 9px;
+    position: absolute;
+    text-align: center;
+    left: 3px;
+    top: -5px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.checkbox_common input[type="checkbox"]:checked+label span:before {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.checkbox_common input[type="checkbox"]+label span,
+.checkbox_common input[type="checkbox"]:checked+label span {
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+.signup_form_common form .remember_pass li a {
+  color: #2a79ff;
+}
+.signup_form_common form .remember_pass li a:hover {
+  text-decoration: underline;
+}
+
+/*------social login common--------*/
+.signup_form_common .social_login li{
+    flex: 1;
+}
+.signup_form_common .social_login li a {
+  color: #fff;
+  font-size: 25px;
+  height: 60px;
+  line-height: 59px;
+  padding: 0 15px;
+}
+.signup_form_common .social_login li.facebook a {
+    background: #3b5998;
+}
+.signup_form_common .social_login li.twitter a {
+    background: #4494f1;
+}
+.signup_form_common .social_login li.google_plus a {
+    background: #cb4c2d;
+}
+
+
+
+/*-------non necessary style----------*/
+.signup_form_section1{
+    background: url(../../images/cta_bg14.jpg) no-repeat center center / cover;
+}
+.signup_form_section1 .overlay{
+    background: rgba(0,0,0,0.9);
+}
+
+
+/*------------------signup and sign in form style-1--------------*/
+.signup_form1 {
+    max-width: 760px;
+    margin: 0 auto;
+    background: rgba(22,82,183,0.1);
+}
+.signup_form1 .signup1_nav {
+    background: #2b2c2d;
+    width: 100%;
+    height: 60px;
+}
+.signup_form1 .signup1_nav li {
+    float: left;
+    width: 50%;
+}
+.signup_form1 .signup1_nav li a {
+    color: #fff;
+    font-size: 25px;
+    padding: 17px 15px;
+}
+.signup_form1 .signup1_nav > li > a:hover {
+    background: none;
+}
+
+.signup_form1 .signup1_nav li a.active {
+    background: #1652b7;
+}
+
+/*------input style-----*/
+.signup_form1 .tab-content {
+    padding: 70px 100px 120px;
+}
+.signup_form_common .input_group{
+    background: none;
+}
+.signup_form_common .input_group:before,
+.signup_form1 .input_group > input{
+    color: #ababab;
+}
+.signup_form1 .input_group > input{
+    border-bottom: 1px solid #545a61;
+}
+.signup_form1 .input_group > input:focus{
+    border-bottom-color: #1652B7;
+}
+.signup_form1 form button {
+    font-size: 25px;
+    color: #1c1b1b;
+}
+.signup_form1 form button:hover {
+    background: #1652B7;
+    color: #fff;
+}
+
+
+
+/*------------------signup and sign in form style-2--------------*/
+.signup_form2 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-top: 2px solid #3d2b5f;
+}
+.signup_form2 .form_header {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 31px 0;
+}
+.signup_form2 > form {
+    padding: 45px 70px 80px;
+}
+.signup_form2 .input_group {
+    margin-bottom: 22px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    padding-left: 15px;
+}
+.signup_form2 .input_group::before {
+    left: 20px;
+}
+.signup_form2 form button {
+    font-size: 25px;
+    color: #fff;
+    background: #3d2b5f;
+}
+.signup_form2 form button:hover{
+    background: #2b194d;
+}
+.signup_form2 form .has_signup a {
+    color: #3d2b5f;
+}
+.signup_form2 form .has_signup a:hover {
+    text-decoration: underline;
+}
+
+.signup_form2 .social_login li a {
+  border-radius: 50px;
+  font-size: 25px;
+  height: 50px;
+  line-height: 49px;
+}
+
+
+
+
+/*--------non necessery code-----------*/
+.signup_form_section3{
+    background: #f9f9f9;
+}
+
+/*------------------signup and sign in form style-3--------------*/
+.signup_form3 {
+    border-bottom: 2px solid #97c359;
+}
+.signup_form3 .form_header {
+    padding: 31px 0;
+    background: #97c359;
+}
+.signup_form3 > form {
+    padding: 45px 70px 50px;
+}
+.signup_form3 .input_group {
+    margin-bottom: 22px;
+    border: 1px solid #e5e5e5;
+    padding-left: 15px;
+}
+.signup_form3 .input_group::before {
+    left: 20px;
+}
+.signup_form3 form button {
+    font-size: 22px;
+    color: #97c359;
+    background: transparent;
+    border: 1px solid #97c359;
+}
+.signup_form3 form button:hover{
+    background: #97c359;
+    color: #fff;
+}
+.signup_form3 form .has_signup a {
+    color: #3d2b5f;
+}
+.signup_form3 form .has_signup a:hover {
+    text-decoration: underline;
+}
+
+.signup_form3 .social_login li a {
+  border-radius: 50px;
+  font-size: 25px;
+  height: 50px;
+  line-height: 49px;
+}
+.signup_form3 .checkbox_common input[type="checkbox"] + label span {
+  border-color: #e5e5e5;
+}
+.signup_form3.login > form {
+  padding-bottom: 86px;
+}
+.signup_form3 .alternative_signin::after,
+.signup_form3 .alternative_signin::before {
+    background: #e5e5e5;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 65px;
+}
+.signup_form3 .alternative_signin::after {
+    left: 0;
+}
+.signup_form3 .alternative_signin::before {
+    right: 0;
+}
+
+
+
+
+/*------------------signup and sign in form style-4--------------*/
+.signup_form4 {
+    border-bottom: 2px solid #1c3650;
+}
+
+/*-----form cover------*/
+.signin_form4_cover{
+    background: url(../../images/signin-form-cover.jpg) no-repeat top center / cover;
+}
+.signup_form4_cover{
+    background: url(../../images/signup-form-cover.jpg) no-repeat top center / cover;
+}
+.signup_form4_cover .overlay{
+    background: rgba(0,0,0,0.6);
+}
+.signup_form4_cover .cover_content{
+    z-index: 2;
+    position: relative;
+}
+.signup_form4_cover i,
+.signin_form4_cover i {
+    color: #fff;
+    font-size: 50px;
+    line-height: normal;
+}
+.signup_form4_cover span.line,
+.signin_form4_cover span.line {
+    height: 2px;
+    margin: 12px auto 28px;
+    width: 60px;
+}
+.signup_form4_cover p,
+.signin_form4_cover p {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.signup_form4 .form_header {
+    padding: 31px 0;
+    background: #1c3650;
+}
+.signup_form4 > form {
+    padding: 70px;
+}
+.signup_form4 .input_group {
+    margin-bottom: 22px;
+    border: 1px solid #e5e5e5;
+    padding-left: 15px;
+}
+.signup_form4 .input_group::before {
+    left: 20px;
+}
+.signup_form4 form button {
+    font-size: 22px;
+    color: #1c3650;
+    background: transparent;
+    border: 1px solid #1c3650;
+}
+.signup_form4 form button:hover{
+    background: #1c3650;
+    color: #fff;
+}
+.signup_form4 form .has_signup a {
+    color: #3d2b5f;
+}
+.signup_form4 form .has_signup a:hover {
+    text-decoration: underline;
+}
+
+.signup_form4 .social_login li a {
+  font-size: 25px;
+  height: 50px;
+  line-height: 49px;
+}
+.signup_form4 .checkbox_common input[type="checkbox"] + label span {
+  border-color: #e5e5e5;
+}
+
+.signup_form4 .alternative_signin::after,
+.signup_form4 .alternative_signin::before {
+    background: #e5e5e5;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 65px;
+}
+.signup_form4 .alternative_signin::after {
+    left: 0;
+}
+.signup_form4 .alternative_signin::before {
+    right: 0;
+}
+
+
+
+
+/*------------------signup and sign in form style-5--------------*/
+.signup_form5 {
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*-----form cover------*/
+.signin_form5_cover{
+    background: url(../../images/signin-form-cover.jpg) no-repeat top center / cover;
+}
+.signup_form5_cover{
+    background: url(../../images/signup-form-cover.jpg) no-repeat top center / cover;
+}
+.signup_form5_cover .overlay{
+    background: rgba(0,0,0,0.6);
+}
+.signup_form5_cover .cover_content{
+    z-index: 2;
+    position: relative;
+}
+.signup_form5_cover i,
+.signin_form5_cover i {
+    color: #fff;
+    font-size: 50px;
+    line-height: normal;
+}
+.signup_form5_cover span.line,
+.signin_form5_cover span.line {
+    height: 2px;
+    margin: 12px 0 28px auto;
+    width: 60px;
+}
+.signup_form5_cover p,
+.signin_form5_cover p {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.signup_form5 .form_header {
+    padding: 31px 0;
+    background: #c53b68;
+}
+.signup_form5 > form {
+    padding: 70px;
+}
+.signup_form5 .input_group {
+    margin-bottom: 22px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.signup_form5 form button {
+    font-size: 22px;
+    color: #1c3650;
+    background: transparent;
+    border: 1px solid #1c3650;
+}
+.signup_form5 form button:hover{
+    background: #1c3650;
+    color: #fff;
+}
+.signup_form5 form .has_signup a {
+    color: #3d2b5f;
+}
+.signup_form5 form .has_signup a:hover {
+    text-decoration: underline;
+}
+
+.signup_form5 .social_login li a {
+  font-size: 25px;
+  height: 50px;
+  line-height: 49px;
+}
+.signup_form5 .checkbox_common input[type="checkbox"] + label span {
+  border-color: #e5e5e5;
+}
+
+.signup_form5 .alternative_signin::after,
+.signup_form5 .alternative_signin::before {
+    background: #e5e5e5;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 65px;
+}
+.signup_form5 .alternative_signin::after {
+    left: 0;
+}
+.signup_form5 .alternative_signin::before {
+    right: 0;
+}
+
+
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    .signup_form3,
+    .signup_form2 {
+        margin-bottom: 50px;
+    }
+    
+    
+    /*------style-4, 5-------*/
+    .signup_form5_cover,
+    .signin_form5_cover {
+        padding-right: 40px;
+    }
+    .signup_form5_cover h1,
+    .signup_form4_cover h1,
+    .signin_form5_cover h1,
+    .signin_form4_cover h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .signup_form5_cover i,
+    .signup_form4_cover i,
+    .signin_form5_cover i,
+    .signin_form4_cover i {
+        font-size: 38px;
+    }
+    .signup_form5 > form,
+    .signup_form4 > form {
+        padding: 50px 30px;
+    }
+    .signup_form5 form button,
+    .signup_form4 form button {
+        font-size: 19px;
+        height: 50px;
+    }
+    .signup_form5 .alternative_signin::after,
+    .signup_form5 .alternative_signin::before,
+    .signup_form4 .alternative_signin::after,
+    .signup_form4 .alternative_signin::before {
+        width: 28px;
+    }
+    .signup_form5 .social_login li a,
+    .signup_form4 .social_login li a {
+        font-size: 20px;
+        height: 43px;
+        line-height: 44px;
+    }
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+    /*---style-1----*/
+    .signup_form_common .social_login li a {
+        font-size: 20px;
+        height: 47px;
+        line-height: 46px;
+    }
+    .signup_form_common form button {
+        height: 50px;
+        font-size: 20px;
+    }
+    .signup_form_common > form {
+        padding: 45px 40px 80px;
+    }
+    .signup_form1 .signup1_nav li a {
+        font-size: 20px;
+        padding: 17px 15px;
+    }
+    .signup_form1 .tab-content {
+        padding: 40px 40px 90px;
+    }
+    .signup_form3.login > form {
+        padding-bottom: 66px;
+    }
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    
+    .signup_form_common ul.align_row_spacebetween {
+        flex-wrap: wrap;
+    }
+    .signup_form1 .tab-content {
+        padding: 20px 20px 60px;
+    }
+    .signup_form_common > form {
+        padding: 45px 20px 80px;
+    }
+    .signup_form_common .form_header h4 {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .signup_form_common .form_header {
+        padding: 17px 0;
+    }
+    .signup_form_common > form {
+        padding: 45px 20px 50px;
+    }
+    
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

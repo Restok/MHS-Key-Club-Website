@@ -1,0 +1,74 @@
+/*--------------------table common style-----------*/
+.table_style_common table tr > th,
+.table_style_common table tr > td {
+    color: #666666;
+    padding: 15px 10px !important;
+    text-align: center;
+    border: none;
+    background: #f9f9f9;
+}
+.table_style_common table tr > th {
+    color: #333333;
+    background: #f1f0f0;
+}
+.table_style_common .table > thead > tr > th {
+    border: none;
+}
+.table_style_common table tr:hover td{
+    background: #fff;
+}
+
+
+
+/*---------table style-2-------------*/
+.table_style2 table{
+    border: 1px solid #f1f0f0;
+}
+.table_style2.color table{
+    border: 1px solid #027AEC;
+}
+.table_style2 table tr > th{
+    background: #f9f9f9;
+}
+.table_style2.color table tr > th{
+    background: #027AEC;
+    color: #fff;
+}
+.table_style2 table tr > td{
+    background: #fff;
+}
+.table_style2 table tr:hover td{
+    background: #f9f9f9;
+}
+
+
+
+/*---------table style-3-------------*/
+.table_style3 table tr:nth-child(odd) > td{
+    background: #fff;
+}
+.table_style3 table tr:nth-child(even) > td{
+    background: #f9f9f9;
+}
+
+
+
+/*---------table style-4-------------*/
+.table_style4 table{
+    border: 1px solid #f7f7f7;
+}
+.table_style4 table tr > th{
+    background: #f7f7f7;
+}
+.table_style4 table tr > td{
+    background: none;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+
+
+
+
+
+
+

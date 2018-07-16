@@ -1,0 +1,1173 @@
+/*------------------------------04. Start Pricing Table shortcode style-----------------------------*/
+/*----------5.1 Pricing Table Style-1----------*/
+.pricingTbl1 .single_tbl .tbl_header {
+    background: #13ab67;
+    padding: 37px 20px 90px;
+}
+.pricingTbl1 .single_tbl .tbl_header .price {
+    background: #13ab67 none repeat scroll 0 0;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    bottom: -60px;
+    height: 120px;
+    left: 50%;
+    margin-left: -60px;
+    padding: 26px 5px;
+    position: absolute;
+    width: 120px;
+}
+.pricingTbl1 .single_tbl .tbl_header .price span {
+  font-size: 14px;
+}
+.pricingTbl1 .single_tbl.advanced .tbl_header .rating {
+    margin-bottom: 20px;
+}
+.pricingTbl1 .single_tbl.advanced .tbl_header .rating li i {
+    color: #eeeeee;
+    font-size: 16px;
+}
+.pricingTbl1 .single_tbl.advanced .tbl_body {
+  padding: 91px 15px 74px;
+}
+.pricingTbl1 .single_tbl.advanced {
+  -webkit-transform: translateY(-45px);
+  -moz-transform: translateY(-45px);
+  -ms-transform: translateY(-45px);
+  -o-transform: translateY(-45px);
+  transform: translateY(-45px);
+}
+
+
+.pricingTbl1 .single_tbl .tbl_body {
+    border: 1px solid #e9e9e9;
+    padding: 91px 15px 60px;
+}
+.pricingTbl1 .single_tbl .tbl_body li {
+    color: #666;
+    line-height: 41px;
+}
+.pricingTbl_common .single_tbl .tbl_body li.dactive_color {
+    color: #c8c8ca;
+}
+.pricingTbl_common .single_tbl .tbl_btn {
+    display: inline-block;
+    height: 48px;
+    line-height: 47px;
+    margin-top: 45px;
+    width: 180px;
+    text-transform: uppercase;
+    position: relative;
+}
+.pricingTbl1 .single_tbl .tbl_btn {
+    border: 1px solid #cacaca;
+    color: #484040;
+}
+.pricingTbl1 .single_tbl.advanced .tbl_btn {
+    border-color: #13ab67;
+    color: #13AB67;
+}
+.pricingTbl1 .single_tbl .tbl_btn:hover {
+    border-color: #13ab67;
+    color: #fff;
+    background: #13AB67;
+}
+.pricingTbl1 .single_tbl .tbl_body li .active_color {
+    color: #13ab67;
+}
+
+
+
+/*----------5.2 Pricing Table Style-2----------*/
+.pricingTbl2 .single_tbl {
+    background: #f8f8f8 none repeat scroll 0 0;
+}
+.pricingTbl2 .single_tbl .tbl_header i {
+    border-radius: 0 0 50px 50px;
+    color: #fff;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    padding: 25px 10px 20px;
+    width: 130px;
+}
+
+.pricingTbl2 .single_tbl .tbl_body li {
+    color: #74819f;
+    line-height: 41px;
+}
+.pricingTbl2 .single_tbl .tbl_header h2 {
+    line-height: 50px;
+    margin-top: 31px;
+}
+
+.pricingTbl2 .single_tbl.tbl1 .tbl_header i {
+    background: #0fba97 none repeat scroll 0 0;
+}
+.pricingTbl2 .single_tbl.tbl1 .tbl_btn {
+    background: #0fba97;
+    color: #fff;
+}
+
+.pricingTbl2 .single_tbl.tbl2 .tbl_header i {
+    background: #027aec none repeat scroll 0 0;
+}
+.pricingTbl2 .single_tbl.tbl2 .tbl_btn {
+    background: #027aec;
+    color: #fff;
+}
+
+.pricingTbl2 .single_tbl.tbl3 .tbl_header i {
+    background: #ff4b4b none repeat scroll 0 0;
+}
+.pricingTbl2 .single_tbl.tbl3 .tbl_btn {
+    background: #ff4b4b;
+    color: #fff;
+}
+
+.pricingTbl2 .single_tbl.tbl4 .tbl_header i {
+    background: #40c952 none repeat scroll 0 0;
+}
+.pricingTbl2 .single_tbl.tbl4 .tbl_btn {
+    background: #40c952;
+    color: #fff;
+}
+
+.pricingTbl2 .single_tbl.tbl1 .tbl_header h4.type,
+.pricingTbl2 .single_tbl.tbl1 .tbl_header h2.mont {
+    color: #0fba97;
+}
+
+.pricingTbl2 .single_tbl.tbl2 .tbl_body li .active_color,
+.pricingTbl2 .single_tbl.tbl2 .tbl_header h4.type,
+.pricingTbl2 .single_tbl.tbl2 .tbl_header h2.mont {
+    color: #027aec;
+}
+
+.pricingTbl2 .single_tbl.tbl3 .tbl_body li .active_color,
+.pricingTbl2 .single_tbl.tbl3 .tbl_header h4.type {
+    color: #ff4b4b;
+}
+.pricingTbl2 .single_tbl.tbl3 .tbl_header h2.mont{
+    color: #fff;
+}
+
+.pricingTbl2 .single_tbl.tbl4 .tbl_body li .active_color,
+.pricingTbl2 .single_tbl.tbl4 .tbl_header h4.type,
+.pricingTbl2 .single_tbl.tbl4 .tbl_header h2.mont {
+    color: #40c952;
+}
+
+.pricingTbl2 .single_tbl .tbl_header .subtitle {
+    color: #afb6c6;
+    font-size: 17px;
+}
+.pricingTbl2 .single_tbl .tbl_header h4.type {
+    margin-top: 30px;
+}
+
+.pricingTbl2 .single_tbl .tbl_body {
+    padding: 8px 15px 50px;
+}
+.pricingTbl2 .single_tbl .tbl_btn {
+    color: #fff;
+}
+.pricingTbl2 .single_tbl.tbl3 {
+    background: #1a1c28 none repeat scroll 0 0;
+}
+.pricingTbl2 .single_tbl .tbl_btn:hover {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.26);
+}
+
+
+/*----------5.3 Pricing Table Style-3----------*/
+.pricingTbl3 .single_tbl .tbl_header {
+    background: #027aec none repeat scroll 0 0;
+    color: #fff;
+    padding: 56px 20px 38px;
+}
+.pricingTbl3 .single_tbl .tbl_header::before {
+    background: #027aec;
+    bottom: -12.5px;
+    content: "";
+    height: 25px;
+    left: 50%;
+    margin-left: -12.5px;
+    position: absolute;
+    width: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.pricingTbl3 .single_tbl .tbl_header h1 {
+    display: inline-block;
+}
+.pricingTbl3 .single_tbl .tbl_header h1 .dollar {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 400;
+    left: -20px;
+    position: absolute;
+    top: -21px;
+}
+.pricingTbl3 .single_tbl .tbl_header h1 .month {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    line-height: normal;
+}
+.pricingTbl3 .single_tbl {
+    background: #f8f8f8;
+    padding-bottom: 50px;
+}
+.pricingTbl3 .single_tbl .tbl_body h5.plan_type {
+    color: #190445;
+    padding: 52px 15px 22px;
+}
+.pricingTbl3 .single_tbl .tbl_body li {
+    color: #524d5b;
+    line-height: 46px;
+}
+.pricingTbl3 .single_tbl .tbl_body li:nth-child(2n+1) {
+    background: #fff;
+}
+.pricingTbl3 .single_tbl .tbl_btn {
+    border: 1px solid #0166c6;
+    color: #0166c6;
+    margin-top: 33px;
+}
+.pricingTbl3 .single_tbl .tbl_btn:hover {
+    background: #0166c6;
+    color: #fff;
+}
+.pricingTbl3 .single_tbl.popular .tbl_btn {
+    background: #0166c6;
+    color: #fff;
+}
+
+.pricingTbl3 .single_tbl .tbl_body li .active_color {
+  color: #fc3b3b;
+}
+
+.pricingTbl3 .single_tbl.popular .tbl_header .rating{
+    display: block;
+    margin-bottom: 32px;
+}
+.pricingTbl3 .single_tbl.popular .tbl_header .rating li i {
+  color: #fff;
+  font-size: 16px;
+}
+.pricingTbl3 .single_tbl.popular .tbl_header {
+  padding: 36px 20px 38px;
+}
+.pricingTbl3 .single_tbl.popular {
+    background: #fff;
+    box-shadow: 0 13px 30px rgba(3, 0, 21, 0.12);
+    -webkit-transform: translateY(-38px);
+    -moz-transform: translateY(-38px);
+    -ms-transform: translateY(-38px);
+    -o-transform: translateY(-38px);
+    transform: translateY(-38px);
+}
+.pricingTbl3 .single_tbl.popular .tbl_body li:nth-child(2n+1) {
+    background: #f8f8f8;
+}
+.pricingTbl3 .single_tbl.popular .tbl_body h5.plan_type {
+  color: #0166c6;
+}
+
+
+/*----------5.4 Pricing Table Style-4----------*/
+.pricingTbl4 .single_tbl {
+    border-radius: 100px 100px 0 0;
+}
+.pricingTbl4 .single_tbl .tbl_header i {
+    border-radius: 0 0 50px 50px;
+    padding: 18px 10px 19px;
+    width: 110px;
+    font-size: 53px;
+    -webkit-box-shadow: 0 15px 11px -11px rgba(51, 51, 51, 0.40) inset;
+    -moz-box-shadow: 0 15px 11px -11px rgba(51, 51, 51, 0.40) inset;
+    box-shadow: 0 15px 11px -11px rgba(51, 51, 51, 0.40) inset;
+}
+.pricingTbl4 .single_tbl .tbl_header h4.type {
+    background: #f2f2f2 none repeat scroll 0 0;
+    line-height: 48px;
+    margin-top: 30px;
+}
+.pricingTbl4 .single_tbl.tbl3 .tbl_header h2.mont {
+    color: #ff4b4b;
+}
+.pricingTbl4 .single_tbl.tbl3 {
+    background: #fff;
+    box-shadow: 0 15px 26px rgba(3, 1, 21, 0.20);
+}
+.pricingTbl4 .single_tbl.tbl4 .tbl_btn,
+.pricingTbl4 .single_tbl.tbl4 .tbl_header i {
+    background: #783393 none repeat scroll 0 0;
+}
+.pricingTbl4 .single_tbl.tbl4 .tbl_body li .active_color,
+.pricingTbl4 .single_tbl.tbl4 .tbl_header h4.type,
+.pricingTbl4 .single_tbl.tbl4 .tbl_header h2.mont {
+    color: #783393;
+}
+
+/*----------5.5 Pricing Table Style-5----------*/
+.pricingTbl5 .single_tbl .tbl_header {
+    position: relative;
+    padding-top: 98px;
+}
+.pricingTbl5 .single_tbl .tbl_header i {
+    background: #f8f8f8 !important;
+    border: 6px solid #fff;
+    border-radius: 100%;
+    color: #027aec;
+    display: block;
+    font-size: 47px;
+    height: 110px;
+    left: 50%;
+    line-height: normal;
+    padding: 21px;
+    position: absolute;
+    top: -55px;
+    width: 110px;
+    transform: translateX(-50%);
+}
+.pricingTbl5 .single_tbl .tbl_header h2 {
+    margin-top: 0;
+    color: #46535f;
+}
+.pricingTbl5 .single_tbl .tbl_header h4.type {
+    background: #f2f2f2 none repeat scroll 0 0;
+    color: #027aec !important;
+    line-height: 48px;
+    margin-top: 55px;
+}
+.pricingTbl5 .single_tbl .tbl_body li .active_color {
+    color: #027aec!important;
+}
+.pricingTbl5 .single_tbl .tbl_btn {
+    background: none!important;
+    border: 1px solid #027aec;
+    color: #027aec!important;
+}
+
+
+.pricingTbl5 .single_tbl.tbl3 {
+  background: #027aec;
+}
+.pricingTbl5 .single_tbl.tbl3 .tbl_header i {
+  background: #027aec!important;
+    color: #fff;
+}
+.pricingTbl5 .single_tbl.tbl3 .tbl_header .subtitle,
+.pricingTbl5 .single_tbl.tbl3 .tbl_header h2 {
+  color: #fff;
+}
+.pricingTbl5 .single_tbl.tbl3 .tbl_header h4.type {
+  background: #fff
+}
+.pricingTbl5 .single_tbl.tbl3 .tbl_body li {
+  color: #dae2f2;
+}
+.pricingTbl5 .single_tbl.tbl3 .tbl_body li .active_color {
+  color: #fff !important;
+    font-weight: 700;
+}
+.pricingTbl5 .single_tbl.tbl3 .tbl_btn {
+    background: #fff!important;
+    color: #3e3e3e;
+}
+.pricingTbl5 .single_tbl {
+  border-bottom: 2px solid #027aec;
+    position: relative;
+}
+.pricingTbl5 .single_tbl:before {
+    border-bottom: 20px solid #027aec;
+    border-right: 20px solid transparent;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+}
+.pricingTbl5 .single_tbl.tbl4 .tbl_btn:hover,
+.pricingTbl5 .single_tbl.tbl2 .tbl_btn:hover,
+.pricingTbl5 .single_tbl.tbl1 .tbl_btn:hover{
+    background: #027aec!important;
+    color: #fff!important;
+    box-shadow: none;
+}
+.pricingTbl5 .single_tbl.tbl3 .tbl_btn:hover{
+    box-shadow: none;
+}
+
+/*----------5.6 Pricing Table Style-6----------*/
+.pricingTbl6 .single_tbl {
+    border: 1px solid #e9e9e9;
+}
+.pricingTbl6 .single_tbl .tbl_header {
+    background: none;
+    padding: 47px 20px 50px;
+}
+
+.pricingTbl6 .single_tbl .tbl_header h3 {
+    color: #1e172b;
+}
+.pricingTbl6 .single_tbl.advanced .tbl_header .rating li i,
+.pricingTbl6 .single_tbl.advanced .tbl_header h3 {
+    color: #fff;
+}
+.pricingTbl6 .single_tbl .tbl_body {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid #e9e9e9;
+    padding: 46px 15px 60px;
+}
+.pricingTbl6 .single_tbl.advanced .tbl_body {
+  padding: 46px 15px 85px;
+}
+.pricingTbl6 .single_tbl.advanced .tbl_header {
+    background: url(../../images/pricing-tbl-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.pricingTbl6 .single_tbl .tbl_body .price span {
+    display: block;
+    margin-top: -5px;
+    color: #1a1c28;
+    font-weight: 700;
+}
+.pricingTbl6 .single_tbl .tbl_body .price h1 {
+    line-height: 53px;
+    color: #1a1c28;
+}
+.pricingTbl6 .single_tbl .tbl_body .price {
+    margin-bottom: 27px;
+}
+.pricingTbl6 .single_tbl .tbl_body li .active_color {
+  color: #1a1c28;
+    font-weight: 700;
+}
+.pricingTbl6 .single_tbl .tbl_btn:hover,
+.pricingTbl6 .single_tbl.advanced .tbl_btn {
+    background: #1a1c28 none repeat scroll 0 0;
+    border-color: #1a1c28;
+    color: #fff;
+}
+
+
+/*----------5.7 Pricing Table Style-7----------*/
+.pricingTbl7 .single_tbl {
+   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+}
+.pricingTbl7 .tbl_header .plan_type {
+    color: #2a2a2a;
+    font-size: 45px;
+}
+.pricingTbl7 .tbl_header {
+    overflow: hidden;
+    padding: 30px;
+}
+.pricingTbl7 .tbl_header .overlay {
+    background: #f4f4f4 none repeat scroll 0 0;
+    height: 175px;
+    left: -25px;
+    top: -35px;
+    transform: rotate(-6deg);
+    width: 130%;
+    z-index: -1;
+}
+.pricingTbl7 .tbl_header .plan_duration {
+    color: #4e4e4e;
+    display: inline-block;
+    font-size: 18px;
+}
+.pricingTbl7 .tbl_header .price {
+    color: #00b4b2;
+    font-size: 45px;
+}
+.pricingTbl7 .tbl_header .details {
+    color: #636363;
+    font-size: 16px;
+}
+
+.pricingTbl7 .single_tbl .tbl_body {
+    border-bottom: 1px solid #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+    padding: 28px 20px 28px 30px;
+}
+.pricingTbl7 .single_tbl .tbl_body li {
+    color: #636363;
+    line-height: 37px;
+    position: relative;
+    padding-left: 30px;
+}
+.pricingTbl7 .single_tbl .tbl_body li i {
+    display: inline-block;
+    font-size: 40px;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    top: -1px;
+    color: #00d2b7;    
+}
+.pricingTbl7 .single_tbl .tbl_body li i.ion-android-close {
+    font-size: 20px;
+    top: 10px;
+    color: #f04e4e;
+}
+.pricingTbl7 .single_tbl .tbl_btn {
+  border: 1px solid #00b4b2;
+  color: #00b4b2;
+  display: block;
+  margin: 29px auto 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricingTbl7 .single_tbl .tbl_btn:hover {
+  background: #00B4B2;
+  color: #fff;
+}
+.pricingTbl7 .single_tbl.tbl1 .tbl_header {
+  border-radius: 20px 0 0;
+}
+.pricingTbl7 .single_tbl.tbl1 {
+  border-radius: 20px 0 0 20px;
+}
+.pricingTbl7 .row .col-lg-3 {
+  padding: 0;
+}
+
+.pricingTbl7 .single_tbl.tbl4 .tbl_header,
+.pricingTbl7 .single_tbl.tbl4 {
+  border-radius: 0 20px 20px 0;
+}
+.pricingTbl7 .single_tbl.tbl3 .tbl_header {
+    border-radius: 20px 20px 0 0;
+    padding-top: 60px;
+}
+.pricingTbl7 .single_tbl.tbl3 .tbl_header .overlay {
+    height: 205px;
+    top: -41px;
+    background: #00b4b2 none repeat scroll 0 0;
+}
+.pricingTbl7 .single_tbl.tbl3 .tbl_header .plan_duration,
+.pricingTbl7 .single_tbl.tbl3 .tbl_header .plan_type {
+    color: #fff;
+}
+.pricingTbl7 .single_tbl.tbl3 {
+    padding-bottom: 65px;
+}
+.pricingTbl7 .single_tbl.tbl3 {
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding-bottom: 65px;
+    -webit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+
+/*----------5.8 Pricing Table Style-8----------*/
+.pricingTbl8 .single_tbl .tbl_header i {
+    background: #027aec none repeat scroll 0 0;
+    font-size: 47px;
+    line-height: 50px;
+    width: 100%;
+    border-radius: 0;
+}
+.pricingTbl8 .single_tbl .tbl_header h2 {
+  margin-top: 40px;
+    position: relative;
+}
+.pricingTbl8 .single_tbl .tbl_header h2::before {
+    border-right: 75px solid transparent;
+    border-top: 75px solid #0FBA97;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -40px;
+}
+.pricingTbl8 .single_tbl.tbl2 .tbl_header h2::before {
+    border-top-color: #027AEC;
+}
+.pricingTbl8 .single_tbl.tbl3 .tbl_header h2::before {
+    border-top-color: #FF4B4B;
+}
+.pricingTbl8 .single_tbl.tbl4 .tbl_header h2::before {
+    border-top-color: #40c952;
+}
+
+.pricingTbl8 .single_tbl.tbl4 .tbl_btn,
+.pricingTbl8 .single_tbl.tbl3 .tbl_btn,
+.pricingTbl8 .single_tbl.tbl2 .tbl_btn,
+.pricingTbl8 .single_tbl.tbl1 .tbl_btn{
+    background: none;
+}
+.pricingTbl8 .single_tbl.tbl1 .tbl_btn{
+    color: #0fba97;
+    border: 1px solid #0fba97
+}
+.pricingTbl8 .single_tbl.tbl2 .tbl_btn{
+    color: #027aec;
+    border: 1px solid #027aec
+}
+.pricingTbl8 .single_tbl.tbl3 .tbl_btn{
+    color: #ff4b4b;
+    border: 1px solid #ff4b4b
+}
+.pricingTbl8 .single_tbl.tbl4 .tbl_btn{
+    color: #40c952;
+    border: 1px solid #40c952
+}
+
+
+
+/*----------5.9 Pricing Table Style-9----------*/
+.pricingTbl9 .single_tbl .tbl_body .price span,
+.pricingTbl9 .single_tbl .tbl_body .price h1 {
+    color: #0166c6;
+    display: inline-block;
+    position: relative;
+}
+.pricingTbl9 .single_tbl .tbl_body .dollar {
+    font-size: 32px;
+    line-height: 30px;
+    margin: 0 !important;
+    position: absolute;
+    top: -26px;
+}
+.pricingTbl9 .single_tbl .tbl_body li .active_color {
+  color: #0166c6;
+}
+.pricingTbl9 .single_tbl.advanced .tbl_btn {
+  background: #0166c6;
+  border-color: #0166c6;
+  color: #fff;
+}
+.pricingTbl9 .single_tbl.advanced .tbl_header {
+  background: #f6f6f6;
+}
+
+.pricingTbl9 .single_tbl.advanced .tbl_header .rating li i,
+.pricingTbl9 .single_tbl.advanced .tbl_header h3 {
+    color: #1e172b;
+}
+.pricingTbl9 .single_tbl .tbl_header h3 {
+    font-size: 26px;
+}
+.pricingTbl9 .single_tbl .tbl_header::before {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+  bottom: -12.5px;
+  content: "";
+  height: 25px;
+  left: 50%;
+  margin-left: -12.5px;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 25px;
+}
+.pricingTbl6 .single_tbl .tbl_header {
+  padding: 47px 20px 47px;
+}
+.pricingTbl9 .single_tbl.advanced .tbl_header::before {
+  background: #f6f6f6;
+}
+.pricingTbl9 .single_tbl .tbl_btn:hover{
+    background: #0166C6;
+    border-color: #0166C6;
+    color: #fff;
+}
+
+
+/*----------5.10 Pricing Table Style-10----------*/
+.pricingTbl10 .single_tbl .tbl_header i {
+    background: #343644!important;
+    border-radius: 0;
+    font-size: 47px;
+    line-height: 50px;
+    width: 100%;
+}
+.pricingTbl10 .single_tbl.tbl3,
+.pricingTbl10 .single_tbl {
+    background: #f9f9f9;
+    position: relative;
+}
+.pricingTbl10 .single_tbl::before {
+    border: 1px solid #a3a6bf;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(10px, 10px);
+    width: 100%;
+    z-index: -1;
+}
+.pricingTbl10 .single_tbl .tbl_body li .active_color,
+.pricingTbl10 .single_tbl .tbl_header h4.type,
+.pricingTbl10 .single_tbl .tbl_header h2 {
+    color: #353847 !important;
+}
+.pricingTbl10 .single_tbl .tbl_btn {
+    background: none!important;
+    border: 1px solid #dadada;
+    color: #353847!important;
+}
+.pricingTbl10 .single_tbl .tbl_btn:hover {
+    background: #343644!important;
+    border-color:#343644;
+    color: #fff!important;
+    box-shadow: none;
+}
+
+/*----------5.11 Pricing Table Style-11----------*/
+.pricingTbl11 .single_tbl {
+    border: 1px solid #e9e9e9;
+}
+.pricingTbl11 .single_tbl .tbl_header {
+    background: none;
+    padding: 55px 20px;
+}
+.pricingTbl11 .single_tbl .tbl_body {
+    border-top: 1px solid #e9e9e9;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.pricingTbl11 .single_tbl .tbl_header .price {
+    background: #fff none repeat scroll 0 0;
+    border: none;
+    box-shadow: 0 4px 1px #e9e9e9;
+    padding: 62px 5px 6px;
+}
+.pricingTbl11 .single_tbl .tbl_header h3.title_35 {
+    color: #1f202c;
+}
+.pricingTbl11 .single_tbl .tbl_header .price h4 {
+    color: #1f202c;
+    line-height: 25px;
+}
+.pricingTbl11 .single_tbl .tbl_header .price span {
+    color: #737893;
+    display: block;
+    font-size: 14px;
+    line-height: 15px;
+}
+.pricingTbl11 .single_tbl.advanced .tbl_header .rating li i {
+    color: #d4d4d4;
+}
+.pricingTbl11 .single_tbl .tbl_body li .active_color {
+    color: #1f202c;
+    font-weight: 700;
+}
+.pricingTbl11 .single_tbl.advanced .tbl_btn {
+    border-color: #cacaca;
+    color: #484040;
+}
+.pricingTbl11 .single_tbl .tbl_btn:hover {
+    background: #1f202c;
+    border-color: #1f202c;
+    color: #fff;
+}
+
+
+/*----------5.12 Pricing Table Style-12----------*/
+.pricingTbl12 .single_tbl.advanced {
+  transform: translateY(0px);
+}
+.pricingTbl12 .single_tbl {
+  border: 10px solid #f6f6f6;
+}
+.pricingTbl12 .single_tbl .tbl_header {
+  background: none;
+  padding: 37px 0 0;
+}
+.pricingTbl12 .single_tbl .tbl_header .price {
+    background: #f6f6f6;
+    border: medium none;
+    border-radius: 0;
+    bottom: initial;
+    height: 100px;
+    left: initial;
+    margin-left: 0;
+    padding: 30px 5px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+.pricingTbl12 .single_tbl .tbl_body {
+    border: none;
+}
+.pricingTbl12 .tbl_header .price span,
+.pricingTbl12 .tbl_header .price h4,
+.pricingTbl12 .tbl_header h3.title_35 {
+    color: #191620;
+}
+.pricingTbl12 .tbl_header .price h4 {
+    line-height: 26px;
+}
+.pricingTbl12 .single_tbl .tbl_header .price span {
+    display: block;
+    line-height: 17px;
+}
+
+.pricingTbl12 .single_tbl .tbl_body {
+    padding: 35px 15px!important;
+}
+.pricingTbl12 .single_tbl .tbl_body li .active_color {
+  color: #191620;
+}
+.pricingTbl12 .single_tbl.advanced .tbl_btn {
+  border: 1px solid #cacaca;
+  color: #484040;
+}
+.pricingTbl12 .single_tbl .tbl_btn:hover,
+.pricingTbl12 .single_tbl.advanced .tbl_btn:hover {
+    border-color: #191620;
+    color: #fff;
+    background: #191620;
+}
+
+/*----------5.13 Pricing Table Style-13----------*/
+.pricingTbl13 .single_tbl {
+  border: 10px solid #f3f3f3;
+    padding-bottom: 0px!important;
+}
+.pricingTbl13 .single_tbl.popular {
+    border: none;
+    transform: translateY(-27px);
+}
+.pricingTbl13 .single_tbl.popular .tbl_body {
+    border: 10px solid #f3f3f3;
+    border-top: none;
+}
+.pricingTbl13 .single_tbl .tbl_header {
+    background: none;
+    color: #fff;
+    padding: 56px 20px 38px;
+}
+.pricingTbl13 .single_tbl.popular {
+    background: #f8f8f8;
+    box-shadow: none;
+}
+.pricingTbl13 .single_tbl .tbl_header::before {
+    display: none;
+}
+.pricingTbl13 .single_tbl.popular .tbl_header {
+  background: #11cdb0 none repeat scroll 0 0;
+}
+.pricingTbl13 .single_tbl.popular .tbl_body li:nth-child(2n+1) {
+  background: #fff;
+}
+.pricingTbl13 .single_tbl .tbl_header h1 {
+    color: #191620;
+}
+.pricingTbl13 .single_tbl .tbl_body h5.plan_type {
+  color: #190445;
+  padding: 41px 15px 37px;
+}
+.pricingTbl13 .single_tbl.popular .tbl_header h1 {
+  color: #fff;
+}
+.pricingTbl13 .single_tbl.popular .tbl_header .rating li i {
+  color: #fff;
+}
+.pricingTbl13 .single_tbl.popular .tbl_body h5.plan_type {
+  color: #11cdb0;
+}
+.pricingTbl13 .single_tbl.popular .tbl_btn {
+  background: #11cdb0 none repeat scroll 0 0;
+  border-color: #11cdb0;
+}
+.pricingTbl13 .single_tbl .tbl_btn {
+  border-color: #11cdb0;
+  color: #11cdb0;
+}
+.pricingTbl13 .single_tbl .tbl_body li .active_color {
+  color: #11cdb0;
+}
+.pricingTbl13 .single_tbl .tbl_btn:hover {
+    background: #11cdb0;
+    color: #fff;
+    border-color: #11cdb0;
+}
+
+/*----------5.14 Pricing Table Style-14----------*/
+.pricingTbl14 .single_tbl .tbl_header {
+    background: #2b3360;
+    border-radius: 0 0 0 60px;
+    padding: 15px 0 27px;
+}
+.pricingTbl14 .tbl_header h2.type {
+  font-size: 42px;
+}
+.pricingTbl14 .tbl_header h3.price {
+    line-height: 30px;
+    margin-top: 11px;
+}
+.pricingTbl14 .tbl_header h3.price > span {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+}
+.pricingTbl14 .single_tbl {
+  background: #f8f8f8 none repeat scroll 0 0;
+}
+.pricingTbl14 .single_tbl .tbl_body li {
+    border-bottom: 1px dashed #dfdfdf;
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0 10px 45px;
+    position: relative;
+}
+.pricingTbl14 .single_tbl .tbl_body li i {
+    display: block;
+    left: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pricingTbl14 .single_tbl .tbl_body li i.ion-ios-checkmark-empty {
+  font-size: 37px;  
+}
+.pricingTbl14 .single_tbl .tbl_body li i.ion-android-close {
+    font-size: 18px;
+}
+.pricingTbl14 .single_tbl .tbl_btn {
+    border: 1px solid #333333;
+    margin: 21px 0 37px 20px;
+    text-align: center;
+    width: 150px;
+}
+.pricingTbl14 .single_tbl .tbl_btn:hover {
+    border-color: #313A6B;
+    background: #313A6B;
+    color: #fff;
+}
+.pricingTbl14 .single_tbl.gold {
+    background: #313a6b;
+}
+.pricingTbl14 .single_tbl.gold .tbl_body li {
+    border-bottom: 1px dashed #242c2d;
+    color: #fff;
+}
+.pricingTbl14 .single_tbl.gold .tbl_btn {
+    border-color: #fff;
+    color: #fff;
+}
+/*------------------------04. End Pricing Table shortcode style----------------------------------*/
+
+
+
+
+
+/*---------------------------04. Start Pricing Table responsive style-------------------------------*/
+
+@media (min-width: 1200px) {}
+
+
+@media (max-width: 1199px) {
+    
+    /*---------style-2-------*/
+    .pricingTbl2 .single_tbl .tbl_header h2 {
+        font-size: 36px;
+    }
+    /*------style-7-------*/
+    .pricingTbl7 .tbl_header {
+        padding: 30px 25px;
+    }
+    .pricingTbl7 .single_tbl .tbl_body {
+        padding: 28px 20px 28px 25px;
+    }
+    .pricingTbl7 .single_tbl .tbl_btn {
+        font-size: 14px;
+    }
+    
+    /*-----style-8------*/
+    .pricingTbl8 .single_tbl .tbl_header h2::before {
+        border-right-width: 65px;
+        border-top-width: 65px;
+    }
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+
+@media (max-width: 991px) {
+    .pricingTbl_common .single_tbl .tbl_btn {
+        height: 45px;
+        line-height: 45px;
+        width: 160px;
+    }
+    /*----style-1-----*/
+    .pricingTbl1 .tbl_header h3.title_35 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    /*-----style-2-------*/
+    .pricingTbl2 .single_tbl {
+        margin-bottom: 33px;
+    }
+    /*------style-3------*/
+    .pricingTbl3 .single_tbl .tbl_header h1 {
+        font-size: 32px;
+        line-height: 41px;
+    }
+    .pricingTbl3 .single_tbl .tbl_header h1 .dollar {
+        font-size: 22px;
+        left: -13px;
+        top: -13px;
+    }
+    .pricingTbl3 .single_tbl .tbl_body h5.plan_type {
+        font-size: 18px;
+    }
+    /*----style-5-------*/
+    .pricingTbl5 .single_tbl {
+        margin-bottom: 120px;
+    }
+    /*----style-6-----*/
+    .pricingTbl6 .single_tbl .tbl_body .price h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    /*-----style-7----*/
+    .pricingTbl7 .single_tbl.tbl3 {
+        transform: translateY(0px);
+        padding-bottom: 40px;
+    }
+    .pricingTbl7 .single_tbl.tbl3 .tbl_header {
+        padding-top: 30px;
+    }
+    .pricingTbl7 .single_tbl.tbl3 .tbl_header .overlay {
+        height: 175px;
+        top: -35px;
+    }
+    .pricingTbl7 .row .col-lg-3 {
+        padding: 0 15px;
+    }
+    .pricingTbl7 .single_tbl {
+        margin-bottom: 33px;
+    }
+    /*---style-9---*/
+    .pricingTbl9 .tbl_header h3.title_35 {
+        font-size: 26px;
+    }
+    .pricingTbl9 .single_tbl.advanced .tbl_header {
+        padding: 26px 20px 32px;
+    }
+    /*---style-13----*/
+    .pricingTbl13 .single_tbl.popular .tbl_header .rating {
+        margin-bottom: 12px;
+    }
+    .pricingTbl13 .single_tbl.popular .tbl_body h5.plan_type {
+        line-height: 25px;
+    }
+    .pricingTbl14 .single_tbl {
+        margin-bottom: 33px;
+    }
+    
+    
+    
+}/*---end 768-991px media query----*/
+
+
+
+@media (max-width: 767px) {
+    /*---style-1--*/
+    .pricingTbl1 .single_tbl.advanced {
+        transform: translateY(0px);
+    }
+    .pricingTbl_common .single_tbl {
+        margin: 0 auto 33px;
+        max-width: 430px;
+    }
+    .pricingTbl1 .single_tbl .tbl_header {
+        padding: 60px 20px 90px;
+    }
+    .pricingTbl1 .single_tbl.advanced .tbl_body {
+        padding: 91px 15px 60px;
+    }
+    .pricingTbl1 .tbl_header h3.title_35 {
+        font-size: 35px;
+        line-height: 48px;
+    }
+    /*---style-3---*/
+    .pricingTbl3 .single_tbl .tbl_header h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .pricingTbl3 .single_tbl .tbl_header h1 .dollar {
+        font-size: 40px;
+        left: -20px;
+        top: -21px;
+    }
+    .pricingTbl3 .single_tbl .tbl_body h5.plan_type {
+        font-size: 20px;
+    }
+    /*--style-5--*/
+    .pricingTbl5 .single_tbl {
+        margin-bottom: 100px!important;
+    }
+    /*--style-5--*/
+    .pricingTbl6 .single_tbl .tbl_header {
+        padding: 47px 20px;
+    }
+    /*--style-7--*/
+    .pricingTbl7 .single_tbl.tbl4 .tbl_header,
+    .pricingTbl7 .single_tbl.tbl3 .tbl_header,
+    .pricingTbl7 .single_tbl.tbl1 .tbl_header,
+    .pricingTbl7 .single_tbl.tbl4,
+    .pricingTbl7 .single_tbl.tbl3,
+    .pricingTbl7 .single_tbl.tbl1 {
+        border-radius: 0px;
+    }
+    /*---style-11*/
+    .pricingTbl11 .single_tbl .tbl_header {
+        padding: 55px 20px;
+    }
+    /*--style-12--*/
+    .pricingTbl12 .single_tbl .tbl_header {
+        padding: 37px 0 0;
+    }
+    /*--style-13--*/
+    .pricingTbl13 .single_tbl.popular {
+        transform: translateY(0px);
+    }
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+
+@media (max-width: 479px) {
+    
+}/*---end 300-489 media query----*/
+/*----------------------------04. End Pricing Table responsive style----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

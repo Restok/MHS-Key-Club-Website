@@ -1,0 +1,345 @@
+/*------------------------------Start pagination shortcode style-----------------------------*/
+/*-------common style for pagination section --------*/
+.bg_efefef {
+    background: #efefef;
+}
+.pagination_common {
+  width: 100%;
+}
+.pagination_common > li {
+  display: inline-block;
+}
+.pagination_common > li a{
+    text-align: center;
+}
+
+
+/*----------pagination-1-------------*/
+.pagination1 a {
+    font-size: 25px;
+    width: 50px;
+    display: block;
+    line-height: 50px;
+    margin: 0 6px;
+    background: #efefef;
+    color: #027aec;
+    height: 50px;
+}
+.pagination1 li a:hover,
+.pagination1 li.active a {
+    background: #027aec;
+    color: #fff;
+}
+.pagination1.radius a{
+    border-radius: 5px;
+}
+.pagination1.circle a{
+    border-radius: 100%;
+}
+
+
+/*----------pagination-2-------------*/
+.pagination2 a {
+    font-size: 25px;
+    width: 50px;
+    display: block;
+    line-height: 50px;
+    margin: 0 6px;
+    border: 1px solid #efefef;
+    color: #027aec;
+    height: 50px;
+}
+.pagination2 li a:hover,
+.pagination2 li.active a {
+    background: #027aec;
+    color: #fff;
+}
+.pagination2.radius a{
+    border-radius: 5px;
+}
+.pagination2.circle a{
+    border-radius: 100%;
+}
+
+/*----------pagination-3-------------*/
+.pagination3 li a {
+    border: 1px solid #efefef;
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.pagination3 li.active a,
+.pagination3 li a:hover {
+    border-color:#027aec;
+    color: #027aec;
+    z-index: 1;
+    position: relative;
+}
+.pagination3 li:last-child a,
+.pagination3 li:first-child a {
+    font-size: 30px;
+    color: #027aec;
+
+}
+.pagination3 > li {
+  float: left;
+  margin-left: -1px;
+}
+
+
+/*----------pagination-4-------------*/
+.pagination4 li a {
+    border: 1px solid #efefef;
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    line-height: 39px;
+    height: 40px;
+    padding: 0 15px;
+}
+.pagination4 li.active a,
+.pagination4 li a:hover {
+    border-color:#027aec;
+    color: #027aec;
+}
+.pagination4 li:last-child a,
+.pagination4 li:first-child a {
+    font-size: 30px;
+    color: #027aec;
+
+}
+.pagination4 > li {
+    float: left;
+    margin: 0 5px;
+}
+
+
+/*----------pagination-5-------------*/
+.pagination5 li a {
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 15px;
+    background: #f3f3f3;
+}
+.pagination5 li:last-child a:hover,
+.pagination5 li:first-child a:hover,
+.pagination5 li.active a,
+.pagination5 li a:hover {
+    background:#027aec;
+    color: #fff;
+}
+.pagination5 li:last-child a,
+.pagination5 li:first-child a {
+    font-size: 30px;
+    color: #027aec;
+    background: #e6e6e6;
+
+}
+.pagination5 > li {
+    float: left;
+    margin: 0 5px;
+}
+
+
+/*----------pagination-6-------------*/
+.pagination6 li a {
+    background: #f3f3f3;
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 9px;
+    border-radius: 100%;
+    width: 45px;
+}
+.pagination6 li:last-child a:hover,
+.pagination6 li:first-child a:hover,
+.pagination6 li.active a,
+.pagination6 li a:hover {
+    background:#027aec;
+    color: #fff;
+}
+.pagination6 li:last-child a,
+.pagination6 li:first-child a {
+    font-size: 30px;
+    color: #027aec;
+    background: #e6e6e6;
+
+}
+.pagination6 > li {
+    float: left;
+    margin: 0 5px;
+}
+
+
+/*----------pagination-7-------------*/
+.pagination7 li a {
+    border: 1px solid #efefef;
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    line-height: 38px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+
+.pagination7 li:last-child a,
+.pagination7 li:first-child a {
+    font-size: 15;
+    text-transform: uppercase;
+    color: #131313;
+}
+.pagination7 li.active a,
+.pagination7 li a:hover {
+    border-color:#2a2a2a;
+    color: #fff;
+    background: #2a2a2a;
+}
+.pagination7 > li {
+    float: left;
+    margin: 0 5px;
+}
+
+
+/*----------pagination-8-------------*/
+.pagination8 li a {
+    color: #1e1e1e;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+.pagination8 li a i {
+    background: #027aec;
+    color: #fff;
+    font-size: 30px;
+    left: 0;
+    padding: 0px 10px;
+    position: absolute;
+    top: 0;
+    line-height: 40px;
+}
+.pagination8 li a i:after {
+    border-right: 10px solid transparent;
+    border-top: 40px solid #027aec;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+}
+.pagination8 > li:first-child {
+    margin-right: 70px;
+    margin-left: 0;
+}
+.pagination8 > li:last-child {
+    margin-left: 70px;
+    margin-right: 0;
+}
+.pagination8 li:last-child a,
+.pagination8 li:first-child a {
+    font-size: 16px;
+    padding: 0 30px 0 70px;
+    text-transform: uppercase;
+    background: #131313;
+    color: #fff;
+    border-bottom: none;
+}
+.pagination8 li.active a,
+.pagination8 li a:hover {
+    border-bottom-color: #027aec;
+}
+.pagination8 > li {
+    float: left;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+    .pagination_common {
+        flex-wrap: wrap;
+    }
+    .pagination_common > li {
+        padding-bottom: 8px;
+    }
+    .pagination8 > li:first-child {
+        margin-right: 10px;
+    }
+    .pagination8 > li:last-child {
+        margin-left: 10px;
+    }
+    .pagination8 li a {
+        padding: 0 4px;
+    }
+    .pagination8 li:last-child a,
+    .pagination8 li:first-child a {
+        padding: 0 20px 0 66px;
+    }
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

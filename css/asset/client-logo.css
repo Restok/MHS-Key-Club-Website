@@ -1,0 +1,238 @@
+/*--------------------client-logo-style-1-------------------*/
+.client_logo .logo_wrapper img {
+    width: auto;
+    margin: 0 auto;
+}
+
+/*next previous*/
+.logo_carousel1 .owl-prev,
+.logo_carousel1 .owl-next {
+    color: #444;
+    display: inline-block;
+    font-size: 30px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+}
+.logo_carousel1 .owl-prev{
+    left: -40px;
+}
+.logo_carousel1 .owl-next{
+    right: -40px;
+}
+
+
+
+/*--------------------client-logo-style-2-------------------*/
+.logo_carousel2 > li {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+}
+.logo_carousel2 > li:hover img{
+    transform: scale(1.1);
+}
+.logo_carousel2 > li:nth-child(1),
+.logo_carousel2 > li:nth-child(2),
+.logo_carousel2 > li:nth-child(3),
+.logo_carousel2 > li:nth-child(4),
+.logo_carousel2 > li:nth-child(5){
+    border-top: none;
+}
+.logo_carousel2 > li:nth-child(5n+5){
+    border-right: none;
+}
+
+
+
+/*--------------------client-logo-style-3-------------------*/
+.logo_carousel3 li {
+    border: 1px solid #f2f2f2;
+}
+.logo_carousel3 li a {
+    padding: 20px;
+}
+
+.logo_carousel3 .owl-prev,
+.logo_carousel3 .owl-next {
+    background: #f2f2f2;
+    color: #333;
+    display: inline-block;
+    font-size: 30px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+.logo_carousel3 .owl-prev{
+    left: 20px;
+}
+.logo_carousel3 .owl-next{
+    right: 20px;
+}
+.logo_carousel3 .owl-prev:hover,
+.logo_carousel3 .owl-next:hover{
+    background: #027AEC;
+    color: #fff;
+}
+.logo_carousel3:hover .owl-prev,
+.logo_carousel3:hover .owl-next{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*--------------------client-logo-style-4-------------------*/
+.logo_carousel4 li {
+    border: 1px solid #f2f2f2;
+    margin-left: -1px;
+}
+.logo_carousel4 li a {
+    padding: 20px;
+}
+.logo_carousel4 .owl-dots {
+    margin-top: 25px;
+    text-align: center;
+}
+.logo_carousel4 .owl-dot {
+    background: #dedede;
+    display: inline-block;
+    height: 3px;
+    margin: 0 5px;
+    width: 30px;
+}
+.logo_carousel4 .owl-dot.active {
+    background: #727272;
+}
+
+
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){
+    .logo_carousel1 .owl-prev {
+        left: -25px;
+    }
+
+    .logo_carousel1 .owl-next {
+        right: -25px;
+    }
+    
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    
+    /*--------style-1--------*/
+    .logo_carousel1 .owl-nav {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .logo_carousel1 .owl-prev,
+    .logo_carousel1 .owl-next {
+        left: initial;
+        margin-top: 0px;
+        position: relative;
+        right: inherit !important;
+    }
+    
+    
+    /*--------style-2--------*/
+    .logo_carousel2 > li {
+        width: 25%;
+    }
+    .logo_carousel2 > li:nth-child(5) {
+        border-top: 1px solid #f2f2f2;
+    }
+    .logo_carousel2 > li:nth-child(4n+4) {
+        border-right: none;
+    }
+    .logo_carousel2 > li:nth-child(5n+5) {
+        border-right: 1px solid #f2f2f2;
+    }
+    
+    
+    /*---------style-3----------*/
+    .logo_carousel3 .owl-prev {
+        left: 10px;
+    }
+    .logo_carousel3 .owl-next {
+        right: 10px;
+    }
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    /*---------style-2----------*/
+    .logo_carousel2 > li {
+        width: 50%;
+    }
+    .logo_carousel2 > li:nth-child(3),
+    .logo_carousel2 > li:nth-child(4),
+    .logo_carousel2 > li:nth-child(5) {
+        border-top: 1px solid #f2f2f2;
+    }
+    .logo_carousel2 > li:nth-child(4n+4) {
+        border-right: 1px solid #f2f2f2;
+    }
+    .logo_carousel2 > li:nth-child(odd) {
+        border-left: 1px solid #f2f2f2;
+    }
+    
+    /*---------style-3----------*/
+    .logo_carousel3 .owl-prev {
+        left: 20px;
+    }
+    .logo_carousel3 .owl-next {
+        right: 20px;
+    }
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .logo_carousel2 > li {
+        width: 100%;
+        margin-top: -1px;
+        border: 1px solid #f2f2f2;
+    }
+    .logo_carousel2 > li{
+    }
+    
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

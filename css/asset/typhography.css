@@ -1,0 +1,87 @@
+
+/*-------------dropcap style-----------*/
+p.dropcap_common span {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 50px;
+    height: 70px;
+    line-height: 68px;
+    margin-right: 20px;
+    margin-top: 8px;
+    text-align: center;
+    width: 70px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+p.dropcap_style1 span {
+    background: #1ad9b2;
+}
+p.dropcap_style2 span {
+    background: #14d1dd;
+}
+p.dropcap_style3 span {
+    background: none;
+    border: 1px solid #bb5bd0;
+    color: #bb5bd0;
+    box-shadow:none;
+}
+p.dropcap_style4 span {
+   background: none;
+    border: 1px solid #1ee580;
+    color: #1ee580;
+    box-shadow:none;
+}
+p.dropcap_style5 span {
+   background: #027aec;
+    color: #fff;
+}
+p.dropcap_style6 span {
+   background: none;
+    border: 1px solid #e0cc1f;
+    color: #e0cc1f;
+    box-shadow:none;
+}
+
+/*----------column style--------*/
+.column_typography .row{
+    margin-bottom: 80px;
+}
+.column_typography .row:last-child{
+    margin-bottom: 0px;
+}
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    .dropcap_common {
+        margin: 0 0 40px;
+        padding-left: 0;
+    }
+    
+    .threeCol .col-lg-3,
+    .twoCol .col-lg-2 {
+        margin-bottom: 30px;
+    }
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+

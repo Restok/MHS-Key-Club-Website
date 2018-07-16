@@ -1,0 +1,132 @@
+/*------------------------------blockquotes common style-------------------*/
+blockquote.blockquotes_common {
+    border-left: 3px solid #e9e9e9;
+    padding: 5px 25px;
+}
+blockquote.blockquote_reverse {
+    border-right: 3px solid #e9e9e9;
+    border-left: none;
+    text-align: right;
+}
+blockquote.blockquotes_common p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/*-------style-2--------*/
+.blockquotes_style2 footer {
+  font-size: 15px;
+}
+blockquote.blockquotes_style2 {
+    border-left-color: #8860b6;
+}
+blockquote.blockquotes_style2:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border-top: 10px solid #8860b6;
+    border-right: 10px solid transparent;
+}
+
+blockquote.blockquotes_style2.blockquote_reverse {
+    border-right-color: #8860b6;
+}
+
+blockquote.blockquotes_style2.blockquote_reverse:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    left: inherit;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border-top: 10px solid #8860b6; 
+   border-left: 10px solid transparent;
+    border-right: none;
+}
+.blockquotes_style2.blockquote_reverse footer::before {
+    display: none;
+}
+.blockquotes_style2.blockquote_reverse footer::after {
+    content: " —";
+}
+
+
+
+/*----------style-3----------*/
+blockquote.blockquotes_style3{
+    border-right: none;
+    border-left: none;
+    padding: 10px 0;
+}
+
+blockquote.blockquotes_style3 i {
+    color: #8860b6;
+    font-size: 50px;
+}
+.blockquotes_style3.blockquote_reverse footer::before {
+    display: none;
+}
+.blockquotes_style3.blockquote_reverse footer::after {
+    content: " —";
+}
+
+
+
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    blockquote.blockquotes_common p {
+        font-size: 15px;
+        line-height: 27px;
+    }
+    blockquote.blockquotes_style3 i {
+        color: #8860b6;
+        font-size: 40px;
+    }
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

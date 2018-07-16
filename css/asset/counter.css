@@ -1,0 +1,464 @@
+/*------------------------------Start counter shortcode style-----------------------------*/
+/*-------common style for counter section --------*/
+.facts_common .facts_title{
+    font-size: 15px;
+}
+
+
+/*-------facts style-1 --------*/
+.facts1{
+    background: url(../../images/facts-bg1.jpg) no-repeat center center / cover;
+}
+.facts1 .overlay{
+    background: rgba(0,0,0,0.8);
+}
+.facts1 .facts_common i {
+    color: #31e2cf;
+    font-size: 45px;
+    line-height: normal;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+.facts1 .facts_common span.line {
+    height: 2px;
+    width: 50px;
+}
+
+
+/*-------facts style-2 --------*/
+.facts2 .extra_border {
+  border: 1px solid #f7f7f7;
+  padding: 20px;
+}
+.facts2 .facts_common i {
+    font-size: 45px;
+    line-height: normal;
+    color: #7e7e7e;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+
+/*-------facts style-3 --------*/
+.facts3{
+    background: #202327;
+}
+
+.facts3 .facts_common i {
+    color: #e8e8e8;
+    display: inline-block;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+.facts3 .facts_common p.facts_title {
+    color: #e8e8e8;
+}
+.facts3 .facts_common span.line {
+    height: 2px;
+    width: 50px;
+    background: #4e5257;
+}
+
+
+/*-------facts style-4 --------*/
+.facts4 .facts_common {
+  border: 1px solid #ededed;
+}
+.facts4 .facts_common i {
+    color: #6c6c6c;
+    display: inline-block;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.facts4 .facts_common span.line {
+    height: 2px;
+    width: 50px;
+    background: #f44437;
+    margin: 10px auto 15px;
+}
+
+
+
+/*-------facts style-5 --------*/
+
+.facts5{
+    background: #333338;
+}
+.facts5 .facts_common::before {
+    background: #717171;
+    content: "";
+    height: 50px;
+    left: 68px;
+    position: absolute;
+    top: 7px;
+    width: 1px;
+}
+.facts5 .facts_common i {
+    color: #3890e4;
+    font-size: 45px;
+    line-height: normal;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+
+/*-------facts style-6 --------*/
+.facts6 .facts_common {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.facts6 .facts_common i {
+    color: #6c6c6c;
+    display: inline-block;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.facts6 .facts_common span.line {
+    height: 2px;
+    width: 50px;
+    background: #f44437;
+    margin: 10px auto 15px;
+}
+
+
+/*-------facts style-7 --------*/
+.facts7{
+    background: url(../../images/facts-bg2.jpg) no-repeat center center / cover;
+}
+.facts7 .facts_wrapper {
+    bottom: -80px;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+.facts7 .facts_common {
+    float: left;
+    width: 25%;
+}
+.facts7 .facts_common h3.title_35 {
+    color: #e13d77;
+}
+.facts7 .facts_common i {
+    color: #75387f;
+    display: inline-block;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.facts7 .facts_common span.line {
+    height: 1px;
+    width: 40px;
+    background: #75387f;
+    margin: 10px auto 15px;
+}
+
+
+/*-------facts style-8 --------*/
+.facts8 .facts_common h3.title_35:after {
+    background: #f44437;
+    content: "";
+    height: 2px;
+    margin-top: -1px;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 25px;
+}
+.facts8 .facts_common i {
+    color: #666666;
+    display: block;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+
+/*-------facts style-9 --------*/
+.facts9 {
+    background: url(../../images/facts-bg3.jpg) no-repeat center center / cover;
+}
+.facts9 .overlay{
+    background: rgba(51,51,56,0.5);
+}
+.facts9 .facts_common i {
+    color: #fdcb61;
+    display: inline-block;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.facts9 .facts_common span.line {
+    height: 2px;
+    width: 40px;
+    background: #fdcb61;
+    margin: 10px auto 15px;
+}
+
+
+/*-------facts style-10 --------*/
+.facts10 {
+    background: url(../../images/facts-bg3.jpg) no-repeat center center / cover;
+}
+.facts10 .overlay{
+    background: rgba(51,51,56,0.5);
+}
+.facts10 .facts_common {
+    background: rgba(191, 154, 84, 0.3);
+}
+.facts10 .facts_common i {
+    color: #fdcb61;
+    display: inline-block;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.facts10 .facts_common span.line {
+    height: 2px;
+    width: 40px;
+    background: #fdcb61;
+    margin: 10px auto 15px;
+}
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){
+    
+    /*----style-1------*/
+    .facts1 .facts_common {
+        padding-left: 75px;
+    }
+    
+    /*----style-5------*/
+    .facts5 .facts_common .facts_title {
+        font-size: 13px;
+    }
+    
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    
+    /*----style-1------*/
+    .facts1{
+        padding: 90px 0 40px;
+    }
+    .facts1 .facts_common {
+        margin-bottom: 50px;
+    }
+    
+    /*----style-2------*/
+    .facts2 .extra_border {
+        margin-bottom: 30px;
+    }
+    
+    /*----style-4------*/
+    .facts4 .facts_common {
+        margin-bottom: 30px;
+    }
+    
+    /*----style-5------*/
+    .facts5{
+        padding: 90px 0 35px;
+    }
+    .facts5 .facts_common {
+        margin-bottom: 50px;
+    }
+    
+    /*----style-10------*/
+    .facts10{
+        padding: 60px 0 30px;
+    }
+    .facts10 .facts_common {
+        margin-bottom: 30px;
+    }
+
+    
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+    /*---style-1----*/
+    .facts1 .col-lg-3.col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    .facts1 .facts_common .facts_title {
+        font-size: 14px;
+    }
+    
+    /*---style-2----*/
+    .facts2 .col-lg-3.col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    
+    /*---style-3----*/
+    .facts3 .col-md-3 {
+        float: left;
+        width: 50%;
+    }
+    .facts3{
+        padding: 80px 0 30px;
+    }
+    .facts3 .facts_common {
+        margin-bottom: 50px;
+    }
+    
+    /*---style-4----*/
+    .facts4 .col-lg-3.col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    
+    /*---style-5----*/
+    .facts5 .col-lg-3.col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    
+    /*---style-6----*/
+    .facts6 .col-md-3 {
+        float: left;
+        width: 50%;
+    }
+    
+    /*---style-7----*/
+    .facts7 .facts_wrapper {
+        padding-top: 30px;
+    }
+    .facts7 .facts_common {
+        width: 50%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    /*---style-8----*/
+    .facts8 .col-md-3 {
+        float: left;
+        width: 50%;
+    }
+    .facts8 .facts_common {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    /*---style-9----*/
+    .facts9 .col-md-3 {
+        float: left;
+        width: 50%;
+    }
+    .facts9{
+        padding: 60px 0 20px;
+    }
+    .facts9 .facts_common {
+        margin-bottom: 40px;
+    }
+    
+    /*---style-10----*/
+    .facts10 .col-lg-3.col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    .facts10{
+        padding: 60px 0 20px;
+    }
+    .facts10 .facts_common {
+        margin-bottom: 40px;
+    }
+    
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    /*---style-1----*/
+    .facts10 .col-lg-3.col-md-6,
+    .facts9 .col-md-3,
+    .facts8 .col-md-3,
+    .facts6 .col-md-3,
+    .facts5 .col-lg-3.col-md-6,
+    .facts4 .col-lg-3.col-md-6,
+    .facts3 .col-md-3,
+    .facts2 .col-lg-3.col-md-6,
+    .facts1 .col-lg-3.col-md-6 {
+        float: none;
+        width: 100%;
+    }
+    .facts2 .extra_border {
+        max-width: 280px;
+        margin: 0 auto 30px;
+    }
+    
+    /*------style-3--------*/
+    .facts3 .facts_common {
+        text-align: center;
+    }
+    .facts3 .facts_common span.line {
+        margin: 10px auto 15px;
+    }
+    
+    /*------style-4------*/
+    .facts4 .facts_common {
+        max-width: 280px;
+        margin: 0 auto 30px;
+    }
+    
+    /*------style-6-----*/
+    .facts6 .facts_common {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    /*-----style-8------*/
+    .facts8 .facts_common {
+        text-align: center;
+    }
+    
+    
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

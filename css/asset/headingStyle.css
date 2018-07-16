@@ -1,0 +1,164 @@
+
+/*-------------------------heading style-1------------------------*/
+.heading_title1 span.d_block {
+  height: 3px;
+  margin-left: 52px;
+  width: 30px;
+}
+.heading_title1.right_align span.d_block {
+    margin-right: 52px;
+    margin-left: auto;
+}
+.heading_title1.center_align span.d_block {
+    margin: 0 auto;
+}
+.heading_title1 span.d_block::after,
+.heading_title1 .d_block::before {
+    background: #e2e2e2;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 1.5px;
+    width: 30px;
+}
+.heading_title1 span.d_block::after {
+  right: -48px;
+}
+.heading_title1 span.d_block::before {
+  left: -48px;
+}
+
+
+
+/*-----------------------heading style-2----------------------*/
+.heading_title2 .heading:after {
+    content: "";
+    background: #eaeaea;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 100%;
+}
+.heading_title2.right_align .heading:after {
+    right: inherit;
+    left: 0;
+}
+.heading_title2 .line {
+    background: #eaeaea;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    display: block;
+}
+
+
+/*--------center align---------*/
+.heading_title2.center_align .line {
+    background: #eaeaea;
+    height: 1px;
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    
+}
+.heading_title2.center_align .lineh2{
+    width: 160px;
+}
+.heading_title2.center_align .lineh3{
+    width: 120px;
+}
+.heading_title2.center_align .lineh4{
+    width: 90px;
+}
+.heading_title2.center_align .lineh5{
+    width: 70px;
+}
+.heading_title2.center_align .lineh6{
+    width: 50px;
+}
+.heading_title2.center_align .line:before,
+.heading_title2.center_align .line:after{
+    content: "";
+    background: #eaeaea;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 100%;
+}
+.heading_title2.center_align .line:before{
+    left: 0;
+}
+.heading_title2.center_align .line:after{
+    right: 0;
+}
+
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    .heading_common h1 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .heading_common h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .heading_common h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .heading_common h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

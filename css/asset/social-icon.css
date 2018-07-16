@@ -1,0 +1,639 @@
+/*------------------------------ Start Social icon shortcode style-----------------------------*/
+/*----------Social icon Common Style----------*/
+.social_common {
+    width: 100%;
+}
+.social_common li a {
+    color: #666666;
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+
+/*--------icon style-1------------*/
+.icon_style1 li a {
+    padding: 10px 14px 5px;
+    color: #23282e;
+}
+.icon_style1 li.facebook a:hover {
+    color: #4c65a8;
+}
+.icon_style1 li.twitter a:hover {
+    color: #41a1f6;
+}
+.icon_style1 li.g-plus a:hover {
+    color: #e93e30;
+}
+.icon_style1 li.instagram a:hover {
+    color: #8f6247;
+}
+.icon_style1 li.pinterest a:hover {
+    color: #ff4c5b;
+}
+.icon_style1 li.behance a:hover {
+    color: #1c52e7;
+}
+.icon_style1 li.linkedin a:hover {
+    color: #e13e82;
+}
+.icon_style1 li.youtube a:hover {
+    color: #c81121;
+}
+.icon_style1 li.vimeo a:hover {
+    color: #1a83e2;
+}
+.icon_style1 li.feed a:hover {
+    color: #34b745;
+}
+.icon_style1 li a i {
+    overflow: hidden;
+}
+.icon_style1 li a i::before {
+    display: block;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+.icon_style1 li a:hover i::before {
+    -webkit-animation: iconTranslateY 0.4s forwards;
+    -moz-animation: iconTranslateY 0.4s forwards;
+    animation: iconTranslateY 0.4s forwards;
+}
+
+@-webkit-keyframes iconTranslateY {
+    49% {
+        -webkit-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes iconTranslateY {
+    49% {
+        -moz-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -moz-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes iconTranslateY {
+    49% {
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+
+
+/*--------icon style-2------------*/
+.icon_style2 li a {
+    border-radius: 100%;
+    color: #fff;
+    height: 40px;
+    margin: 0 6px;
+    padding: 10px;
+    width: 40px;
+}
+.icon_style2 li a i {
+    overflow: hidden;
+}
+.icon_style2 li.facebook a {
+    background: #4c65a8;
+}
+.icon_style2 li.twitter a {
+    background: #41a1f6;
+}
+.icon_style2 li.g-plus a {
+    background: #e93e30;
+}
+.icon_style2 li.instagram a {
+    background: #8f6247;
+}
+.icon_style2 li.pinterest a {
+    background: #ff4c5b;
+}
+.icon_style2 li.behance a {
+    background: #1c52e7;
+}
+.icon_style2 li.linkedin a {
+    background: #e13e82;
+}
+.icon_style2 li.youtube a {
+    background: #c81121;
+}
+.icon_style2 li.vimeo a {
+    background: #1a83e2;
+}
+.icon_style2 li.feed a {
+    background: #34b745;
+}
+.icon_style2 li a i::before {
+    display: block;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+.icon_style2 li a:hover i::before {
+    -webkit-animation: iconTranslateY 0.4s forwards;
+    -moz-animation: iconTranslateY 0.4s forwards;
+    animation: iconTranslateY 0.4s forwards;
+}
+
+
+/*--------icon style-3------------*/
+.icon_style3 li a {
+    border-radius: 100%;
+    height: 40px;
+    margin: 0 6px;
+    padding: 7px 10px;
+    width: 40px;
+    background: #ededed;
+}
+.icon_style3 li.facebook a:hover {
+    color:#fff;
+    background: #4c65a8;
+}
+.icon_style3 li.twitter a:hover {
+    color:#fff;
+    background: #41a1f6;
+}
+.icon_style3 li.g-plus a:hover {
+    color:#fff;
+    background: #e93e30;
+}
+.icon_style3 li.instagram a:hover {
+    color:#fff;
+    background: #8f6247;
+}
+.icon_style3 li.pinterest a:hover {
+    color:#fff;
+    background: #ff4c5b;
+}
+.icon_style3 li.behance a:hover {
+    color:#fff;
+    background: #1c52e7;
+}
+.icon_style3 li.linkedin a:hover {
+    color:#fff;
+    background: #e13e82;
+}
+.icon_style3 li.youtube a:hover {
+    color:#fff;
+    background: #c81121;
+}
+.icon_style3 li.vimeo a:hover {
+    color:#fff;
+    background: #1a83e2;
+}
+.icon_style3 li.feed a:hover {
+    color:#fff;
+    background: #34b745;
+}
+
+
+/*--------icon style-4------------*/
+.icon_style4 li a {
+    height: 40px;
+    margin: 0 6px;
+    padding: 7px 10px;
+    width: 40px;
+    background: #ededed;
+    position: relative;
+}
+.icon_style4 li a i{
+    z-index: 2;
+    position: relative;
+}
+.icon_style4 li a:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    z-index: 0;
+}
+.icon_style4 li a:hover:before{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.icon_style4 li a:hover{
+    color: #fff;
+}
+.icon_style4 li.facebook a:hover:before {
+    background: #4c65a8;
+}
+.icon_style4 li.twitter a:hover:before {
+    background: #41a1f6;
+}
+.icon_style4 li.g-plus a:hover:before {
+    background: #e93e30;
+}
+.icon_style4 li.instagram a:hover:before {
+    background: #8f6247;
+}
+.icon_style4 li.pinterest a:hover:before {
+    background: #ff4c5b;
+}
+.icon_style4 li.behance a:hover:before {
+    background: #1c52e7;
+}
+.icon_style4 li.linkedin a:hover:before {
+    background: #e13e82;
+}
+.icon_style4 li.youtube a:hover:before {
+    background: #c81121;
+}
+.icon_style4 li.vimeo a:hover:before {
+    background: #1a83e2;
+}
+.icon_style4 li.feed a:hover:before {
+    background: #34b745;
+}
+
+
+/*--------icon style-5------------*/
+.icon_style5 li a {
+    border: 1px solid #ededed;
+    font-size: 20px;
+    height: 48px;
+    margin: 0 6px;
+    padding: 11px 10px;
+    width: 50px;
+}
+.icon_style5 li a:hover {
+    color: #fff;
+    border-color: #258cdb;
+    background: #258cdb;
+}
+
+
+/*--------icon style-6------------*/
+.icon_style6 li a {
+    font-size: 20px;
+    height: 48px;
+    margin: 0 6px;
+    padding: 11px 10px;
+    width: 50px;
+    border-radius: 5px;
+}
+.icon_style6 li.facebook a {
+    color:#fff;
+    background: #4c65a8;
+}
+.icon_style6 li.twitter a {
+    color:#fff;
+    background: #41a1f6;
+}
+.icon_style6 li.g-plus a {
+    color:#fff;
+    background: #e93e30;
+}
+.icon_style6 li.instagram a {
+    color:#fff;
+    background: #8f6247;
+}
+.icon_style6 li.pinterest a {
+    color:#fff;
+    background: #ff4c5b;
+}
+.icon_style6 li.behance a {
+    color:#fff;
+    background: #1c52e7;
+}
+.icon_style6 li.linkedin a {
+    color:#fff;
+    background: #e13e82;
+}
+.icon_style6 li.youtube a {
+    color:#fff;
+    background: #c81121;
+}
+.icon_style6 li.vimeo a {
+    color:#fff;
+    background: #1a83e2;
+}
+.icon_style6 li.feed a {
+    color:#fff;
+    background: #34b745;
+}
+.icon_style6 li a:hover {
+    background: #ddd;
+    color: #444;
+}
+
+/*--------icon style-7------------*/
+.icon_style7 li a {
+    border: 1px solid #ededed;
+    font-size: 20px;
+    height: 48px;
+    margin: 0 6px;
+    padding: 10px 10px;
+    width: 50px;
+    border-radius: 5px;
+}
+.icon_style7 li a:hover {
+    color: #fff;
+    border-color: #258cdb;
+    background: #258cdb;
+}
+
+/*--------icon style-8------------*/
+.icon_style8 > li {
+    float: left;
+    text-align: center;
+    width: 16.6667%;
+}
+.icon_style8 li a {
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    line-height: 80px;
+}
+.icon_style8 li.facebook {
+    background: #4c65a8;
+}
+.icon_style8 li.twitter {
+    background: #41a1f6;
+}
+.icon_style8 li.g-plus {
+    background: #e93e30;
+}
+.icon_style8 li.pinterest {
+    background: #ff4c5b;
+}
+.icon_style8 li.behance {
+    background: #1c52e7;
+}
+.icon_style8 li.linkedin {
+    background: #e13e82;
+}
+
+.icon_style8 li a i::before {
+    display: block;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+.icon_style8 li a:hover i::before {
+    -webkit-animation: iconTranslateY 0.4s forwards;
+    -moz-animation: iconTranslateY 0.4s forwards;
+    animation: iconTranslateY 0.4s forwards;
+}
+
+
+
+/*---------------btn_style5------------------*/
+.button_common {
+    margin-left: -25px;
+    text-align: center;
+}
+.button_common > li {
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+.button_common li a {
+    border: 1px solid #77379f;
+    color: #77379f;
+    display: block;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 45px 0 28px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.button_common li a i {
+    overflow: hidden;
+}
+.btn_style5 {
+  margin-left: -70px;
+}
+.btn_style5 > li {
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+.btn_style5 li a {
+    background: #00b4e1;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0 26px 0 74px;
+    position: relative;
+}
+.btn_style5 li a i {
+    font-size: 24px;
+}
+.btn_style5 li a > span {
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 50px;
+    justify-content: center;
+    left: 0;
+    line-height: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+
+.btn_style5 > li.facebook a {
+  background: #3c5a98;
+}
+.btn_style5 > li.facebook a span {
+  background: #314E88;
+}
+.btn_style5 > li.twitter a {
+  background: #1DA1F2;
+}
+.btn_style5 > li.twitter a span {
+  background: #0E92DE;
+}
+.btn_style5 > li.g-plus a {
+  background: #DB4437;
+}
+.btn_style5 > li.g-plus a span {
+  background: #c73023;
+}
+.btn_style5 > li.linkedin a {
+  background: #0077B5;
+}
+.btn_style5 > li.linkedin a span {
+  background: #0062a0;
+}
+.btn_style5 > li.pinterest a {
+  background: #BD081C;
+}
+.btn_style5 > li.pinterest a span {
+  background: #a20001;
+}
+.btn_style5 > li.youtube a {
+  background: #FF0000;
+}
+.btn_style5 > li.youtube a span {
+  background: #de0000;
+}
+
+.btn_style5 li a i:before {
+    display: inline-block;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+.btn_style5 li a:hover i::before {
+    -webkit-animation: iconTranslateY 0.5s forwards;
+    -moz-animation: iconTranslateY 0.5s forwards;
+    animation: iconTranslateY 0.5s forwards;
+}
+
+@-webkit-keyframes iconTranslateY {
+    49% {
+        -webkit-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes iconTranslateY {
+    49% {
+        -moz-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -moz-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes iconTranslateY {
+    49% {
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    .icon_style8 li a {
+        line-height: 65px;
+    }
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    .social_common > li {
+        margin-bottom: 10px;
+    }
+    .social_common.icon_style8 > li {
+        margin-bottom: 0px;
+    }
+    .icon_style8 li a {
+        line-height: 60px;
+    }
+    
+    /*--------button style-5--------*/
+    .button_common li a {
+        font-size: 16px;
+        line-height: 45px;
+        padding: 0 40px 0 24px;
+    }
+    .btn_style5 {
+        margin-left: -30px;
+    }
+    
+    .btn_style5 > li {
+        margin-left: 30px;
+    }
+    .btn_style5 li a {
+        padding: 0 26px 0 74px;
+        line-height: 50px;
+    }
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .icon_style8 li a {
+        font-size: 20px;
+    }
+    .icon_style8 li a {
+        line-height: 50px;
+    }
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

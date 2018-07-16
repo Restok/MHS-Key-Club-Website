@@ -1,0 +1,285 @@
+/*------------unnecessary code------------*/
+.modal_style{
+    margin-left: -20px;
+}
+.modal_style li {
+    float: left;
+    width: 22%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+.modal_style li a {
+	background: #E5E5E5;
+	display: block;
+	font-size: 16px;
+	height: 55px;
+	line-height: 55px;
+	color: #999;
+    text-transform: uppercase;
+    font-weight: 700;
+	border-radius: 3px;
+}
+.modal_style li a:hover{
+    background: #027AEC;
+    color: #fff;
+}
+/*------------end unnecessary code------------*/
+
+
+
+
+
+
+/*--------------modal common style------------------*/
+.ABmodal_common button.close {
+    background: #fff;
+    opacity: 1;
+    position: absolute;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    right: -12px;
+    top: -12px;
+}
+.ABmodal_common button.close i {
+    display: block;
+    font-size: 15px;
+}
+.ABmodal_common.fade .modal-dialog {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+.ABmodal_transition.fade .modal-dialog {
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+
+
+/*--------modal slide top ----------*/
+.ABmodal_slideTop.fade .modal-dialog {
+    -webkit-transform: translate(0px, -25%);
+    -moz-transform: translate(0px, -25%);
+    -ms-transform: translate(0px, -25%);
+    -o-transform: translate(0px, -25%);
+    transform: translate(0px, -25%);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_slideTop.fade.show .modal-dialog {
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*--------modal slide left ----------*/
+.ABmodal_slideLeft.fade .modal-dialog {
+    -webkit-transform: translate(25%, 0px);
+    -moz-transform: translate(25%, 0px);
+    -ms-transform: translate(25%, 0px);
+    -o-transform: translate(25%, 0px);
+    transform: translate(25%, 0px);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_slideLeft.fade.show .modal-dialog {
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*-------------modal slide in up-----------*/
+.ABmodal_slideUp.fade .modal-dialog {
+     transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_slideUp.fade.show .modal-dialog {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*-------------modal slide right-----------*/
+.ABmodal_slideRight.fade .modal-dialog {
+    -webkit-transform: translate(-25%, 0px);
+    -moz-transform: translate(-25%, 0px);
+    -ms-transform: translate(-25%, 0px);
+    -o-transform: translate(-25%, 0px);
+    transform: translate(-25%, 0px);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_slideRight.fade.show .modal-dialog {
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+/*-------------modal zoom in-----------*/
+.ABmodal_zoom.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_zoom.fade.show .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*--------modal skew----------*/
+.ABmodal_skew.fade .modal-dialog {
+    -webkit-transform: scale(0.5) skewX(20deg);
+    -moz-transform: scale(0.5) skewX(20deg);
+    -ms-transform: scale(0.5) skewX(20deg);
+    -o-transform: scale(0.5) skewX(20deg);
+    transform: scale(0.5) skewX(20deg);
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_skew.fade.show .modal-dialog {
+    -webkit-transform: scale(1) skewX(0deg);
+    -moz-transform: scale(1) skewX(0deg);
+    -ms-transform: scale(1) skewX(0deg);
+    -o-transform: scale(1) skewX(0deg);
+    transform: scale(1) skewX(0deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*-------------modal Rotate in left-----------*/
+.ABmodal_roatet.fade .modal-dialog {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_roatet.fade.show .modal-dialog {
+    transform-origin: left bottom;
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*-------------modal roll in-----------*/
+.ABmodal_rollin.fade .modal-dialog {
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_rollin.fade.show .modal-dialog {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*-------------modal jack in-----------*/
+.ABmodal_jackin.fade .modal-dialog {
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_jackin.fade.show .modal-dialog {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*------------- modal zoom In Down-----------*/
+.ABmodal_zoomInDown.fade .modal-dialog {
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    visibility: hidden;
+    opacity: 0;
+}
+.ABmodal_zoomInDown.fade.show .modal-dialog {
+    transform: scale3d(1, 1, 1) translate3d(0, 0px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+@media (max-width: 767px){
+    .ABmodal_common .modal-dialog {
+        margin: 50px 30px;
+    }
+    .modal_style li {
+        width: 29%;
+    } 
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .modal_style{
+        margin-left: 0;
+    }
+    .modal_style li {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+}/*---end 480-767px media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

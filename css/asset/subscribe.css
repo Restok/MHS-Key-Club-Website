@@ -1,0 +1,760 @@
+/*------------------------------newsletter subscribe common style-------------------*/
+.newsletter_subscribe .subscribe_form input,
+.newsletter_subscribe .subscribe_form button{
+    border: none;
+}
+.newsletter_subscribe .subscribe_form label{
+    margin: 0;
+}
+
+/*-------------newsletter subscribe1 style--------------*/
+.subscribe1 {
+    background: #f7f7f7  url(../../images/newsletter_bg1.png) no-repeat center center / cover;
+}
+.subscribe1 .subscribe_form {
+    margin: 0 auto;
+    max-width: 760px;
+}
+.subscribe1 .subscribe_form input {
+    border-bottom: 1px solid #989898;
+    background: transparent;
+    height: 45px;
+    width: 500px;
+    display: block;
+    color: #666666;
+    padding: 10px 2px;
+}
+.subscribe1 .subscribe_form button {
+    border: 1px solid #42bca2;
+    background: transparent;
+    margin-left: 30px;
+}
+.subscribe1 .subscribe_form button span {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    height: 45px;
+    line-height: 44px;
+    padding: 0 40px;
+    background: #42bca2;
+}
+.subscribe1 .subscribe_form button:hover span {
+    transform: translate(-7px, -8px);
+}
+
+
+/*-------------newsletter subscribe2 style--------------*/
+.subscribe2 .subscribe_content{
+    border-top: 2px solid #434343;
+}
+.subscribe2 .subscribe_form {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+.subscribe2 .subscribe_form input{
+    height: 50px;
+    display: block;
+    color: #666666;
+    padding: 10px 20px;
+}
+.subscribe2 .subscribe_form input[type="text"]{
+    width: 40.333%;
+    margin-right: 30px;
+}
+.subscribe2 .subscribe_form input[type="email"]{
+    width: 46.667%;
+}
+.subscribe2 .subscribe_form button {
+    background: #434343;
+    color: #fff;
+    font-size: 44px;
+    height: 50px;
+    width: 90px;
+}
+.subscribe2 .subscribe_form button:hover {
+    background: #2079FF;
+}
+
+
+/*-------------newsletter subscribe3 style--------------*/
+.subscribe3{
+    background: #383838;
+}
+.subscribe3 .subscribe_title p{
+    color: #e0e0e0;
+}
+.subscribe3 .subscribe_form {
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 50px;
+}
+.subscribe3 .subscribe_form input{
+    background: #fff;
+    width: 86%;
+    height: 50px;
+    display: block;
+    color: #666666;
+    padding: 10px 20px 10px 25px;
+    border-radius: 50px 0 0 50px;
+}
+.subscribe3 .subscribe_form button {
+    background: #fff;
+    color: #434343;
+    font-size: 44px;
+    height: 50px;
+    width: 80px;
+    border-radius: 0 50px 50px 0;
+}
+.subscribe3 .subscribe_form button:hover {
+    color: #2079FF;
+    padding-left: 5px;
+}
+
+
+/*-------------newsletter subscribe4 style--------------*/
+.subscribe4 .subscribe_form span.line {
+    background: #027aec;
+    height: 2px;
+    width: 100px;
+}
+.subscribe4 .subscribe_form input{
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    color: #666666;
+    padding: 10px 20px 10px 25px;
+}
+.subscribe4 .subscribe_form input:focus {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+}
+.subscribe4 .subscribe_form input[type="text"] {
+    margin-bottom: 20px;
+}
+.subscribe4 .subscribe_form form span {
+    color: #979797;
+    font-size: 13px;
+}
+.subscribe4 .subscribe_form button {
+    background: #027aec none repeat scroll 0 0;
+    color: #fff;
+    height: 45px;
+    padding: 0 66px 0 33px;
+}
+.subscribe4 .subscribe_form button i {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: 31px;
+    top: 7px;
+    vertical-align: middle;
+}
+.subscribe4 .subscribe_form button:hover i {
+    right: 26px;
+}
+
+
+/*-------------newsletter subscribe5 style--------------*/
+.subscribe5 {
+    padding: 90px 0;
+}
+.subscribe5 .subscribe_title{
+    width: 43.333%;
+}
+.subscribe5 .subscribe_form {
+    width: 62.667%;
+    margin-left: 30px;
+}
+.subscribe5 .subscribe_form input {
+    height: 50px;
+    display: block;
+    color: #666666;
+    padding: 10px 20px;
+    width: 83%;
+}
+.subscribe5 .subscribe_form button {
+    background: #fff;
+    color: #434343;
+    font-size: 44px;
+    height: 50px;
+    width: 90px;
+}
+.subscribe5 .subscribe_form button:hover {
+    padding-left: 15px;
+}
+
+
+
+/*-------------newsletter subscribe6 style--------------*/
+.subscribe6 .container-fluid{
+    padding-left: 0;
+}
+.subscribe6 .subscribe_form,
+.subscribe6 .subscirbe_img {
+  width: 50%;
+}
+.subscribe6 .subscirbe_img{
+    background: url(../../images/subscribe-img2.jpg) no-repeat center center / cover;
+}
+.subscribe6 .subscribe_form span.line {
+    background: #027aec;
+    height: 2px;
+    width: 100px;
+}
+.subscribe6 .subscribe_form input{
+    background: #fff;
+    width: 450px;
+    display: block;
+    height: 50px;
+    color: #666666;
+    padding: 10px 20px 10px 25px;
+}
+.subscribe6 .subscribe_form input:focus {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+}
+.subscribe6 .subscribe_form input[type="text"] {
+    margin-bottom: 20px;
+}
+.subscribe6 .subscribe_form form span {
+    color: #979797;
+    font-size: 13px;
+}
+.subscribe6 .subscribe_form button {
+    background: #027aec none repeat scroll 0 0;
+    color: #fff;
+    height: 45px;
+    padding: 0 66px 0 33px;
+}
+.subscribe6 .subscribe_form button i {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: 31px;
+    top: 7px;
+    vertical-align: middle;
+}
+.subscribe6 .subscribe_form button:hover i {
+    right: 26px;
+}
+
+
+
+/*-------------newsletter subscribe7 style--------------*/
+.subscribe7 {
+    background: #262626;
+}
+.subscribe7 .subscribe_form {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+.subscribe7 .subscribe_form input{
+    background: transparent;
+    border: 1px solid #3b3b3b;
+    height: 50px;
+    display: block;
+    color: #aeaeae;
+    padding: 10px 20px;
+}
+.subscribe7 .subscribe_form input:focus{
+    border-color: #2079FF;
+}
+.subscribe7 .subscribe_form input[type="text"]{
+    width: 40.333%;
+    margin-right: 30px;
+}
+.subscribe7 .subscribe_form input[type="email"]{
+    width: 46.667%;
+}
+.subscribe7 .subscribe_form button {
+    background: #2079FF;
+    color: #fff;
+    font-size: 44px;
+    height: 50px;
+    width: 90px;
+}
+.subscribe7 .subscribe_form button:hover {
+    padding-left: 15px;
+}
+
+
+
+/*-------------newsletter subscribe8 style--------------*/
+.subscribe8 .subscribe_title > h3::before {
+    background: #027aec;
+    content: "";
+    height: 40px;
+    left: 50%;
+    margin-left: -0.5px;
+    position: absolute;
+    top: -44px;
+    width: 1px;
+}
+.subscribe8 .subscribe_form {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+.subscribe8 .subscribe_form input{
+    height: 50px;
+    display: block;
+    color: #666666;
+    padding: 10px 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.094);
+}
+.subscribe8 .subscribe_form input:focus{
+    box-shadow: none;
+}
+.subscribe8 .subscribe_form input[type="text"]{
+    width: 40.333%;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.subscribe8 .subscribe_form input[type="email"]{
+    width: 46.667%;
+    border-radius: 50px 0px 0px 50px;
+    padding: 10px 30px 10px 20px;
+}
+.subscribe8 .subscribe_form button {
+    background: #2079FF;
+    color: #fff;
+    font-size: 44px;
+    height: 50px;
+    width: 90px;
+    border-radius: 50px;
+    margin-left: -22px;
+}
+.subscribe8 .subscribe_form button:hover {
+    background: #434343;
+}
+
+
+/*-------------newsletter subscribe9 style--------------*/
+.subscribe9 .subscribe_form{
+    border-top: 2px solid #42bca2;
+}
+.subscribe9 .subscribe_form span.line {
+    background: #42bca2;
+    height: 2px;
+    width: 50px;
+}
+.subscribe9 .subscribe_form input{
+    background: #fff;
+    width: 100%;
+    display: block;
+    height: 50px;
+    color: #666666;
+    padding: 10px 20px 10px 25px;
+    border-radius: 50px;
+}
+.subscribe9 .subscribe_form input:focus {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+}
+.subscribe9 .subscribe_form input[type="text"] {
+    margin-bottom: 20px;
+}
+.subscribe9 .subscribe_form form span {
+    color: #979797;
+    font-size: 13px;
+}
+.subscribe9 .subscribe_form button {
+    background: #42bca2;
+    color: #fff;
+    height: 45px;
+    padding: 0px 66px 0 33px;
+    border-radius: 50px;
+}
+.subscribe9 .subscribe_form button i {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: 31px;
+    top: 8px;
+    vertical-align: middle;
+}
+.subscribe9 .subscribe_form button:hover i {
+    right: 26px;
+}
+
+
+/*-------------newsletter subscribe10 style--------------*/
+.subscribe10{
+    box-shadow: 0 12px 25px rgba(0,0,0,0.09);
+}
+.subscribe10 .subscribe_form span.line {
+    background: #027aec;
+    height: 2px;
+    width: 50px;
+}
+.subscribe10 .subscribe_form input{
+    width: 100%;
+    display: block;
+    height: 50px;
+    color: #666666;
+    padding: 10px 20px 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.subscribe10 .subscribe_form .animate_border{
+    display: block;
+}
+
+.subscribe10 .subscribe_form input:focus {
+   border-color: #027aec
+}
+.subscribe10 .subscribe_form input[type="text"] {
+    margin-bottom: 20px;
+}
+.subscribe10 .subscribe_form form span.d_block {
+    color: #979797;
+    font-size: 13px;
+}
+.subscribe10 .subscribe_form button {
+    background: #027aec;
+    color: #fff;
+    height: 45px;
+    padding: 0px 66px 0 33px;
+}
+.subscribe10 .subscribe_form button i {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: 31px;
+    top: 8px;
+    vertical-align: middle;
+}
+.subscribe10 .subscribe_form button:hover i {
+    right: 26px;
+}
+
+
+/*-------------newsletter subscribe11 style--------------*/
+.subscribe11 .subscribe_form{
+    border-bottom: 2px solid #2f2f2f;
+}
+.subscribe11 .subscribe_form span.line {
+    background: #aeaeae;
+    height: 2px;
+    width: 50px;
+}
+.subscribe11 .subscribe_form input{
+    background: #fff;
+    width: 100%;
+    display: block;
+    height: 50px;
+    color: #666666;
+    padding: 10px 20px 10px 25px;
+}
+.subscribe11 .subscribe_form input:focus {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+}
+.subscribe11 .subscribe_form input[type="text"] {
+    margin-bottom: 20px;
+}
+.subscribe11 .subscribe_form form span {
+    color: #979797;
+    font-size: 13px;
+}
+.subscribe11 .subscribe_form button {
+    background: #2f2f2f;
+    color: #fff;
+    height: 45px;
+    padding: 0px 66px 0 33px;
+}
+.subscribe11 .subscribe_form button i {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 0;
+    position: absolute;
+    right: 31px;
+    top: 8px;
+    vertical-align: middle;
+}
+.subscribe11 .subscribe_form button:hover i {
+    right: 26px;
+}
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){
+    .subscribe2 .subscribe_form button {
+        width: 66px;
+    }
+    
+    /*------style-2--------*/
+    .subscribe4 .subscribe_form.pl_100 {
+        padding-left: 50px;
+    }
+    .subscribe2 .subscribe_content {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    /*-------style-6---------*/
+    .subscribe6 .subscribe_form .ptb_100 {
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+    .subscribe6 .subscribe_form input {
+        width: 380px;
+    }
+    
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    
+    /*---------style-2---------*/
+    .subscribe2 .subscribe_content {
+        padding: 40px 20px 50px 30px;
+    }
+    .subscribe2 .subscribe_form input[type="text"] {
+        margin-right: 20px;
+    }
+    .subscribe2 .subscribe_form {
+        padding-top: 40px;
+    }
+    
+    
+    /*--------style-4----------*/
+    .subscribe4 .subscribe_form.pl_100 h3 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .subscribe4 .subscribe_form form.pt_60 {
+        padding-top: 30px;
+    }
+    .subscribe4 .subscribe_form form span {
+        padding-bottom: 20px;
+    }
+    
+    
+    /*----------style-5----------*/
+    .subscribe5 .subscribe_title .title_35 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .subscribe5 .subscribe_form button {
+        width: 69px;
+    }
+    
+    
+    /*----------style-6---------*/
+    .subscribe6 .subscribe_form .title_35 {
+        font-size: 29px;
+        line-height: 40px;
+    }
+    .subscribe6 .subscribe_form .ptb_100 {
+        padding-left: 40px;
+    }
+    .subscribe6 .subscribe_content.pr_40 {
+        padding-right: 0;
+    }
+    .subscribe6 .subscribe_form input {
+        width: 100%;
+    }
+    
+    
+    /*----------style-7----------*/
+    .subscribe7 .subscribe_form input[type="text"] {
+        margin-right: 20px;
+        width: 38.033%;
+    }
+    
+    /*----------style-8----------*/
+    .subscribe8 .subscribe_form input[type="text"] {
+        margin-right: 20px;
+        width: 40.833%;
+    }
+    
+    /*---------style-9--------*/
+    .subscribe11,
+    .subscribe10,
+    .subscribe9 {
+        margin-bottom: 70px;
+        max-width: 400px;
+    }
+    
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+    /*--------style-1----------*/
+    .subscribe1 .subscribe_form {
+        margin: 0 auto;
+        max-width: 450px;
+    }
+    .subscribe1 .subscribe_form input {
+        float: none;
+        width:100%;
+    }
+    .subscribe1 .subscribe_form button {
+        float: none;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    /*-----------style-2---------*/
+    .subscribe2 .subscribe_content {
+        padding: 40px 30px 50px;
+    }
+    .subscribe2 .subscribe_form input {
+        float: none !important;
+        margin-bottom: 20px;
+        width: 100% !important;
+    }
+    .subscribe2 .subscribe_form button {
+        float: none;
+        width: 116px;
+    }
+    
+    
+    /*-----------style-3---------*/
+    .subscribe3 {
+        padding: 50px 0 60px;
+    }
+    .subscribe3 .subscribe_form input {
+        width: 81%;
+    }
+    
+    
+    /*----------style-4-------------*/
+    .subscribe4 .subscribe_content {
+        display: block;
+        margin: 0 auto;
+        max-width: 450px;
+        padding: 0;
+    }
+    .subscribe4 .subscribe_form.pl_100 {
+        padding: 40px 30px;
+    }
+    
+    
+    /*------------style-5----------*/
+    .subscribe5 {
+        padding: 60px 0 70px;
+    }
+    .subscribe5 .col-xl-10.align_row_center_center {
+        display: block;
+    }
+    .subscribe5 .subscribe_title {
+        margin-bottom: 20px;
+        text-align: center!important;
+        width: 100%;
+    }
+    .subscribe5 .subscribe_form {
+        margin: 0 auto;
+        max-width: 450px;
+        width: 100%;
+    }
+    
+    
+    /*--------style-6---------*/
+    .subscribe6 .subscirbe_img {
+        display: none;
+    }
+    .subscribe6 .subscribe_form {
+        width: 100%;
+    }
+    .subscribe6 .subscribe_form .ptb_100 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    /*-----------style-7---------*/
+    .subscribe7 .subscribe_form input {
+        float: none !important;
+        margin-bottom: 20px;
+        width: 100% !important;
+    }
+    .subscribe7 .subscribe_form button {
+        float: none;
+        width: 116px;
+    }
+    
+    /*-----------style-8---------*/
+    .subscribe8 .subscribe_form input {
+        float: none !important;
+        margin-bottom: 20px;
+        width: 100% !important;
+        border-radius: 0px!important;
+    }
+    .subscribe8 .subscribe_form button {
+        float: none;
+        width: 116px;
+        border-radius: 0px;
+        margin-left: 0;
+    }
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .newsletter_subscribe .subscribe_title h3.title_35 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    
+    /*------style-3------*/
+    .subscribe3 .subscribe_form button {
+        font-size: 33px;
+        width: 51px;
+    }
+    
+    
+    /*------style-4------*/
+    .subscribe4 .subscribe_form.pl_100 {
+        padding: 40px 15px;
+    }
+    
+    
+    /*------style-5------*/
+    .subscribe5 .subscribe_form input {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .subscribe5 .subscribe_form button {
+        width: 110px;
+    }
+    
+    /*------style-6------*/
+    .subscribe6 .subscribe_form .ptb_100 {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .subscribe11 .subscribe_form,
+    .subscribe10 .subscribe_form,
+    .subscribe9 .subscribe_form {
+        padding: 30px 15px 50px;
+    }
+    
+    
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

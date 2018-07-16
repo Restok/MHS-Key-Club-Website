@@ -1,0 +1,365 @@
+/*------------------------------carousel style-1-----------------------------*/
+.abcarousel1 .hoverlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.abcarousel1 .carousel_item{
+    overflow: hidden;
+}
+.abcarousel1 .carousel_item img{
+    width: 100%;
+}
+.abcarousel1 .carousel_item:hover img{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.abcarousel1 .hoverlay span.line{
+    width: 80px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 13px;
+    opacity:0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    
+    -webkig-transition: all 0.4s 0.2s;
+    -moz-transition: all 0.4s 0.2s;
+    -ms1-transition: all 0.4s 0.2s;
+    -o-transition: all 0.4s 0.2s;
+    transition: all 0.4s 0.2s;
+}
+
+.abcarousel1 .hoverlay h5 a{
+    color: #fff;
+    opacity:0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    
+    -webkig-transition: all 0.4s 0.1s;
+    -moz-transition: all 0.4s 0.1s;
+    -ms1-transition: all 0.4s 0.1s;
+    -o-transition: all 0.4s 0.1s;
+    transition: all 0.4s 0.1s;
+}
+.abcarousel1 .hoverlay h5 a:hover{
+    color: #fbf268;
+}
+.abcarousel1 .hoverlay p{
+    opacity:0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+    
+    -webkig-transition: all 0.4s 0s;
+    -moz-transition: all 0.4s 0s;
+    -ms1-transition: all 0.4s 0s;
+    -o-transition: all 0.4s 0s;
+    transition: all 0.4s 0s;
+}
+
+.abcarousel1 .carousel_item:hover .hoverlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+.abcarousel1 .carousel_item:hover .hoverlay span.line{
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    
+    -webkig-transition: all 0.4s 0s;
+    -moz-transition: all 0.4s 0s;
+    -ms1-transition: all 0.4s 0s;
+    -o-transition: all 0.4s 0s;
+    transition: all 0.4s 0s;
+    opacity:1;
+}
+.abcarousel1 .carousel_item:hover .hoverlay h5 a{
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    
+    -webkig-transition: all 0.4s 0.1s;
+    -moz-transition: all 0.4s 0.1s;
+    -ms1-transition: all 0.4s 0.1s;
+    -o-transition: all 0.4s 0.1s;
+    transition: all 0.4s 0.1s;
+    opacity:1;
+}
+.abcarousel1 .carousel_item:hover .hoverlay p{
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    
+    -webkig-transition: all 0.4s 0.3s;
+    -moz-transition: all 0.4s 0.3s;
+    -ms1-transition: all 0.4s 0.3s;
+    -o-transition: all 0.4s 0.3s;
+    transition: all 0.4s 0.3s;
+    opacity:1;
+}
+
+/*------next previus button-------*/
+.abcarousel1 .owl-prev,
+.abcarousel1 .owl-next {
+    background: rgba(255,255,255,0.5);
+    color: #333;
+    display: inline-block;
+    font-size: 30px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+.abcarousel1 .owl-prev{
+    left: 0;
+}
+.abcarousel1 .owl-next{
+    right: 0;
+}
+.abcarousel1 .owl-prev:hover,
+.abcarousel1 .owl-next:hover{
+    background: rgba(255,255,255,1);
+}
+.abcarousel1:hover .owl-prev,
+.abcarousel1:hover .owl-next{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*------------------------------carousel style-2-----------------------------*/
+.abcarousel2 .owl-prev,
+.abcarousel2 .owl-next {
+    background: rgba(255,255,255,0.5);
+    color: #333;
+    display: inline-block;
+    font-size: 30px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+.abcarousel2 .owl-prev{
+    left: 0;
+}
+.abcarousel2 .owl-next{
+    right: 0;
+}
+.abcarousel2 .owl-prev:hover,
+.abcarousel2 .owl-next:hover{
+    background: rgba(255,255,255,1);
+}
+.abcarousel2:hover .owl-prev,
+.abcarousel2:hover .owl-next{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*------------------------------carousel style-3-----------------------------*/
+.abcarousel3 img{
+    width: 170px;
+}
+.abcarousel3 .img_content{
+    background: #fff;
+    padding: 30px 20px 30px 30px;
+    margin-left: -20px;
+}
+.abcarousel3 .img_content > a {
+    color: #333;
+    font-size: 16px;
+}
+.abcarousel3 .img_content > a:hover {
+  color: #d54e7f;
+}
+.abcarousel3 .img_content > .price {
+  color: #d54e7f;
+}
+.abcarousel3 .img_content .rating li,
+.abcarousel3 .img_content .rating li i {
+  color: #606060;
+}
+.abcarousel3 .img_content .rating li i{
+    font-size: 14px;
+}
+.abcarousel3 .owl-nav {
+    margin-top: 40px;
+    text-align: center;
+}
+.abcarousel3 .owl-prev,
+.abcarousel3 .owl-next{
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.abcarousel3 .owl-prev:hover,
+.abcarousel3 .owl-next:hover{
+    color: #d54e7f;
+}
+
+
+
+/*------------------------------carousel style-4-----------------------------*/
+.abcarousel4 .hoverlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.abcarousel4 .carousel_item:hover .hoverlay{
+    opacity: 1;
+    visibility: visible;
+}
+.abcarousel4 .carousel_item{
+    overflow: hidden;
+}
+.abcarousel4 .carousel_item img{
+    width: 100%;
+}
+.abcarousel4 .carousel_item:hover img{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.abcarousel4 .hoverlay ul li a {
+    background: #fff;
+    border-radius: 100%;
+    color: #3d2aeb;
+    display: block;
+    font-size: 24px;
+    height: 35px;
+    margin: 0 5px;
+    padding: 5px;
+    width: 35px;
+}
+.abcarousel4 .hoverlay ul li a:hover {
+    background: #3d2aeb;
+    color: #fff;
+}
+
+
+/*-----next previus btn-----------*/
+.abcarousel4 .owl-prev,
+.abcarousel4 .owl-next {
+    background: rgba(255,255,255,0.5);
+    color: #333;
+    display: inline-block;
+    font-size: 30px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+.abcarousel4 .owl-prev{
+    left: 0;
+}
+.abcarousel4 .owl-next{
+    right: 0;
+}
+.abcarousel4 .owl-prev:hover,
+.abcarousel4 .owl-next:hover{
+    background: rgba(255,255,255,1);
+}
+.abcarousel4:hover .owl-prev,
+.abcarousel4:hover .owl-next{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){
+   
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    /* style-3*/
+    .abcarousel3 .img_content {
+        margin-left: -65px;
+        padding: 20px 20px 20px 15px;
+    }
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    .abcarousel3 .carousel_item {
+        justify-content: center;
+    }
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

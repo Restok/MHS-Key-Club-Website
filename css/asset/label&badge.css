@@ -1,0 +1,234 @@
+.badge_style li{
+    margin-right: 50px;
+}
+.badge_style li:last-child {
+    margin-right: 0px;
+}
+
+
+/*-------------------badge style-1---------------*/
+.badge_style1 .icon i {
+  color: #555555;
+  font-size: 50px;
+}
+.badge_style1 .icon .count {
+    background: #f44437;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 10px;
+    min-height: 23px;
+    min-width: 23px;
+    padding: 6px 4px;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+}
+.badge_style1 .txt.color_33 {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+
+/*-------------------badge style-2---------------*/
+.badge_style2 {
+    background: #824095;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 40px 12px 25px;
+}
+
+.badge_style2 i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+.badge_style2 .count {
+    background: #fff;
+    border-radius: 50px;
+    color: #222;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 10px;
+    min-height: 22px;
+    min-width: 22px;
+    padding: 6px 3px;
+    position: absolute;
+    right: -15px;
+    top: -4px;
+}
+
+
+
+/*-------------------badge style-3---------------*/
+.badge_style3 {
+    background: #027aec;
+    color: #fff;
+    font-size: 20px;
+    padding: 14px 25px 13px;
+}
+.badge_style3 .count {
+    background: #fff;
+    border-radius: 3px;
+    color: #222;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 10px;
+    margin-left: 12px;
+    min-height: 20px;
+    min-width: 21px;
+    padding: 5px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+
+
+
+/*-------------------badge style-4---------------*/
+.badge_style4{
+    border: 1px solid #eee;
+}
+.badge_style4 > li {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.badge_style4 > li:last-child {
+    border-bottom: none;
+}
+.badge_style4 > li a {
+    color: #666666;
+    display: block;
+    font-size: 15px;
+    padding: 10px 50px 10px 20px;
+}
+.badge_style4 > li .count {
+    font-size: 14px;
+    line-height: 15px;
+    min-height: 28px;
+    min-width: 28px;
+    padding: 6px;
+    text-align: center;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/*-------------------badge style-5---------------*/
+.badge_style5{
+    border: 1px solid #eee;
+}
+.badge_style5 > li {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.badge_style5 > li:last-child {
+    border-bottom: none;
+}
+.badge_style5 > li a {
+    color: #666666;
+    display: block;
+    font-size: 15px;
+    padding: 10px 50px 10px 20px;
+}
+.badge_style5 > li .count {
+    font-size: 14px;
+    line-height: 15px;
+    min-height: 28px;
+    min-width: 28px;
+    padding: 6px;
+    text-align: center;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.badge_style5 > li:hover .count{
+    background: #824095;
+    color: #fff;
+}
+
+
+
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){
+    .label_common h1 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    .badge_style.align_row_center_left {
+        display: block;
+    }
+    .badge_style.align_row_center_left>li {
+        margin: 10px 0;
+    }
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .label_common h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .label_common h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .label_common h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    
+}/*---end 300-489 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

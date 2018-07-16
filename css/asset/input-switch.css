@@ -1,0 +1,472 @@
+/*-----------------------------------input switch style--------------------------------*/
+.switch_common>li{
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.switch_common>li:last-child{
+    margin-right: 0px;
+}
+.switch_common .switch {
+    visibility: hidden;
+    margin-left: -9999px;
+    position: absolute;
+}
+.switch_common label{
+    margin-bottom: 0;
+}
+.switch_common .switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border-radius: 80px;
+    border: 1px solid #ddd;
+    user-select: none;
+}
+.switch_common .switch + label:before {
+    right: 0px;
+    background: #F1F1F1;
+    border-radius: 75px;
+}
+.switch_common .switch + label:after {
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.switch_common .switch + label:before,
+.switch_common .switch + label:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.switch_common .switch:checked + label:before {
+    background-color: #ED2553;
+}
+.switch_common .switch:checked + label {
+    border-color: #ED2553;
+}
+
+
+
+/*-------------small switch--------------*/
+.sm_switch .switch + label {
+    height: 20px;
+    width: 40px;
+}
+.sm_switch .switch + label:after {
+    width: 18px;
+    height: 18px;
+}
+.sm_switch .switch:checked + label:after {
+    margin-left: 20px;
+}
+
+/*-------------medium switch--------------*/
+.md_switch .switch + label {
+    height: 30px;
+    width: 60px;
+}
+.md_switch .switch + label:after {
+    width: 28px;
+    height: 28px;
+}
+.md_switch .switch:checked + label:after {
+    margin-left: 30px;
+}
+
+/*-------------large switch--------------*/
+.lg_switch .switch + label {
+    height: 45px;
+    width: 90px;
+}
+.lg_switch .switch + label:after {
+    width: 43px;
+    height: 43px;
+}
+.lg_switch .switch:checked + label:after {
+    margin-left: 45px;
+}
+
+/*-------------extra large switch--------------*/
+.xl_switch .switch + label {
+    height: 60px;
+    width: 120px;
+}
+.xl_switch .switch + label:after {
+    width: 58px;
+    height: 58px;
+}
+.xl_switch .switch:checked + label:after {
+    margin-left: 60px;
+}
+
+
+/*----------------------------switch style-2 common------------------------------*/
+.switch_style2 .switch + label {
+  border-width: 2px;
+}
+.switch_style2 .switch:checked + label {
+    border-color: #ED2553;
+}
+
+.switch_style2 .switch + label::before {
+    background: #fff;
+}
+.switch_style2 .switch:checked + label:before {
+    background-color: transparent;
+}
+
+.switch_style2 .switch + label::after {
+  background-color: #ddd;
+  box-shadow: none;
+}
+.switch_style2 .switch:checked + label::after {
+  background-color: #ED2553;
+}
+
+/*----------switch style-2 xl switch------------*/
+.switch_style2 .xl_switch .switch + label::after {
+    height: 50px;
+    left: 3px;
+    top: 3px;
+    width: 50px;
+}
+
+/*----------switch style-2 lg switch------------*/
+.switch_style2 .lg_switch .switch + label::after {
+    height: 35px;
+    left: 3px;
+    top: 3px;
+    width: 35px;
+}
+
+/*----------switch style-2 md switch------------*/
+.switch_style2 .md_switch .switch + label::after {
+    height: 20px;
+    left: 3px;
+    top: 3px;
+    width: 20px;
+}
+
+/*----------switch style-2 sm switch------------*/
+.switch_style2 .sm_switch .switch + label::after {
+    height: 12px;
+    left: 2px;
+    top: 2px;
+    width: 12px;
+}
+
+
+
+/*----------------------switch with icon common style------------------------*/
+.switch_icon label span.icon::before,
+.switch_icon label span.icon::after {
+    color: #bfc6cf;
+    font-family: ionicons;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.switch_icon label span.icon::after {
+    content: "\f129";
+    right: 16px;
+}
+.switch_icon label span.icon::before {
+    content: "\f121";
+    left: 16px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.switch_icon.lock label span.icon::after {
+    content: "\f457";
+    right: 16px;
+}
+.switch_icon.lock label span.icon::before {
+    content: "\f4c8";
+    left: 16px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.switch_icon .switch:checked + label span.icon::after {
+    opacity: 0;
+    visibility: hidden;
+}
+.switch_icon .switch:checked + label span.icon::before {
+    opacity: 1;
+    visibility: visible;
+}
+.switch_style2.switch_icon label span.icon::before {
+    color: #ED2553;
+}
+
+
+/*-----icon with small switch----------*/
+.switch_icon .sm_switch label span.icon::before,
+.switch_icon .sm_switch label span.icon::after {
+    font-size: 12px;
+}
+.switch_icon .sm_switch label span.icon::after {
+    right: 6px;
+}
+.switch_icon .sm_switch label span.icon::before {
+    left: 6px;
+}
+
+
+/*-----icon with medium switch----------*/
+.switch_icon .md_switch label span.icon::before,
+.switch_icon .md_switch label span.icon::after {
+    font-size: 16px;
+}
+.switch_icon .md_switch label span.icon::after {
+    right: 10px;
+}
+.switch_icon .md_switch label span.icon::before {
+    left: 10px;
+}
+
+
+/*-----icon with large switch----------*/
+.switch_icon .lg_switch label span.icon::before,
+.switch_icon .lg_switch label span.icon::after {
+    font-size: 25px;
+}
+
+
+/*-----icon with extra large switch----------*/
+.switch_icon .xl_switch label span.icon::before,
+.switch_icon .xl_switch label span.icon::after {
+    font-size: 37px;
+}
+
+
+
+
+
+
+/*-----------------------------------input switch with text style--------------------------------*/
+.switch_common.text{
+    width: 100%;
+    text-align: center;
+}
+.switch_common.text>li{
+    margin-right: 60px;
+    vertical-align: middle;
+}
+.switch_common.text>li:last-child{
+    margin-right: 0px;
+}
+.switch_common.text .switch {
+    visibility: hidden;
+    margin-left: -9999px;
+    position: absolute;
+}
+.switch_common.text label{
+    margin-bottom: 0;
+}
+.switch_common.text .switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    user-select: none;
+}
+.switch_common.text .switch + label:before {
+    right: 0px;
+    background: #F8F8F8;
+    border-radius: 0px;
+}
+.switch_common.text .switch + label:before,
+.switch_common.text .switch + label:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.switch_common.text .switch + label:after {
+    content: "\f394";
+    font-family: ionicons;
+    padding: 3px 0;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    border-right: 1px solid #ddd;
+}
+.switch_common.text .switch:checked + label:before {
+    background-color: #ED2553;
+}
+.switch_common.text .switch:checked + label:after {
+    border-right: none;
+    border-left: 1px solid #ddd;
+    color: #ED2553;
+}
+
+
+.switch_common.text label span.icon::before,
+.switch_common.text label span.icon::after {
+    color: #bfc6cf;
+    font-family: ionicons;
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.switch_common.text label span.icon::after {
+    right: 16px;
+}
+.switch_common.text label span.icon::before {
+    left: 16px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+.switch_common.text label span.icon::after {
+    content: "no";
+}
+.switch_common.text label span.icon::before {
+    content: "yes";
+}
+
+.switch_common.text .switch:checked + label span.icon::after {
+    opacity: 0;
+    visibility: hidden;
+}
+.switch_common.text .switch:checked + label span.icon::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*-------------yesNo switch--------------*/
+.switch_common.text .yesNo .switch + label {
+    height: 35px;
+    width: 120px;
+}
+.switch_common.text .yesNo .switch + label:after {
+    height: 33px;
+    width: 60px;
+}
+.switch_common.text .yesNo .switch:checked + label:after {
+    margin-left: 58px;
+}
+
+
+/*-------------states1 switch--------------*/
+.switch_common.text .states1 label span.icon::after {
+    content: "Disable";
+}
+.switch_common.text .states1 label span.icon::before {
+    content: "enable";
+}
+.switch_common.text .states1 .switch + label {
+    height: 35px;
+    width: 170px;
+}
+.switch_common.text .states1 .switch + label:after {
+    height: 33px;
+    width: 80px;
+}
+.switch_common.text .states1 .switch:checked + label:after {
+    margin-left: 88px;
+}
+
+/*-------------states2 switch--------------*/
+.switch_common.text .states2 label span.icon::after {
+    content: "offline";
+}
+.switch_common.text .states2 label span.icon::before {
+    content: "online";
+}
+.switch_common.text .states2 .switch + label {
+    height: 35px;
+    width: 170px;
+}
+.switch_common.text .states2 .switch + label:after {
+    height: 33px;
+    width: 80px;
+}
+.switch_common.text .states2 .switch:checked + label:after {
+    margin-left: 88px;
+}
+
+/*-------------states3 switch--------------*/
+.switch_common.text .states3 label span.icon::after {
+    content: "wide";
+}
+.switch_common.text .states3 label span.icon::before {
+    content: "boxed";
+}
+.switch_common.text .states3 .switch + label {
+    height: 35px;
+    width: 170px;
+}
+.switch_common.text .states3 .switch + label:after {
+    height: 33px;
+    width: 80px;
+}
+.switch_common.text .states3 .switch:checked + label:after {
+    margin-left: 88px;
+}
+
+
+
+/*-------------------------------responsive style-----------------------------*/
+@media (max-width: 1199px){}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    .switch_common.float-right {
+        float: none !important;
+    }
+    .switch_common {
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .switch_common.text > li {
+        margin-right: 26px;
+        margin-bottom: 30px;
+    }
+    .input_switch h4.fw_700 {
+        text-align: center;
+    }
+    
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+    
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    .switch_common > li {
+        display: block;
+        margin-bottom: 30px;
+        margin-right: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    
+}/*---end 300-489 media query----*/
+

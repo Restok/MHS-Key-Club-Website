@@ -1,0 +1,98 @@
+/*--------------list group common style--------------*/
+.list_common {
+    border: 1px solid #eeeeee;
+}
+.list_common.dark {
+    border: none;
+}
+.list_common li {
+    border-bottom: 1px solid #eeeeee;
+}
+.list_common li:last-child {
+    border-bottom: none;
+}
+.list_common li a {
+    color: #666666;
+    display: block;
+    padding: 12px 20px;
+}
+.list_common.dark li {
+    border-color: #3c3c3c;
+}
+.list_common.dark li a {
+    background: #2b2b2b;
+    color: #e1e1e1;
+}
+.list_common li a:hover {
+    background: #f8f8f8;
+}
+.list_common.dark li a:hover {
+    background: #262626;
+}
+.list_common li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+.list_common li:last-child a{
+    border-radius: 0px 0px 3px 3px;
+}
+
+
+/*---------list style-2----------*/
+.list_style2.dark li.active a,
+.list_style2 li.active a {
+    background: #713d85;
+    color: #fff;
+}
+.list_style2.dark li a {
+    background: #2f2732;
+    color: #fff;
+}
+
+
+/*---------list style-3----------*/
+.list_style3 li.active a {
+    background: #f8f8f8;
+}
+.list_style3.dark li.active a {
+    background: #323232;
+}
+.list_style3.dark li a:hover,
+.list_style3 li a:hover {
+    background: #027aec;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

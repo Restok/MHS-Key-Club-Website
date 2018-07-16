@@ -1,0 +1,260 @@
+/*------------------------------ Start progressbar shortcode style-----------------------------*/
+/*----------progressbar Common Style----------*/
+.skill-progress .progress-title-holder {
+    position: relative;
+    font-size: 14px;
+    color: #1e1e27;
+    text-transform: uppercase;
+}
+.skill-progress .progress-wrapper {
+    width: 100%;
+    z-index: 10;
+}
+.skill-progress .progress-mark {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.skill-progress .progress-outter {
+    background-color: #e5e5e5;
+}
+.skill-progress .progress-content {
+    width: 0%;
+    background: #474d53;
+}
+.skill-progress .progress-content,
+.skill-progress .progress-outter {
+    height: 20px;
+}
+.skill-progress .percent {
+  color: #1e1e27;
+  font-size: 14px;
+}
+
+/*------------------- progress bar style-1 --------------------*/
+.style1 .progress-content,
+.style1 .progress-outter {
+    height: 10px;
+}
+.style1 .progress-content {
+  background: #00cee0;
+}
+.style1 .skill-bar {
+  margin-bottom: 18px;
+}
+.style1 .skill-bar:last-child {
+  margin-bottom: 0px;
+}
+
+
+/*------------------- progress bar style-2 --------------------*/
+.style2 .progress-content,
+.style2 .progress-outter {
+    height: 4px;
+}
+.style2 .progress-content {
+    background: #00cee0;
+}
+.style2 .percent {
+    position: relative;
+}
+.style2 .percent:before {
+    background: #00cee0 ;
+    border-radius: 100%;
+    bottom: -17px;
+    content: "";
+    height: 15px;
+    position: absolute;
+    right: 13px;
+    width: 15px;
+}
+.style2 .skill-bar {
+  margin-bottom: 18px;
+}
+.style2 .skill-bar:last-child {
+  margin-bottom: 0px;
+}
+
+
+/*------------------- progress bar style-3 --------------------*/
+.style3 .progress-content,
+.style3 .progress-outter {
+    height: 3px;
+}
+.style3 .progress-content {
+    background: #26d28f;
+}
+.style3 .skill-bar {
+  margin-bottom: 18px;
+}
+.style3 .skill-bar:last-child {
+  margin-bottom: 0px;
+}
+
+
+/*------------------- progress bar style-4 --------------------*/
+.style4 .progress-content,
+.style4 .progress-outter {
+    height: 3px;
+}
+.style4 .progress-content {
+    background: #00cee0;
+    background: -moz-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: -webkit-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: linear-gradient(to right, #00cee0 23%, #26d28f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cee0', endColorstr='#26d28f', GradientType=1);
+}
+.style4 .skill-bar {
+  margin-bottom: 18px;
+}
+.style4 .skill-bar:last-child {
+  margin-bottom: 0px;
+}
+.style4 .percent {
+    position: relative;
+}
+.style4 .percent:before {
+    background: #26d28f none repeat scroll 0 0;
+    border-radius: 100%;
+    bottom: -16px;
+    content: "";
+    height: 15px;
+    position: absolute;
+    right: 13px;
+    width: 15px;
+}
+
+
+/*------------------- progress bar style-5 --------------------*/
+.style5 .progress-content,
+.style5 .progress-outter {
+    height: 2px;
+}
+.style5 .progress-content {
+    background: #00cee0;
+    background: -moz-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: -webkit-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: linear-gradient(to right, #00cee0 23%, #26d28f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cee0', endColorstr='#26d28f', GradientType=1);
+}
+.style5 .skill-bar {
+    margin-bottom: 18px;
+}
+.style5 .skill-bar:last-child {
+    margin-bottom: 0px;
+}
+.style5 .progress-mark {
+    bottom: 10px;
+}
+.style5 .percent {
+    background: #00cee0;
+    background: -moz-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: -webkit-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: linear-gradient(to right, #00cee0 23%, #26d28f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cee0', endColorstr='#26d28f', GradientType=1);
+    color: #fff;
+    display: inline-block;
+    line-height: normal;
+    padding: 5px 10px;
+    position: relative;
+}
+.style5 .percent:before {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #26d28f;
+    bottom: -6px;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    margin-left: -5px;
+}
+
+/*------------------- progress bar style-6 --------------------*/
+.style6 .progress-content,
+.style6 .progress-outter {
+    height: 2px;
+}
+.style6 .progress-content {
+    background: #00cee0;
+    background: -moz-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: -webkit-linear-gradient(left, #00cee0 23%, #26d28f 100%);
+    background: linear-gradient(to right, #00cee0 23%, #26d28f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cee0', endColorstr='#26d28f', GradientType=1);
+    position: relative;
+}
+.style6 .percent {
+    position: relative;
+}
+.style6 .percent:before {
+    border-bottom: 8px solid #26d28f;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: -9px;
+    content: "";
+    height: 0;
+    margin-left: -5px;
+    position: absolute;
+    right: 13px;
+    width: 0;
+}
+.style6 .skill-bar {
+  margin-bottom: 18px;
+}
+.style6 .skill-bar:last-child {
+  margin-bottom: 0px;
+}
+
+
+
+
+/*------------------------------responsive style start from here-----------------------------*/
+
+
+@media (max-width: 1199px){
+    
+    
+    
+    
+}/*---end 992-1199px media query----*/
+
+
+@media (max-width: 991px){
+    .style5,
+    .style3,
+    .style1 {
+        margin-bottom: 100px;
+    }
+}/*---end 768-991px media query----*/
+
+
+@media (max-width: 767px){
+    
+}/*---end 480-767px media query----*/
+
+
+@media (max-width: 479px){
+    
+}/*---end 300-479 media query----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

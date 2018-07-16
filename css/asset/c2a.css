@@ -1,0 +1,1176 @@
+/*------------------------------Start Call To Action shortcode style-----------------------------*/
+/*-------common style for c2a section --------*/
+.cta_common .cta_content .content_txt p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.cta_common .cta_content .cta_button {
+  display: inline-block;
+  font-size: 18px;
+  height: 55px;
+  line-height: 54px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.cta_common.dark {
+    background-color: #1b1c21;
+}
+
+
+/*-------------------------style-1-----------------------*/
+.cta1 .cta_content .content_txt {
+    max-width: 650px;
+}
+.cta1 .cta_content .content_txt h2::before {
+    background: #1b1c21 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    width: 150px;
+}
+.cta1 .cta_content .cta_button {
+    border: 1px solid #1b1c21;
+    background: #1b1c21;
+    color: #fff;
+}
+
+.cta1 .cta_content .cta_button:hover {
+    border: 1px solid #1b1c21;
+    background: transparent;
+    color: #1b1c21;
+}
+
+/*style-1 background-image version*/
+.cta1.bgImg {
+    background: url(../../images/cta_bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.cta1.bgImg .overlay {
+    background: rgba(31, 34, 39, 0.4);
+}
+.cta1.bgImg .cta_content .content_txt h2::before {
+    background: #fff;
+}
+.cta1.dark .cta_content .cta_button,
+.cta1.bgImg .cta_content .cta_button {
+    border-color:#fff;
+    background: #fff;
+    color: #1b1c21;
+}
+.cta1.dark .cta_content .cta_button:hover,
+.cta1.bgImg .cta_content .cta_button:hover {
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+}
+
+/*style-1 Dark version*/
+.cta1.dark .cta_content .content_txt h2::before {
+    background: #c0c2c5;
+}
+
+
+/*----------------------style-2----------------------*/
+.cta2 {
+    background: #f0f2f8 none repeat scroll 0 0;
+}
+.cta2 .cta_content {
+    border: 1px solid #e4e5ea;
+    padding: 40px;
+}
+.cta2 .cta_content .content_txt {
+    margin: 0 auto;
+    max-width: 560px;
+}
+.cta2 .cta_content .cta_button {
+    background: #bf9a54;
+    border: 1px solid #bf9a54;
+}
+.cta2 .cta_content .cta_button:hover {
+    background: transparent;
+    color: #bf9a54;
+}
+
+/*style-2 background-image version*/
+.cta2.bgImg {
+    background: url(../../images/cta_bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta2.bgImg .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+.cta2.bgImg .cta_content .content_txt p {
+    color: #cacaca;
+}
+.cta2.bgImg .cta_content {
+    border-color: #756c62;
+}
+
+/*style-2 Dark version*/
+.cta2.dark .cta_content {
+    border-color: #35363e;
+}
+
+
+/*---------------------style-3---------------------*/
+.cta3 .content_txt h3 {
+  font-size: 36px;
+}
+.cta3 .cta_content .content_txt {
+    max-width: 650px;
+}
+.cta3 .cta_content .cta_button {
+    border: 2px solid #1ed6d8;
+    line-height: 52px;
+    color: #1ed6d8;
+}
+.cta3 .cta_content .cta_button:hover {
+    background: #1ed6d8;
+    color: #fff;
+}
+
+/*----style-3 background-image version----*/
+.cta3.bgImg {
+    background: url(../../images/cta_bg3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta3.bgImg .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+.cta3.dark .cta_content .cta_button,
+.cta3.bgImg .cta_content .cta_button {
+    border-color: #fff;
+    color: #fff;
+}
+.cta3.dark .cta_content .cta_button:hover,
+.cta3.bgImg .cta_content .cta_button:hover {
+    background: #fff;
+    color: #1b1c21;
+}
+
+
+/*-------------------------style-4-------------------------*/
+.cta4 .content_txt h3 {
+  font-size: 36px;
+}
+.cta4 .cta_content .content_txt {
+    max-width: 650px;
+}
+.cta4 .cta_content .content_txt::after {
+    background: #e0e0e0;
+    content: "";
+    height: 95px;
+    margin-top: -47.5px;
+    position: absolute;
+    right: -110px;
+    top: 50%;
+    width: 2px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.cta4 .cta_content .cta_button {
+    border: 2px solid #1b1c21;
+    line-height: 52px;
+    color: #1b1c21;
+}
+.cta4 .cta_content .cta_button:hover {
+    background: #1b1c21;
+    color: #fff;
+}
+
+/*style-4 background-image version*/
+.cta4.bgImg {
+    background: url(../../images/cta_bg4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta4.bgImg .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+.cta4.dark .cta_content .cta_button,
+.cta4.bgImg .cta_content .cta_button {
+    border-color: #fff;
+    color: #fff;
+}
+.cta4.dark .cta_content .cta_button:hover,
+.cta4.bgImg .cta_content .cta_button:hover {
+    background: #fff;
+    color: #1b1c21;
+}
+
+
+/*---------------------style-5---------------------*/
+.cta5 .content_txt h3 {
+  font-size: 36px;
+}
+.cta5 .cta_content .content_txt {
+    max-width: 650px;
+}
+.cta5 .content_txt .right_line {
+    background: #e0e0e0;
+    content: "";
+    height: 92px;
+    margin-top: -45px;
+    position: absolute;
+    right: -110px;
+    top: 50%;
+    width: 2px;
+}
+.cta5 .content_txt .right_line:after {
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #e0e0e0;
+    border-top: 7px solid transparent;
+    content: "";
+    height: 0;
+    left: 1px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.cta5 .cta_content .cta_button {
+    border: 2px solid #1b1c21;
+    line-height: 52px;
+    color: #1b1c21;
+}
+.cta5 .cta_content .cta_button:hover {
+    background: #1b1c21;
+    color: #fff;
+}
+
+/*style-5 background-image version*/
+.cta5.bgImg {
+    background: url(../../images/cta_bg5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta5.bgImg .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+.cta5.dark .cta_content .cta_button,
+.cta5.bgImg .cta_content .cta_button {
+    border-color: #fff;
+    color: #fff;
+}
+.cta5.dark .cta_content .cta_button:hover,
+.cta5.bgImg .cta_content .cta_button:hover {
+    background: #fff;
+    color: #1b1c21;
+}
+
+
+/*----------------------style-6----------------------*/
+.cta6 .content_txt h3 {
+    font-size: 36px;
+    font-style: italic;
+}
+.cta6 .cta_content .content_txt {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.cta6 .cta_content .cta_button {
+  background: #221d28;
+  border: 1px solid #221d28;
+  color: #fff;
+}
+.cta6 .cta_content .cta_button:hover {
+  background: transparent;
+  color: #221d28;
+}
+
+/*style-6 background-image version*/
+.cta6.bgImg {
+    background: url(../../images/cta_bg6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta6.bgImg .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+.cta6.dark .cta_content .cta_button,
+.cta6.bgImg .cta_content .cta_button {
+    border-color:#fff;
+    background: #fff;
+    color: #1b1c21;
+}
+.cta6.dark .cta_content .cta_button:hover,
+.cta6.bgImg .cta_content .cta_button:hover {
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+}
+
+
+/*----------------------style-7--------------------*/
+.cta7 .content_txt h3 {
+    font-size: 30px;
+    line-height: 38px;
+    max-width: 500px;
+}
+.cta7 .cta_content .content_txt {
+    max-width: 620px;
+    margin: 0 auto;
+}
+.cta7 .cta_content .cta_button {
+    border: 2px solid #1b1c21;
+    line-height: 52px;
+    color: #1b1c21;
+}
+.cta7 .cta_content .cta_button:hover {
+    background: #1b1c21;
+    color: #fff;
+}
+
+/*style-7 background-image version*/
+.cta7.bgImg {
+    background: url(../../images/cta_bg7.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta7.bgImg .overlay {
+    background: rgba(247,247,247, 0.7);
+}
+/*style-7 dark version*/
+.cta7.dark .cta_content .cta_button {
+    border-color:#fff;
+    color: #fff;
+}
+.cta7.dark .cta_content .cta_button:hover {
+    background: #fff;
+    color: #1b1c21;
+}
+
+
+/*-----------------------style-8---------------------*/
+.cta8 .cta_content .cta_button {
+    background: #26d28f;
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    line-height: 56px;
+}
+.cta8 .cta_content .cta_button::after {
+    border: 1px solid #26d28f;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    -webkit-transform: translate(6px, 6px);
+    -moz-transform: translate(6px, 6px);
+    -ms-transform: translate(6px, 6px);
+    -o-transform: translate(6px, 6px);
+    transform: translate(6px, 6px);
+}
+.cta8 .cta_content .cta_button:hover:after {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+/*style-8 background-image version*/
+.cta8.bgImg {
+    background: url(../../images/cta_bg8.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta8.bgImg .overlay {
+    background: rgba(0,0,0, 0.7);
+}
+
+
+
+/*----------------------------style-9--------------------------*/
+.cta9 .cta_content .content_txt {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.cta9 .cta_content .content_txt::before {
+    background: #00b4e1;
+    content: "";
+    height: 103px;
+    left: 0;
+    position: absolute;
+    top: 11px;
+    width: 3px;
+}
+.cta9 .cta_content .cta_button {
+    background: #00b4e1;
+    color: #fff;
+    border: 1px solid #00b4e1;
+}
+.cta9 .cta_content .cta_button:hover {
+    background: transparent;
+    color: #00b4e1;
+}
+
+/*style-9 background-image version*/
+.cta9.bgImg {
+    background: url(../../images/cta_bg9.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta9.bgImg .overlay {
+    background: rgba(35,35,35, 0.7);
+}
+
+
+
+/*----------------------style-10--------------------*/
+.cta10 .content_txt h3 {
+    font-size: 36px;
+}
+.cta10 .content_txt h3:before {
+    background: #e44646 none repeat scroll 0 0;
+    content: "";
+    height: 50px;
+    left: 50%;
+    position: absolute;
+    top: -80px;
+    width: 1px;
+}
+.cta10 .cta_content .cta_button {
+    background: #e44646;
+    color: #fff;
+}
+.cta10 .cta_content .cta_button i {
+    font-size: 32px;
+    line-height: normal;
+    margin-left: 7px;
+    position: relative;
+    top: 6px;
+}
+.cta10 .cta_content .cta_button:hover i {
+    margin-left: 15px;
+}
+
+/*style-10 background-image version*/
+.cta10.bgImg {
+    background: url(../../images/cta_bg10.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta10.bgImg .overlay {
+    background: rgba(35,35,35, 0.7);
+}
+/*style-10 gradient version*/
+.cta10.gradient {
+    background: rgb(9, 207, 200);
+    background: -moz-linear-gradient(left, rgba(9, 207, 200, 1) 0%, rgba(17, 122, 195, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(9, 207, 200, 1) 0%, rgba(17, 122, 195, 1) 100%);
+    background: linear-gradient(to right, rgba(9, 207, 200, 1) 0%, rgba(17, 122, 195, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09cfc8', endColorstr='#117ac3', GradientType=1);
+}
+.cta10.gradient .cta_content .cta_button {
+    background: #fff;
+    color: #222;
+}
+.cta10.gradient .content_txt h3::before {
+  background: #64e2eb;
+}
+
+
+/*-----------------------style-11---------------------*/
+.cta11 .content_txt h3 {
+    font-size: 36px;
+}
+.cta11 .cta_content .cta_button {
+  background: #1b1c21;
+  color: #fff;
+}
+.cta11 .cta_content .cta_button i {
+    font-size: 32px;
+    line-height: normal;
+    margin-left: 7px;
+    position: relative;
+    top: 6px;
+}
+.cta11 .cta_content .cta_button:hover i {
+    margin-left: 15px;
+}
+
+/*style-11 background-image version*/
+.cta11.bgImg {
+    background: url(../../images/cta_bg11.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta11.bgImg .overlay {
+    background: rgba(0,0,0, 0.5);
+}
+.cta11.dark .cta_content .cta_button,
+.cta11.bgImg .cta_content .cta_button {
+  background: #fff;
+  color: #1b1c21;
+}
+
+/*style-11 gradient version*/
+.cta11.gradient {
+    background: rgb(72, 61, 151);
+    background: -moz-linear-gradient(left, rgba(72, 61, 151, 1) 0%, rgba(82, 47, 101, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(72, 61, 151, 1) 0%, rgba(82, 47, 101, 1) 100%);
+    background: linear-gradient(to right, rgba(72, 61, 151, 1) 0%, rgba(82, 47, 101, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#483d97', endColorstr='#522f65', GradientType=1);
+}
+.cta11.gradient .cta_content .cta_button {
+    background: #fff;
+    color: #222;
+    line-height: 57px;
+}
+
+
+/*-----------------------style-12---------------------*/
+.cta12 .cta_content {
+  border: 1px solid #f1f1f1;
+  padding: 35px;
+}
+.cta12 .cta_content {
+  border-bottom: 2px solid #2ac1c7;  
+}
+.cta12 .cta_content .content_txt h2:after,
+.cta12 .cta_content .content_txt h2:before {
+    background: #1b1c21 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 26px;
+    width: 120px;
+}
+.cta12 .cta_content .content_txt h2:before {
+    left: 100px;
+}
+.cta12 .cta_content .content_txt h2:after {
+    right: 100px;
+}
+.cta12 .cta_content .content_txt p {
+    max-width: 650px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+.cta12 .cta_content .cta_button {
+    background: #1b1c21;
+    box-shadow: -0px 0 0 0 #2f3038 inset;
+    color: #fff;
+    position: relative;
+    padding-right: 30px;
+}
+.cta12 .cta_content .cta_button:hover {
+    box-shadow: -270px 0 0 0 #2f3038 inset;
+}
+.cta12 .cta_content .cta_button i {
+    background: #2f3038;
+    font-size: 22px;
+    height: 100%;
+    line-height: 55px;
+    position: absolute;
+    right: 0;
+    width: 47px;
+}
+
+/*style-12 background-image version*/
+.cta12 .bgImg {
+    background: url(../../images/cta_bg12.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta12 .bgImg .overlay {
+    background: rgba(255,255,255, 0.5);
+}
+
+/*style-12 dark version*/
+.cta12.dark{
+    background: none;
+}
+.cta12.dark .content_txt{
+    background-color: #1b1c21;
+}
+.cta12.dark .cta_content .cta_button i {
+    background: #24acb1;
+}
+.cta12.dark .cta_content .cta_button {
+    background: #2ac1c7;
+    box-shadow: -0px 0 0 0 #24acb1 inset;
+}
+.cta12.dark .cta_content .cta_button:hover {
+    box-shadow: -270px 0 0 0 #24acb1 inset;
+}
+
+
+/*----------------------style-13-------------------*/
+.cta13 .cta_content .content_txt p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.cta13 .cta_content {
+    border: 1px solid #f1f1f1;
+    padding: 70px;
+    border-top: 3px solid #60357f;
+}
+.cta13 .cta_content::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	background: #f1f1f1;
+}
+.cta13 .cta_content .cta_button {
+    background: #60357f;
+    border: 1px solid #60357f;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+.cta13 .cta_content .cta_button:hover {
+    background: transparent;
+    color: #60357f;
+}
+.cta13 .cta_content .cta_button i {
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+/*style-13 background-image version*/
+.cta13 .bgImg {
+    background: url(../../images/cta_bg13.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta13 .bgImg .overlay {
+    background: rgba(255,255,255, 0.55);
+}
+.cta13 .cta_content.bgImg {
+    border: none;
+}
+.cta13 .cta_content.bgImg:after {
+    display: none;
+}
+
+/*style-13 dark version*/
+.cta13.dark{
+    background: none;
+}
+.cta13.dark .cta_content{
+    background-color: #1b1c21;
+}
+.cta13.dark .cta_content:after{
+    display: none;
+}
+.cta13.dark .cta_content .cta_button {
+    background: #1ac298;
+    border-color: #1ac298;
+}
+.cta13.dark .cta_content .cta_button:hover {
+    background: transparent;
+    color: #1ac298;
+}
+.cta13.dark .cta_content {
+    border-top-color: #1ac298;
+}
+
+/*---------------------------style-14-------------------------*/
+.cta14 .cta_content .content_txt p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.cta14 .cta_content {
+    padding: 70px;
+}
+.cta14 .cta_content::after,
+.cta14 .cta_content::before {
+	position: absolute;
+	border: 1px solid #f1f1f1;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: -10px;
+	content: "";
+	z-index: -1;
+}
+.cta14 .cta_content::before {
+	top: 0;
+}
+.cta14 .cta_content .cta_button {
+    background: #221d28;
+    border: 1px solid #221d28;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+.cta14 .cta_content .cta_button:hover {
+    background: transparent;
+    color: #221d28;
+}
+.cta14 .cta_content .cta_button i {
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+/*style-14 background-image version*/
+.cta14 .bgImg {
+    background: url(../../images/cta_bg14.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta14 .bgImg .overlay {
+    background: rgba(255,255,255, 0.55);
+}
+.dark.cta14 .cta_content::before{
+	top:10px;
+}
+
+/*style-14 dark version*/
+.cta14.dark{
+    background: none;
+}
+.cta14.dark .cta_content{
+    background-color: #1b1c21;
+}
+.cta14.dark .cta_content .cta_button {
+    background: #117ac3;
+    border-color: #117ac3;
+}
+.cta14.dark .cta_content .cta_button:hover {
+    background: transparent;
+    color: #117ac3;
+}
+
+/*--------------------style-15------------------*/
+.cta15 .cta_content {
+  border: 1px solid #f1f1f1;
+  padding: 35px;
+}
+.cta15 .cta_content .content_txt{
+    z-index: 1;
+    position: relative;
+}
+.cta15 .cta_content .content_txt p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.cta15 .cta_content .cta_button {
+  background: #221d28;
+  border: 1px solid #221d28;
+  color: #fff;
+}
+.cta15 .cta_content .cta_button:hover {
+  background: transparent;
+  color: #221d28;
+}
+
+/*style-15 background-image version*/
+.cta15 .bgImg {
+    background: url(../../images/cta_bg15.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cta15 .bgImg .overlay {
+    background: rgba(255,255,255, 0.55);
+    z-index: -1;
+}
+
+/*style-14 dark version*/
+.cta15.dark{
+    background: none;
+}
+.cta15.dark .content_txt{
+    background-color: #1b1c21;
+}
+.cta15.dark .cta_content .cta_button {
+    background: #09cec8;
+    border-color: #09cec8;
+}
+.cta15.dark .cta_content .cta_button:hover {
+    background: transparent;
+    color: #09cec8;
+}
+/*------------------------------End Call To Action shortcode style------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------Start Call To Action Responsive style------------------------------*/
+@media (min-width: 1400px) {
+    /*---------call to action common style-----------*/
+    .cta_common .cta_content .cta_button {
+        font-size: 22px;
+        height: 60px;
+        line-height: 58px;
+        min-width: 260px;
+    }
+    .cta7 .content_txt h3 {
+        font-size: 36px;
+        max-width: 100%;
+        line-height: 48px;
+    }
+    .cta8 .cta_content .cta_button {
+        line-height: 59px;
+    }
+    
+    
+}
+
+@media (max-width: 1199px){
+    /*common style*/
+    .cta_common .cta_content .content_txt {
+        max-width: 550px;
+    }
+     .cta_common .content_txt h3 {
+        font-size: 35px;
+    }
+    
+    /*style-1*/
+    .cta1 .cta_content .content_txt h2::before {
+        right: -35px;
+        width: 100px;
+    }
+    
+    /*style-4*/
+    .cta4 .cta_content .content_txt::after {
+        height: 70px;
+        margin-top: -35px;
+        right: -68px;
+    }
+    
+    /*style-5*/
+    .cta5 .content_txt .right_line {
+        right: -68px;
+    }
+    
+    /*style-6*/
+    .cta6 .cta_content .content_txt {
+        max-width: 570px;
+    }
+    
+    /*style-8*/
+    .cta8 .cta_content .content_txt {
+        max-width: inherit;
+    }
+    .cta8 .content_txt h3 {
+        font-size: 28px;
+    }
+    
+    /*style-10*/
+    .cta10 .cta_content .content_txt {
+        max-width: initial;
+    }
+    
+    /*style-11*/
+    .cta11 .cta_content .content_txt {
+        max-width: 600px;
+    }
+    
+    /*style-12*/
+    .cta12 .cta_content .content_txt {
+        max-width: 100%;
+    }
+    .cta12 .cta_content .content_txt h2::after,
+    .cta12 .cta_content .content_txt h2::before {
+        width: 80px;
+    }
+    .cta12 .cta_content .content_txt h2::after {
+        right: 30px;
+    }
+    .cta12 .cta_content .content_txt h2::before {
+        left: 30px;
+    }
+    
+    /*style-13*/
+    .cta13 .cta_content {
+        padding: 50px;
+    }
+    .cta13 .cta_content .content_txt {
+        max-width: 510px;
+    }
+    .cta13 .cta_content .content_txt h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    /*style-14*/
+    .cta14 .cta_content {
+        padding: 50px;
+    }
+    .cta14 .cta_content .content_txt h2 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+    
+    /*style-15*/
+    .cta15 .cta_content .content_txt {
+        max-width: 100%;
+    }
+    
+   
+    
+}/*---------992-1199------*/
+
+
+@media (max-width: 991px){
+    .cta_common {
+        padding: 50px 0 60px;
+    }
+    .cta_common .align_row_spacebetween {
+        text-align: center;
+        display: block;
+    }
+    .cta_common .cta_content .content_txt {
+        max-width: 100%;
+    }
+    .cta_common .cta_content .cta_button {
+        font-size: 15px;
+        height: 50px;
+        line-height: 50px;
+        min-width: 200px;
+        margin-top: 30px;
+    }
+    
+    /*style-1*/
+    .cta1 .cta_content .content_txt h2::before {
+       display: none;
+    }
+    
+    /*style-2*/
+    .cta2 {
+        padding: 60px 0 60px;
+    }
+    .cta2 .cta_content .content_txt p {
+        padding-bottom: 0;
+    }
+        
+    /*style-4*/
+    .cta7 .cta_content .cta_button,
+    .cta5 .cta_content .cta_button,
+    .cta3 .cta_content .cta_button,
+    .cta4 .cta_content .cta_button {
+        line-height: 46px;
+    }
+    .cta5 .content_txt .right_line,
+    .cta4 .cta_content .content_txt::after {
+        display: none;
+    }
+    
+    /*style-7*/
+    .cta7 .content_txt h3 {
+        font-size: 30px;
+        max-width: 100%;
+    }
+    
+    /*style-9*/
+    .cta9 .cta_content .content_txt::before {
+        display: none;
+    }
+    .cta9 .cta_content .content_txt {
+        padding-left: 0;
+    }
+    
+    /*style-10*/
+    .cta10 .content_txt h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .cta10 .cta_content .cta_button {
+        margin-top: 0px;
+    }
+    .cta10 .content_txt h3::before {
+        display: none;
+    }
+    
+    /*style-11*/
+    .cta11 .cta_content .content_txt {
+        text-align: center!important;
+    }
+    .cta11 .content_txt h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    /*style-12*/
+    .cta12 .cta_content .content_txt h2::after,
+    .cta12 .cta_content .content_txt h2::before {
+        display: none;
+    }
+    .cta12 .cta_content .content_txt h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .cta12 .cta_content .content_txt p {
+        max-width: 550px;
+        padding-bottom: 0;
+    }
+    .cta12 .cta_content .cta_button i {
+        line-height: 48px;
+    }
+    .cta15,
+    .cta14,
+    .cta13,
+    .cta12 {
+        padding: 0;
+    }
+    
+    /*style-15*/
+    .cta15 .cta_content .content_txt p {
+        max-width: 560px;
+        padding-bottom: 0;
+    }
+    
+    
+    
+}/*---------768-991------*/
+
+
+@media (max-width: 767px){
+    .cta_common .cta_content .cta_button {
+        font-size: 15px;
+        height: 45px;
+        line-height: 45px;
+        min-width: 170px;
+    }
+    .cta_common .cta_content .content_txt p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    
+    /*style-1*/
+    .cta1 .cta_content .content_txt h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    
+    /*style-2*/
+    .cta2 .cta_content .content_txt h2 {
+        font-size: 31px;
+        line-height: 44px;
+    }
+    
+    /*style-3*/
+    .cta_common .content_txt h3 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+    
+    .cta7 .cta_content .cta_button,
+    .cta5 .cta_content .cta_button,
+    .cta3 .cta_content .cta_button,
+    .cta4 .cta_content .cta_button {
+        line-height: 40px;
+    }
+    
+    /*style-10*/
+    .cta11 .cta_content .cta_button,
+    .cta10 .cta_content .cta_button {
+        min-width: 180px;
+    }
+    .cta11 .cta_content .cta_button i,
+    .cta10 .cta_content .cta_button i {
+        font-size: 29px;
+    }
+    
+    /*style-12*/
+    .cta12 .cta_content {
+        border: none;
+        padding: 0;
+    }
+    .cta12 .cta_content .content_txt {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .cta12 .cta_content .content_txt h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .cta12 .cta_content .cta_button {
+        min-width: 200px;
+    }
+    .cta12 .cta_content .cta_button i {
+        line-height: 45px;
+    }
+    
+    /*style-13*/
+    .cta13 .cta_content {
+        padding: 20px 15px 30px;
+    }
+    .cta13 .cta_content .content_txt h2 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+    .cta14 .cta_content .cta_button,
+    .cta13 .cta_content .cta_button {
+        position: relative;
+        z-index: 1;
+    }
+    
+    /*style-14*/
+    .cta14 .cta_content {
+        padding: 20px 15px 30px;
+    }
+    .cta14 .cta_content .content_txt h2 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+    
+    /*style-15*/
+    .cta15 .cta_content{
+        padding: 0;
+        border: none;
+    }
+    .cta15 .cta_content .content_txt h2{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .cta15 .cta_content .content_txt {
+        padding: 30px 0 40px;
+    }
+    
+    
+}/*---------480-767------*/
+
+
+@media (max-width: 479px){
+    
+}/*---------300-479------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
