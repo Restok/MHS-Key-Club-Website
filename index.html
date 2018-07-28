@@ -10,7 +10,7 @@
 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-<title>Simple Theme</title>
+<title>MHS Key Club Home</title>
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
 <link href="css/asset/parallax.css" rel="stylesheet" type="text/css">
@@ -52,9 +52,9 @@
 	
 								<!--NAVIGATION BAR-->
 	
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id = "not-in-view" style = "box-shadow: 0 17px 25px -22px black">
-  <a class="navbar-brand" href="#"><span class= "logo">MHS KEY CLUB</span></a>
-  <button class="navbar-toggler" style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id = "not-in-view" style = "box-shadow: 0 17px 25px -22px black; background-color:#2babe2">
+  <a class="navbar-brand" href="#"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150";></span></a>
+  <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -64,22 +64,22 @@
         <a class="nav-link" href="#"></a>
       </div>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link navtext-color" href="#">Home <span class="sr-only">(current)</span></a>
 		</li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Events</a>
+        <a class="nav-link navtext-color" href="events.html">Events</a>
       </li>
 	<li class="nav-item">
-        <a class="nav-link" href="#">Uhhhh</a>
+        <a class="nav-link navtext-color" href="#">Uhhhh</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle navtext-color" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown link
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-menu navtext-color" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item navtext-color" href="#">Action</a>
+          <a class="dropdown-item navtext-color" href="#">Another action</a>
+          <a class="dropdown-item navtext-color" href="#">Something else here</a>
         </div>
       </li>
     </ul>
@@ -95,17 +95,17 @@
 <!--	------------------INTRO BOX------------->
 
 	<p class="headingtxt text-center">Join the..................................</p>
-	<img alt = "key-club" src="img/KC-wordmark_BW-01.png" class = "headingimg">
+	<img alt = "key-club" src="img/MHSKeyClub-black.png" class = "headingimg mt-2">
 	
 	
-<button class="join">Learn More</button>
+<button class="join" onClick="scrollToElement('.about')">Learn More</button>
 
-<div class = "header" style = "">
+<div class = "header">
 	
 	<img src="img/click-here-arrow-02.png" id = "clickpls" class = "menu mcenter clickpls mctrl"  alt="Click me">
 
 <img src="img/KEY-CLUB-SEAL-Color-1.png"  id = "control" class = "menu mcenter" onClick="popUp()" alt="Key Club Logo">
-  <div id = "op1" class = "menu moption1"><span class = "navtxt">About</span></div>
+  <div id = "op1" class = "menu moption1" onClick="scrollToElement('.about')"><span class = "navtxt">About</span></div>
 	<div id = "op2" class = "menu moption2"><span class = "navtxt">Events</span></div>
 	<div id="op3" class = "menu moption3"><span class = "navtxt">Pictures</span></div>
 	<div id= "op4" class = "menu moption4"><span class = "navtxt">Media</span></div>
@@ -142,7 +142,7 @@
 
 <!-- ----------------------PARALLAX AND ABOUTBOX---------------------------!-->
 
-	<div class = "container-fluid bg-white box" style ="padding:0px;">
+	<div class = "container-fluid bg-white box pos_relative" style ="padding:0px;">
 	
 	<section class="parallax_section parallax3 pos_relative ">
         <div class="overlay"></div>
@@ -174,11 +174,11 @@
     </section>
 		
 		
-		<div class="shortcode_section_title text-center mb_60 mt_70">
+		<div class="shortcode_section_title text-center mb_60 mt_70 pos_relative">
 				<h2 class="lato color_10 text-uppercase mb_20 animation-element bounce-up">Why Join Key Club?</h2>
 				<span class="d_block pos_relative"></span>
 			</div>
-			<section class="welcome_section welcome25 pt_100 pb_50">
+			<section class="welcome_section welcome25 pt_100 pb_50 pos_relative">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
@@ -229,7 +229,7 @@
 				</div>
 			</section>
 
-				<section class="parallax2 pos_relative" style = "height: 600px;">
+				<section class="parallax2 pos_relative" style = "height: 900px;">
 					<div class = "container float-right pos_relative " style = 'z-index:3'>
 					<h1 class = "endtxt float-right mr-5 animation-element bounce-up" style = " z-index:2;">Begin your adventure with key club now.</h1>
 					<button class="call float-right mr-5 mt-5 animation-element bounce-up" style = "z-index: 2;">Go</button>
@@ -237,11 +237,57 @@
 				 	<div class = "overlay snip_square" style = "z-index: 1"></div>
 
 					</section>
-			
-			
+			<div class="shortcode_section_title text-center pb_10 pt_20 pos_relative" style = "background-color: #032940">
+				<h2 class="lato color_10 mb_20 animation-element bounce-up" style = "font-size:25px;color:white">We meet every monday at the Tiger's Den.</h2>
+			</div>
+		
+		<footer class="footer_widget3 footer_widget5 dark">
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+                 <div class="col-lg-6 col-md-6 justify-content-center">
+                    <div class="single_widget widget1 justify-content-center">
+                        <h2 class="title_20 widget_title">CONTACT INFO</h2>
+                        <div class="contact_address">
+                            <p class="address"><i class="flaticon-placeholder"></i><span class="text-uppercase">ADDRESS:</span> 28 Green Tower, Street Name New York City, USA</p>
+                            <p class="phone"><i class="flaticon-phone-call"></i><span class="text-uppercase">Phone:</span> +84 846 250 592</p>
+                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> contact@stuck.com</p>
+                            <p class="web"><i class="flaticon-internet"></i><span class="text-uppercase">WEbsite:</span> <a href="#">demostuck.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 justify-content-center">
+                    <div class="single_widget widget2 justify-content-center">
+                        <h2 class="title_20 widget_title">Links</h2>
+                        <ul class="quick_link">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+        </div>
+    <section class="main_footer footer5 dark" style = "background-color:transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="copyright">Copyright 2017??<a </p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social_link d_inline pull-right">
+                        <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+
+                </div>
+            </div>
+        </div>
+    </section>
+		</div>
 
 </div>
-	
+
 <!--
 <div class = "container about2" style = "background-color:#6a859c;left: 50%;transform: translateX(-50%);">
 		<div class = "row">

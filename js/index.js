@@ -1,5 +1,12 @@
 var extended = false;
 var center = document.getElementById("control");
+
+function scrollToElement(element){
+	document.querySelector(element).scrollIntoView({ 
+	  behavior: 'smooth' 
+	});
+}
+
 function popUp(){
 	$("#clickpls").fadeOut(100)
 	if(extended === false){
