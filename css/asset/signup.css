@@ -22,7 +22,7 @@
     content: "\f2eb";
 }
 .signup_form_common .input_group.password:before{
-    content: "\f392";
+    content: "\f2fc";
 }
 .signup_form_common .input_group > input {
     border: medium none;
@@ -345,7 +345,7 @@
 
 .signup_form4 .form_header {
     padding: 31px 0;
-    background: #1c3650;
+    background: #003366;
 }
 .signup_form4 > form {
     padding: 70px;
