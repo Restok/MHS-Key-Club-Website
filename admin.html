@@ -56,7 +56,7 @@
 <div class = "container mt-5">
 <h1>Site Manager</h1>
 	<br>
-<form class = "mt-2 plainform" action = 'admin.php' method = "post">
+<form class = "mt-4 plainform" action = 'admin.php' method = "post">
 	<h4><b>Insert Events:</b></h4>
 
 	<div class  = "mt-4">
@@ -66,6 +66,18 @@
 		 <input type = "text" name = "event-date" class = "input-basic"></input>
 		<p>Time:</p>
 		<input type = "text" name = "event-time" class = "input-basic"></input>
+	<br>
+		<button class = "clean-button input-basic">Submit</button>
+
+	</div>	
+</form>
+<form class = "mt-4 plainform" action = 'admin.php' method = "post">
+	<h4><b>Remove Events:</b></h4>
+
+	<div class  = "mt-4">
+		<p>Event number:</p>
+		<input type = "text" name = "event-number" class = "input-basic"></input>
+
 	<br>
 		<button class = "clean-button input-basic">Submit</button>
 
