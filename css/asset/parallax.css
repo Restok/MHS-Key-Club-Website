@@ -1,7 +1,7 @@
 
 /*--------------------parallax style-1----------------*/
 .parallax1{
-    background: url(../../img/parallax-bg1.jpg) no-repeat fixed center center / cover;
+    background: url(../../img/parallax-bg1.jpg) no-repeat fixed top top / cover;
 }
 .parallax1 .overlay{
     background: rgba(0,0,0,0.7);
@@ -24,10 +24,11 @@
 
 /*--------------------parallax style-2----------------*/
 .parallax2{
-    background: url(../../img/oriento-746838-unsplash.jpg) no-repeat fixed top center / cover;
+    background: url(../../img/rawpixel-196464-unsplash.jpg) no-repeat fixed top center / cover;
 }
 .parallax2 .overlay{
-    background: rgba(69, 150, 232, 0.8)
+    background: #2FAFEF;
+	opacity:0.8
 }
 
 .parallax2 .parallax_content{
