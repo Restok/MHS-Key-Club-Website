@@ -502,12 +502,16 @@
         $('.parallax1').parallax("50%", 0.4);
         $('.parallax2').parallax("80%", 0.3);
         $('.parallax3').parallax("80%", 0.4);
+		$('.parallax4').parallax("80%", 0.4);
+
     }
     if (wWidth < 992 && wWidth > 767) {
         $('.parallax1').parallax("100%", 0.3);
         $('.parallax2').parallax("50%", 0.3);
         $('.parallax3').parallax("50%", 0.4);
-    }
+		$('.parallax4').parallax("80%", 0.4);
+
+	}
 
     $('.portlux').parallax("50%", 0.3);
 

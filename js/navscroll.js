@@ -14,10 +14,10 @@ function check_if_nav_in_view(){
 	var window_bottom_position = window_top_position+window_height;
 		//check to see if this current container is within viewport
 		if (window_top_position>=600)  {
-		  $('#not-in-view').fadeIn(500);
+		  $('#not-in-view').addClass('actual-bg')
 		} 
 		else {
-			$('#not-in-view').fadeOut(200);
+			$('#not-in-view').removeClass('actual-bg');
 		}
 }
 
