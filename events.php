@@ -1,10 +1,10 @@
- <!doctype html>
+ <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Untitled Document</title>
+<title>Events</title>
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
 <link href="css/events.css" rel="stylesheet" type="text/css">
@@ -124,27 +124,26 @@
 		  <th scope="col">Time</th>
 		</tr>
 	  </thead>
-	  <tbody>
-		<tr>
-		  <th scope="row">1</th>
-		  <td></td>
-		  <td></td>
-		  <td></td>
-		</tr>
-		<tr>
-		  <th scope="row">2</th>
-		  <td></td>
-		  <td></td>
-		  <td></td>
-		</tr>
-		<tr>
-		  <th scope="row">3</th>
-		  <td></td>
-		  <td></td>
-		  <td></td>
-		</tr>
+	<tbody>
+		<?php
+		include 'connection.php';
+		mysqli_select_db($conn,"key-club-database");
+
+		$sql = "SELECT id, Event, Date, Time FROM events";
+
+		$result = $conn-> query($sql);
+
+		if($result-> num_rows > 0){
+			while ($row = $result-> fetch_assoc()){
+				echo "<tr><th scope = 'row'>". $row["id"]. "</th><th scope='row'>". $row['Event']. "</th><th scope='row'>". $row['Date']. "</th><th scope='row'>". $row['Time']. "</th></tr>";
+			}
+		}
+		mysqli_close($conn);
+	?>
+	  
 	  </tbody>
 	</table>
+
 	<button class = "float-right clean-button" data-toggle="modal" data-target=".ABmodal_slideRight">Sign Up</button>
 <!--	 <li><a href="#" data-toggle="modal" data-target=".ABmodal_slideRight">Slide right</a></li>-->
 	</div>
