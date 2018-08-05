@@ -10,6 +10,16 @@
 @font-face{
 	font-family: Century Gothic;
 	src:url(../fonts/ufonts.com_century-gothic.ttf)
+}@font-face{
+	font-family: HC;
+	src:url(../fonts/HelloCute.ttf)
+}
+.actual-bg{
+	background-color:#2FAFEF !important;
+}
+body{
+	margin:0 !important;
+	padding:0 !important;
 }
 .logo{
 	font-family: Century Gothic;
@@ -20,7 +30,9 @@
 	position:absolute;
 	width:100%;
 	height:432px;
-	background-color:#3398D8;
+	background-color:#2FAFEF;
+	padding-top: 0;
+	margin-top: 0;
 }
 .navtxt{
 	position:absolute;
@@ -33,12 +45,12 @@
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	font-size:33px;
+	font-size:40px;
 	color:white;
-	font-family: Century Gothic;
-	transform:translateX(-50%);
+	font-family: Myriad Pro;
+	transform:translate(-50%,-50%);
 	left:50%;
-	top: 70px;
+	top:40%;
 }
 .join{
 	width:200px;
@@ -62,14 +74,20 @@
 	width:200px;
 	text-align: center;
 	height: 60px;
-	border-style: none;
-	background-color:#31FFA8;
-	border-radius: 3px;
+	border-style:solid;
+	border-width: thick;
+	border-color: #22D6A3;
+	background-color:transparent;
 	font-size: 15px;
+	color:white;
+}
+.call:hover{
+	background-color: #22D6A3;
 }
 .headingimg{
 	width:130px;
-	display:block;
+	transform:  translateX(-50%);
+	left:50%;
 	margin:auto;
 	height:auto;
 }
@@ -81,7 +99,7 @@ body{
 .header{
 	box-shadow: 4px 4px 120px -40px black;
 	position: absolute;
-	background-color:white;
+	background-color:#F2FBFF;
 	height: 400px;
 	width: 768px;
 	top:300px;
@@ -90,7 +108,7 @@ body{
 }
 
 .menu{
-	background-color:#66ACE5;
+	background-color:#2D6AB5;
 	margin: 0;
     position: absolute;
 	border-radius: 50%;
@@ -261,29 +279,35 @@ color: white !important;
 font-family: Myriad Pro Light;
 font-size:20px;
 }
+.navtext-color:hover{
+color:blue !important;
+
+}
 .noblur{
 	filter:blur(0);
 }
 .firstimg{
 	height: 650px;
+	background-color: #c41230;
 	background-image: url("../img/freestocks-org-505571-unsplash.jpg");
 	background-size: cover;
 	background-position: center;
 }
 .txt-cont{
-	background-color:#E4E4E4; border-radius: 10px;
+	background-color:transparent; border-radius: 10px;
 }
 .my-sad-lifes-purpose-is-just-to-make-the-navigation-bar-fade-in-when-its-supposed-to{
 	position:absolute;
 	width:100px;
+	height:100px;
 	height:100px;
 	background-color:white;
 	top:300px;
 	opacity:0;
 }
 .navbar-nav > li{
-  padding-left:15px;
-  padding-right:15px;
+  padding-left:30px;
+  padding-right:30px;
 }
 .cont{
 	width: 800px;
@@ -291,7 +315,7 @@ font-size:20px;
 }
 
 .snip_square{
-clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 
 }
 .content{
@@ -329,7 +353,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 
 	}
 .shad{
-	box-shadow: 20px 20px 1px 0px #b5edff;
+	box-shadow: 20px 20px 1px 0px #EF6461;
 }
 
 .box{
@@ -354,6 +378,14 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 	background-color:#003366;
 
 }
+.break-line{
+		width:100%;
+		position:absolute;
+		background-color:#EF6461;
+		height:13px;
+		top:432px;
+		z-index: -1;
+}
 @media screen and (min-width : 1670px ){
 	.pad{
 		margin-left:-190px;
@@ -362,7 +394,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 		margin-bottom:-80px;
 	}
 	.shad{
-		box-shadow: 80px 80px 1px 0px #b5edff;
+		box-shadow: 80px 80px 1px 0px #2D6AB5;
 	}
 
 }
@@ -376,10 +408,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 		font-size:5.5rem;
 		}
 	.break-line{
-		width:100%;
-		position:absolute;
-		background-color:burlywood;
-		height:10px;
+		z-index: 1;
 		top:677px;
 	}
 	.pad{
@@ -390,7 +419,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 
 	}
 	.shad{
-		box-shadow: 30px 30px 1px 0px #b5edff;
+		box-shadow: 30px 30px 1px 0px #2D6AB5;
 	}
 	.bgimage{
 		height:687px;
@@ -407,15 +436,13 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 	}
 	
 	.headingtxt{
-		width: 100%;
-		text-align: center;
-		position: absolute;
-		font-size:33px;
-		color:white;
-		font-family: Century Gothic;
+
+		font-size:40px;
 		transform:translateX(-50%);
 		left:50%;
-		top: 110px;
+		top: 160px;
+
+
 	}
 	.join{
 		top: 195px;
@@ -434,7 +461,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 
 @media (max-width: 992px) {
 	.shad{
-		box-shadow: 0px 0px 1px 15px #b5edff;
+		box-shadow: 0px 0px 20px -10px black;
 	}
 	.pad{
 		margin-left:0px;
@@ -445,7 +472,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 	.col-ctrl{
 		margin-left: 1rem !important;
 		margin-right: 1rem !important;
-		margin-top: 5rem !important;
+		margin-top: 3rem !important;
 	}
 	.firstimg{
 		top: 30px;
@@ -524,6 +551,10 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 
 		font-size:4.5rem;
 	}
+	.headingtxt{
+		width:60%;
+		line-height: normal
+	}
 }
 
 @media screen and (max-width : 767px ){
@@ -550,9 +581,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 	.txtadj{
 		font-size:2.5rem !important;
 	}
-	.headingtxt{
-		bottom:0%;
-	}
+
 	.join{
 		bottom:0%;
 		font-size: 12px;
@@ -685,7 +714,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 
 	}
 	.headingtxt{
-		top:85px;
+		width:60%;
 	}
 
 }
@@ -732,10 +761,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 		transform:scale(1);
 
 	}
-	.headingtxt{
-		font-size:25px;
-		top:100px;
-	}
+
 }
 
 @media (max-width: 371px){
@@ -786,10 +812,7 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 41% 81%);
 		transform:scale(1);
 
 	}
-	.headingtxt{
-		font-size:7vw;
-		top:100px;
-	}
+
 	.endtxt{
 		font-size:2.5rem;
 	}
