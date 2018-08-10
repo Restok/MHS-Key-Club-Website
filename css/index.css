@@ -14,8 +14,13 @@
 	font-family: HC;
 	src:url(../fonts/HelloCute.ttf)
 }
+.transparentBG{
+	background-color: transparent;
+	transition: all 300ms ease;
+}
 .actual-bg{
 	background-color:#2FAFEF !important;
+	transition: all 500ms ease;
 }
 body{
 	margin:0 !important;
@@ -280,7 +285,7 @@ font-family: Myriad Pro Light;
 font-size:20px;
 }
 .navtext-color:hover{
-color:blue !important;
+color:#D1D1D1 !important;
 
 }
 .noblur{
@@ -306,8 +311,8 @@ color:blue !important;
 	opacity:0;
 }
 .navbar-nav > li{
-  padding-left:30px;
-  padding-right:30px;
+  padding-left:20px;
+  padding-right:20px;
 }
 .cont{
 	width: 800px;
@@ -353,7 +358,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 
 	}
 .shad{
-	box-shadow: 20px 20px 1px 0px #EF6461;
+	box-shadow: 20px 20px 1px 0px #2D6AB5;
 }
 
 .box{
