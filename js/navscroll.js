@@ -2,8 +2,7 @@
 
 $(document).ready(function(){
     $(window).scroll(check_if_nav_in_view);
-	$(window).on('scroll resize', check_if_nav_in_view);
-	$("#not-in-view").hide();
+	$(window).scroll('scroll resize', check_if_nav_in_view);
 });
 
 
@@ -13,7 +12,7 @@ function check_if_nav_in_view(){
 	var window_top_position = $(window).scrollTop();
 	var window_bottom_position = window_top_position+window_height;
 		//check to see if this current container is within viewport
-		if (window_top_position>=600)  {
+		if (window_top_position>=10)  {
 		  $('#not-in-view').addClass('actual-bg')
 		} 
 		else {

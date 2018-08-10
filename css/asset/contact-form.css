@@ -45,11 +45,16 @@
 }
 .contact_form1 .abform_area .abinput_group > textarea,
 .contact_form1 .abform_area .abinput_group > input {
+	border-bottom: 1px solid #303030;
     color: #444;
+	background-color:#fff;
 }
 .contact_form1 .abform_area .abinput_group > textarea:focus,
 .contact_form1 .abform_area .abinput_group > input:focus {
     padding-left: 0;
+	 border-color: #b7372d;
+
+
 }
 .contact_form1 .abform_area button {
     letter-spacing: 1px;
