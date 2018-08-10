@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
     $(window).scroll(check_if_nav_in_view);
-	$(window).on('scroll resize', check_if_nav_in_view);
+	$(window).scroll('scroll resize', check_if_nav_in_view);
 });
 
 
