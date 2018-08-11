@@ -1,9 +1,5 @@
 // JavaScript Document
 
-$(document).ready(function(){
-    $(window).scroll(check_if_nav_in_view);
-	$(window).scroll('scroll resize', check_if_nav_in_view);
-});
 
 
 
@@ -13,10 +9,21 @@ function check_if_nav_in_view(){
 	var window_bottom_position = window_top_position+window_height;
 		//check to see if this current container is within viewport
 		if (window_top_position>=10)  {
-		  $('#not-in-view').addClass('actual-bg')
+		  $('#not-in-view').addClass('actual-bg');
+		  $('#navSection').removeClass('navTop');
+		  $('.navtext-color').each(function() {
+  			  $(this).addClass("scrolled");
+
+		  })
+			
 		} 
 		else {
 			$('#not-in-view').removeClass('actual-bg');
+ 		    $('#navSection').addClass('navTop')
+			$('.navtext-color').each(function() {
+			  $(this).removeClass("scrolled");
+		  })
+
 		}
 }
 
@@ -41,6 +48,11 @@ function check_if_in_view() {
     }
   });
 }
+$(document).ready(function(){
+    $(window).scroll(check_if_nav_in_view);
+	$(window).scroll('scroll resize', check_if_nav_in_view);
+});
+
 $(document).ready(function(){
 	$window.on('scroll', check_if_in_view);
 	$window.on('scroll resize', check_if_in_view);
