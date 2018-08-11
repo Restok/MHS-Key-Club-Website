@@ -1,7 +1,7 @@
 
 /*--------------------parallax style-1----------------*/
 .parallax1{
-    background: url(../../img/parallax-bg1.jpg) no-repeat fixed top top / cover;
+    background: url(../../img/kcpics/CTXJ2116.jpg) no-repeat fixed center center / cover;
 }
 .parallax1 .overlay{
     background: rgba(0,0,0,0.7);
@@ -24,7 +24,8 @@
 
 /*--------------------parallax style-2----------------*/
 .parallax2{
-    background: url(../../img/rawpixel-196464-unsplash.jpg) no-repeat fixed top center / cover;
+    background: url(../../img/kcpics/IMG_6525.JPG) no-repeat fixed top center / cover;
+	image-orientation: 90deg;
 }
 .parallax2 .overlay{
     background: #2FAFEF;
@@ -52,7 +53,7 @@
 
 /*--------------------parallax style-3----------------*/
 .parallax3{
-    background: url(../../img/christopher-czermak-732755-unsplash.jpg) no-repeat fixed top center / cover;
+    background: url(../../img/kcpics/IMG_5942.JPG) no-repeat fixed right center / cover;
 }
 .parallax3 .overlay{
     background: rgba(0,0,0,0.5);

@@ -305,10 +305,11 @@ color:#D1D1D1 !important;
 }
 .firstimg{
 	height: 650px;
-	background-color: #c41230;
-	background-image: url("../img/freestocks-org-505571-unsplash.jpg");
+	background-color: #E1E1E1;
+	background-image: url("../img/kcpics/IMG_5508.JPG");
 	background-size: cover;
 	background-position: center;
+	background-blend-mode:hard-light
 }
 .txt-cont{
 	background-color:transparent; border-radius: 10px;
