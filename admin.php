@@ -70,7 +70,7 @@
 
 		<input type = "text" name = "email" class = "input-basic">
 	<br>
-		<button class = "clean-button input-basic">Submit</button>
+		<input type = "submit" class = "clean-button input-basic">Submit</button>
 
 	</div>	
 </form>
@@ -85,7 +85,7 @@
 		<p>Time:</p>
 		<input type = "text" name = "event-time" class = "input-basic">
 	<br>
-		<button class = "clean-button input-basic">Submit</button>
+		<input type = "submit" class = "clean-button input-basic">Submit</button>
 
 	</div>	
 </form>
@@ -98,11 +98,49 @@
 		<input type = "text" name = "event-number" class = "input-basic">
 
 	<br>
-		<button class = "clean-button input-basic">Submit</button>
+		<input type = "submit" class = "clean-button input-basic">Submit</button>
 
 	</div>
 </form>
+<br>
+<h4><b>Gallery Manager:</b></h4>
+<div class = "slideshowPics">
+	<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
+		<br>
+		<h5>Slideshow Pictures: </h5>
+		<div class  = "mt-4">
+			Upload <input type="file" name="fileToUpload" id="fileToUpload">
+			<input type="submit" value="Upload Image" name="submit">
 
+
+		</div>
+	</form>
+	<form enctype="multipart/form-data"  action = 'delslidefile.php' method = "post">
+		<div>
+			Remove Image: <input type="text" name="fileToDelete" id="fileToDelete">
+			<input type="submit" value="Delete File" name="submit">
+		</div>
+	</form>
+</div>
+
+	<div class = "slideshowPics">
+		<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
+			<br>
+			<h5>2017-2018 COLUMN 1</h5>
+			<div class  = "mt-4">
+				Upload <input type="file" name="fileToUpload" id="fileToUpload">
+				<input type="submit" value="Upload Image" name="submit">
+
+
+			</div>
+		</form>
+		<form enctype="multipart/form-data"  action = 'delslidefile.php' method = "post">
+			<div>
+				Remove Image: <input type="text" name="fileToDelete" id="fileToDelete">
+				<input type="submit" value="Delete File" name="submit">
+			</div>
+		</form>
+	</div>
 </div>
 
 <body>

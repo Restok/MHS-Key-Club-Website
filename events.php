@@ -50,7 +50,21 @@
 
 			
 		}
-*/
+		*/
+		.navtext-color{
+			font-size:18px;
+		}
+		.border_behavior{
+			margin-top:27px;						
+
+		}
+		@media (max-width: 992px) {
+			.border_behavior{
+				margin-top:0px;						
+
+			}
+		}
+
 	
 	</style>
 	</head>
@@ -92,11 +106,23 @@
 	
 
 <div class="container mt-5 pt-5">
-	<h1>Events</h1>
+	<div class = "row" >
+		<div class = "col-lg-3" >
+			<h1>Events</h1>
+
+		</div>
+		<div class = "col-lg-9	border_behavior">
+					<img src = "img/Template_KeyClub_Red-scribble-pencil-graphic.jpg.jpg" alt = "scribble" style = "width:100%;height:auto">
+
+			</div>
+	</div>
 	<p class = "mt-4">	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante nisl, commodo sed odio vitae, tempor dictum sapien. Donec vitae tellus vel sapien varius hendrerit. Suspendisse non sagittis lectus. Cras vitae tristique erat, sit amet iaculis ante. </p>
+	<hr>
 	<div class="row mt-5">
 	  <div class="col-sm-6">
 		<div class="card">
+		<img class="card-img-top" src="img/kcpics/IMG_9202.jpg" alt="Card image cap">
+
 		  <div class="card-body">
 			<h5 class="card-title">Previous Events</h5>
 			<p class="card-text">Check out pictures from previous Key Club events.</p>
@@ -106,6 +132,8 @@
 	  </div>
 	  <div class="col-sm-6">
 		<div class="card">
+		  <img class="card-img-top" src="img/kcpics/IMG_5922.JPG" alt="Card image cap">
+
 		  <div class="card-body">
 			<h5 class="card-title">Sign Up</h5>
 			<p class="card-text">Sign up for an event that you would like to attend.</p>
