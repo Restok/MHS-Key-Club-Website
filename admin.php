@@ -115,28 +115,35 @@
 
 		</div>
 	</form>
-	<form enctype="multipart/form-data"  action = 'delslidefile.php' method = "post">
-		<div>
-			Remove Image: <input type="text" name="fileToDelete" id="fileToDelete">
-			<input type="submit" value="Delete File" name="submit">
-		</div>
-	</form>
+
 </div>
 
 	<div class = "slideshowPics">
-		<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
+		<form enctype="multipart/form-data" class = "mt-5" action = 'upload-mul.php' method = "post">
+			<h5>COLUMNS</h5>
+			Select the column:<select name="colNum" style = "width:10%;min-width: 50px;">
+				  <option value=1>1</option>
+				  <option value=2>2</option>
+				  <option value=3>3</option>
+				  <option value=4>4</option>
+				</select> 
 			<br>
-			<h5>2017-2018 COLUMN 1</h5>
-			<div class  = "mt-4">
-				Upload <input type="file" name="fileToUpload" id="fileToUpload">
+				Upload <input type="file" name="colUpload[]" multiple = "multiple">
 				<input type="submit" value="Upload Image" name="submit">
-
-
-			</div>
 		</form>
+		
 		<form enctype="multipart/form-data"  action = 'delslidefile.php' method = "post">
-			<div>
-				Remove Image: <input type="text" name="fileToDelete" id="fileToDelete">
+			<div class = "mt-5">
+				<h5> REMOVE IMAGE</h5>
+				Image Name <input type="text" name="fileToDelete" id="fileToDelete">
+				<br>
+				Select the directory:<select name="colNum" style = "width:10%;min-width: 50px;">
+					  <option value=0>Slide</option>
+					  <option value=1>1</option>
+					  <option value=2>2</option>
+					  <option value=3>3</option>
+					  <option value=4>4</option>
+				</select> 
 				<input type="submit" value="Delete File" name="submit">
 			</div>
 		</form>

@@ -144,31 +144,46 @@ blueberries
 -->
 			<div class="row" id = "imtiredstired"> 
 			  <div class="column">
-				<img src="img/gallery/slide-1.jpg"  >
-				<img src="img/gallery/slide-3.jpg"  >
-				<img src="img/gallery/slide-2.jpg"  >
-				<img src="img/gallery/col1-1.jpg"  >
+				<?php
+				$dir2 = "img/gallery/column1/*";
+					$images2 = glob( $dir2 );
+					//extract only the name of the file without the extension and save in an array named $find
+					foreach( $images2 as $image2 ):
+						echo "<img src='" . $image2 . "'/>";
+					endforeach;
+				?>
 
 			  </div>
 			  <div class="column">
-				<img src="img/gallery/slide-1.jpg"  >
-				<img src="img/gallery/slide-3.jpg"  >
-				<img src="img/gallery/slide-2.jpg"  >
-				<img src="img/gallery/col1-1.jpg"  >
-
+				<?php
+				$dir3 = "img/gallery/column2/*";
+					$images3 = glob( $dir3 );
+					//extract only the name of the file without the extension and save in an array named $find
+					foreach( $images3 as $image3 ):
+						echo "<img src='" . $image3 . "'/>";
+					endforeach;
+				?>
 			  </div>  
 			  <div class="column">
-				<img src="img/gallery/slide-1.jpg"  >
-				<img src="img/gallery/slide-3.jpg"  >
-				<img src="img/gallery/slide-2.jpg"  >
-				<img src="img/gallery/col1-1.jpg"  >
+				<?php
+				$dir4 = "img/gallery/column3/*";
+					$images4 = glob( $dir4 );
+					//extract only the name of the file without the extension and save in an array named $find
+					foreach( $images4 as $image4 ):
+						echo "<img src='" . $image4 . "'/>";
+					endforeach;
+				?>
 
 			  </div>
 			  <div class="column">
-				<img src="img/gallery/slide-1.jpg"  >
-				<img src="img/gallery/slide-3.jpg"  >
-				<img src="img/gallery/slide-2.jpg"  >
-				<img src="img/gallery/col1-1.jpg"  >
+				<?php
+				$dir4 = "img/gallery/column4/*";
+					$images5 = glob( $dir5 );
+					//extract only the name of the file without the extension and save in an array named $find
+					foreach( $images5 as $image5 ):
+						echo "<img src='" . $image5 . "'/>";
+					endforeach;
+				?>
 			  </div>
 </div>
 		</div>
