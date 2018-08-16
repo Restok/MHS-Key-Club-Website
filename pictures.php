@@ -83,6 +83,9 @@
 	.expandBtn:hover{
 		cursor: pointer;
 	}
+	img {
+    image-orientation: from-image;
+}
 </style>
 <div hidden>
 <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"> <symbol id="blueberries" viewbox="0 0 53.308 53.308">
@@ -119,7 +122,7 @@ blueberries
         </div>
     </section>
 	<section class = "m-4">
-		<h1 >2017-2018<i class = "fa fa-angle-down expandBtn" id = "imtired" style = "margin:10px" onClick="expand('imtired', '#imtiredstired')"></i></h1>
+<!--		<h1 >2017-2018<i class = "fa fa-angle-down expandBtn" id = "imtired" style = "margin:10px" onClick="expand('imtired', '#imtiredstired')"></i></h1>-->
 
 
 
@@ -177,7 +180,7 @@ blueberries
 			  </div>
 			  <div class="column">
 				<?php
-				$dir4 = "img/gallery/column4/*";
+				$dir5 = "img/gallery/column4/*";
 					$images5 = glob( $dir5 );
 					//extract only the name of the file without the extension and save in an array named $find
 					foreach( $images5 as $image5 ):
@@ -196,6 +199,7 @@ blueberries
 
     <!-- jQuary library -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!--
 	<script>
 		var expanded = true;
 		function expand(id, colid){
@@ -217,6 +221,7 @@ blueberries
 			}
 		}
 	</script>
+-->
     <!--bootstrap min js-->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

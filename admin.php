@@ -107,7 +107,7 @@
 <div class = "slideshowPics">
 	<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
 		<br>
-		<h5>Slideshow Pictures: </h5>
+		<h5>Slideshow Pictures (IMPORTANT: MAKE SURE THE IMAGE DIMENSIONS ARE EXACTLY 1170px x 600px): </h5>
 		<div class  = "mt-4">
 			Upload <input type="file" name="fileToUpload" id="fileToUpload">
 			<input type="submit" value="Upload Image" name="submit">
@@ -137,7 +137,7 @@
 				<h5> REMOVE IMAGE</h5>
 				Image Name <input type="text" name="fileToDelete" id="fileToDelete">
 				<br>
-				Select the directory:<select name="colNum" style = "width:10%;min-width: 50px;">
+				Select the directory:<select name="sel" style = "width:10%;min-width: 50px;">
 					  <option value=0>Slide</option>
 					  <option value=1>1</option>
 					  <option value=2>2</option>

@@ -1,9 +1,10 @@
 <?php
 	$fPath = "";
-	$column = $_POST['colNum'];
+	$column = $_POST['sel'];
 	switch($column){
 		case 0:
 			$fPath = "img/gallery/slide/";
+			break;
 		case 1:
 			$fPath = "img/gallery/column1/";
 			break;
