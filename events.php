@@ -68,7 +68,9 @@
 	
 	</style>
 	</head>
-	
+<?php
+	include 'eventSignUp.php';
+?>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style = "box-shadow: 0 17px 25px -22px black; background-color:#2babe2">
   <a class="navbar-brand" href="index.html"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150";></span></a>
   <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -186,9 +188,9 @@
                         <h4 class="fw_700 text-uppercase color_ff">Sign Up</h4>
                     </div>
 
-                    <form action="#" method="post">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 						<div class="input_group password">
-                            <input type="text" name="enumber" placeholder="Event Number">
+                            <input type="number" name="enumber" placeholder="Event Number">
                         </div>
                         <div class="input_group fname">
                             <input type="text" name="fname" placeholder="First Name">
@@ -198,9 +200,6 @@
                             <input type="text" name="lname" placeholder="Last Name">
                         </div>
 
-                        <div class="input_group email">
-                            <input type="email" name="email" placeholder="Email">
-                        </div>
 
 
 

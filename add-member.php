@@ -15,6 +15,8 @@
 	else{
 		echo 'Member', $fname, ' ', $lname, ' has been added! ', 'Email: ', $email;
 	}
+	mysqli_close($conn);
+
 ?>
 <br>
 <a style = "color:#3E3E3E"href = "admin.php">
