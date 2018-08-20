@@ -403,6 +403,19 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 		top:432px;
 		z-index: -1;
 }
+.txtadj{
+	font-family: Century Gothic;
+	font-size:3rem;
+	line-height: normal;
+}
+.highlight{
+	background-color:#F3F3F3;
+	margin:2.5%;
+	padding:2.5%;
+	font-size:3rem;
+	text-align: center;
+	max-width:80%;
+}
 @media screen and (min-width : 1670px ){
 	.pad{
 		margin-left:-190px;
@@ -782,9 +795,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 }
 
 @media (max-width: 371px){
-	.txtadj{
-		font-size: 1.5rem;
-	}
+
 	.join{
 		width:130px;
 		height: 30px;

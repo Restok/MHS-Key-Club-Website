@@ -56,7 +56,7 @@
     background: url(../../img/kcpics/IMG_5942.JPG) fixed center center / cover;
 }
 .parallax3 .overlay{
-    background: rgba(0,0,0,0.5);
+    background: rgba(200,50,50,0.5);
 }
 .parallax3 .parallax_content{
     min-height: 600px;
