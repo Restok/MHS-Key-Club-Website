@@ -7,6 +7,7 @@
 		$selectedShift = '0';
 		include 'connection.php';
 		$userExists = false;
+		$success = false;
 		$errorMessage = "";
 		mysqli_select_db($conn, 'key-club-database');
 
@@ -34,6 +35,8 @@
 			else{
 				echo "You dungoofed";
 				echo $conn->error;
+				$success = false;
+
 			}
 
 			$eventName = preg_replace('/\s*/', '', $eventName);
@@ -48,11 +51,19 @@
 				$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`, `shift`, `hours`) VALUES (NULL, '$firstName', '$lastName', '$selectedShift', '$eventHours');";
 
 				if($conn->query($sqlQuery)){
-					echo "success";
+
+						$errorMessage = "Sign up successful!";
+
+						echo $errorMessage;
+
+					
 				}
 
 				else{
-					echo "failed";
+					$errorMessage = "Something went wrong on our end! Please try again later.";
+
+						echo $errorMessage;
+
 					echo $conn -> error;
 
 				}
@@ -66,24 +77,39 @@
 					$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`, `shift`, `hours`) VALUES (NULL, '$firstName', '$lastName', '$selectedShift', '$eventHours');";
 
 					if($conn->query($sqlQuery)){
-						echo "success";
-					}
-					else{
-						echo "failed";
+						$errorMessage = "Sign up successful!";
+
+						echo $errorMessage;
+
 						echo $conn -> error;
+
 					}
+
+				
+					else{
+					$errorMessage = "Something went wrong on our end! Please try again later.";
+					echo $errorMessage;
+					echo $conn -> error;
+
+					}
+
 				}
 				else{
-					echo "Failed to create table";
+						$errorMessage = "We could not find an event corresponding to the event number!";
+					echo $errorMessage;
+
 				}
 
 			}
 		}
 
 		else {
-			$errorMessage = "Could not find an entry with the corresponding name and ID in database.";
-
+			$errorMessage = "We could not find you in our database. Make sure you have requested entry and that everything is spelt right.";
+			echo $errorMessage;
 		}
+		$conn->close();
+		echo("You will be redirected back shortly");
+			header('Refresh: 3; URL=events.php');
 	}
-	$conn->close();
+
 ?>

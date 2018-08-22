@@ -84,7 +84,7 @@
 		 <input type = "text" name = "event-date" class = "input-basic">
 		<p>Time:</p>
 		<input type = "text" name = "event-time" class = "input-basic">
-		<p>Hours:</p>
+		<p>Members Limit:</p>
 		<input type = "number" name = "event-hours" class = "input-basic">
 	<br>
 		<button type = "submit" class = "clean-button input-basic">Submit</button>

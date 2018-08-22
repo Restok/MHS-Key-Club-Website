@@ -30,6 +30,8 @@
 <link rel="stylesheet" href="css/asset/modal.css">
 <link rel="stylesheet" href="css/asset/signup.css">
     <!-- style css -->
+<link rel="stylesheet" href="css/asset/alert.css">
+
 <link rel="stylesheet" href="css/shortcode-style.css">
 <link rel="stylesheet" href="css/asset/parallax.css">
 <link rel="stylesheet" href="css/asset/footer.css">
@@ -68,9 +70,7 @@
 	
 	</style>
 	</head>
-<?php
-	include 'eventSignUp.php';
-?>
+
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style = "box-shadow: 0 17px 25px -22px black; background-color:#2babe2">
   <a class="navbar-brand" href="index.html"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150";></span></a>
   <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,8 +144,10 @@
 		</div>
 	  </div>
 </div>
-	
-	<table class="table mt-5">
+	<br>
+
+	<br>
+	<table class="table ">
 	  <thead class = "thead-dark">
 		<tr>
 		  <th scope="col">#</th>
@@ -188,7 +190,7 @@
                         <h4 class="fw_700 text-uppercase color_ff">Sign Up</h4>
                     </div>
 
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <form action="eventSignUp.php" method="post">
 						<div class="input_group password">
                             <input type="number" name="enumber" placeholder="Event Number">
                         </div>
