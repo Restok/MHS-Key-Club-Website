@@ -4,9 +4,9 @@
 	$fname = $_POST['first-name'];
 	$lname = $_POST['last-name'];
 	$email = $_POST['email'];
-
-	$sql = "INSERT INTO `members` (`id`, `fname`, `lname`, `gmail`, `hours`) VALUES ('', '$fname', '$lname', '$email', '');";
 	mysqli_select_db($conn,"key-club-database");
+	$sql = "INSERT INTO `members` (`id`, `fname`, `lname`, `gmail`, `hours`) VALUES ('', '$fname', '$lname', '$email', '');";
+
 
 	if(!$conn->query($sql)){
 		echo 'Whatever you tried to do did not work. Dont bother trying again - if it didnt work the first time it probably will not work again' . mysqli_error($conn);

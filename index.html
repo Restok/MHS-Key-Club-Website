@@ -95,6 +95,8 @@
           <a class="dropdown-item navtext-color" href="events.php">Events</a>
           <a class="dropdown-item navtext-color" href="#">Picture</a>
           <a class="dropdown-item navtext-color" href="#">Leaderboard</a>
+          <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideRight">Join Club</a>
+
         </div>
       </li>
 
@@ -118,19 +120,67 @@
 	
 	<img src="img/click-here-arrow-02.png" id = "clickpls" class = "menu mcenter clickpls mctrl"  alt="Click here">
 
-<img src="img/KEY-CLUB-SEAL-Color-1.png"  id = "control" class = "menu mcenter" onClick="popUp()" alt="Key Club Logo">
-  <div id = "op1" class = "menu moption1" onClick="scrollToElement('.about')"><span class = "navtxt">About</span></div>
-	<div id = "op2" class = "menu moption2"><span class = "navtxt">Join</span></div>
+	<img src="img/KEY-CLUB-SEAL-Color-1.png"  id = "control" class = "menu mcenter" onClick="popUp()" alt="Key Club Logo">
+  
+	<div id = "op1" class = "menu moption1" onClick="scrollToElement('.about')"><span class = "navtxt">About</span></div>
+	
+	<div id = "op2" class = "menu moption2" data-toggle="modal" data-target=".ABmodal_slideRight"><span class = "navtxt">Join</span></div>
+<!--	 <li><a href="#" data-toggle="modal" data-target=".ABmodal_slideRight">Slide right</a></li>-->
+	
+
 	<div id="op3" class = "menu moption3"><span class = "navtxt">Pictures</span></div>
 	<div id= "op4" class = "menu moption4"><span class = "navtxt">Leaderboard</span></div>
-</div>
+	    </div>
+
 </div>
 <div class = "break-line"></div>
 <!--<div class = "animation-element"></div>-->
 
 	<!--background:linear-gradient(white, #dbf4fc)-->
 	
-	
+		 <div class="modal fade ABmodal_transition ABmodal_slideRight ABmodal_common mt-5" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close align_center_center" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+
+                <!--content start-->
+                <div class="signup_form_common signup_form4 register bg_color_ff">
+                    <div class="form_header text-center">
+                        <h4 class="fw_700 text-uppercase color_ff">Request Membership</h4>
+                    </div>
+					<p class ="text-center mx-5 mt-5 padding:0"><em>This is only for students of Millennium High School! An officer will approve your request as soon as they see it.<br/>Note that you can attend key club meetings without being officially registered here.</em></p>
+                    <form action="approval-pending.php" class = "mb-5" method="post">
+
+                        <div class="input_group fname">
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="input_group lname">
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+						
+						<div class="input_group email">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+						
+						<div class="input_group">
+
+						 <select name="year" class ="input_group" style = "border:none">
+						  <option value="freshman">Freshman</option>
+						  <option value="sophomore">Sophomore</option>
+						  <option value="junior">Junior</option>
+						  <option value="senior">Senior</option>
+						</select> 
+                        </div>
+						<button type="submit" class="transition_3s text-uppercase mt_20">Send request</button>
+
+                    </form>
+                </div>
+                <!--content end-->
+            </div>
+		</div>
+
+        </div>
 <!-- ----------------------------THE TWO BOXES-----------------------!-->
 <div class = "container-fluid justify-content-center about" style = "display:flex;background-image:url(img/bg.png);background-position: center; background-size:contain;">
 	<div class = "container">
