@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>Untitled Document</title>
+<title>MHS Key Club - Contact</title>
 	
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
@@ -52,7 +52,9 @@
 			
 		}
 */
-	
+			.navtext-color{
+			font-size:18px;
+		}
 	</style>
 	</head>
 	
@@ -60,37 +62,82 @@
 <body>
 	
 <nav class="navbar navbar-expand-lg navbar-light fixed-top actual-bg" style = "opacity: 1;">
-  <a class="navbar-brand" href="#"><span class= "logo"><img alt = "logo" src="img/MHSKeyClub-white.png" width= "150"></span></a>
+  <a class="navbar-brand" href="mhskey.club"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150"></span></a>
   <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
+  <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto resizeNav">
 
       <li class="nav-item active bg-transparent">
-        <a class="nav-link navtext-color" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link navtext-color" href="index.html">Home <span class="sr-only">(current)</span></a>
 		</li>
       <li class="nav-item">
         <a class="nav-link navtext-color" href="about.html">About</a>
       </li>
 			      <li class="nav-item">
-        <a class="nav-link navtext-color" href="#">Contact</a>
+        <a class="nav-link navtext-color" href="contact.html">Contact</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle navtext-color" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Club Section
         </a>
 		  
-        <div class="dropdown-menu navtext-color actual-bg" style ="border-style: none"  aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item navtext-color" href="#">Events</a>
-          <a class="dropdown-item navtext-color" href="#">Picture</a>
-          <a class="dropdown-item navtext-color" href="#">Leaderboard</a>
+        <div class="dropdown-menu navtext-color" style = "background-color:#032940" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item navtext-color" href="maintenance.html">Events</a>
+          <a class="dropdown-item navtext-color" href="pictures.php">Picture</a>
+          <a class="dropdown-item navtext-color" href="maintenance.html">Leaderboard</a>
+          <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideRight">Join Club</a>
+
         </div>
       </li>
 
 	  </ul>
   </div>
 </nav>
+<div class="modal fade ABmodal_transition ABmodal_slideRight ABmodal_common mt-5" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close align_center_center" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+
+                <!--content start-->
+                <div class="signup_form_common signup_form4 register bg_color_ff">
+                    <div class="form_header text-center">
+                        <h4 class="fw_700 text-uppercase color_ff">Request Membership</h4>
+                    </div>
+					<p class ="text-center mx-5 mt-5 padding:0"><em>This is only for students of Millennium High School! An officer will approve your request as soon as they see it.<br/>Note that you can attend key club meetings without being officially registered here.</em></p>
+                    <form action="approval-pending.php" class = "mb-5" method="post">
+
+                        <div class="input_group fname">
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="input_group lname">
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+						
+						<div class="input_group email">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+						
+						<div class="input_group">
+
+						 <select name="year" class ="input_group" style = "border:none">
+						  <option value="freshman">Freshman</option>
+						  <option value="sophomore">Sophomore</option>
+						  <option value="junior">Junior</option>
+						  <option value="senior">Senior</option>
+						</select> 
+                        </div>
+						<button type="submit" class="transition_3s text-uppercase mt_20">Send request</button>
+
+                    </form>
+                </div>
+                <!--content end-->
+            </div>
+		</div>
+
+        </div>
 <!--	<h1 class = "mt-5 pt-5 ml-5">Contact us</h1>-->
 <!--	<div style = "width:100%;height:600px;background: url(img/chase-moyer-732821-unsplash.jpg) no-repeat scroll center center / cover"></div>-->
 		<section class="contact_form contact_form1 mt-5 bg-white">
@@ -131,10 +178,10 @@
                     <div class="single_widget widget1 justify-content-center">
                         <h2 class="title_20 widget_title">CONTACT INFO</h2>
                         <div class="contact_address">
-                            <p class="address"><i class="flaticon-placeholder"></i><span class="text-uppercase">ADDRESS:</span> ???</p>
-                            <p class="phone"><i class="flaticon-phone-call"></i><span class="text-uppercase">Phone:</span> ????</p>
-                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> ????</p>
-                            <p class="web"><i class="flaticon-internet"></i><span class="text-uppercase">WEbsite:</span> <a href="#">mhskey.club</a></p>
+                            <p class="address"><i class="flaticon-placeholder"></i><span class="text-uppercase">ADDRESS:</span> 14802 W Wigwam Blvd, Goodyear, AZ 85395</p>
+s
+                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> mhskeyclub2k18@gmail.com</p>
+                            <p class="web"><i class="flaticon-internet"></i><span class="text-uppercase">Website:</span> <a href="https://mhskey.club">mhskey.club</a></p>
                         </div>
                     </div>
                 </div>
@@ -143,8 +190,8 @@
                     <div class="single_widget widget2 justify-content-center">
                         <h2 class="title_20 widget_title">Links</h2>
                         <ul class="quick_link">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
 							<li></li>
                         </ul>
                     </div>
@@ -156,19 +203,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="copyright">Copyright 2018?? </p>
+                    <p class="copyright">Copyright 2018...?</p>
                 </div>
                 <div class="col-md-4">
                     <ul class="social_link d_inline pull-right">
-                        <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/mhskeyclub2k18/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/mhskeyclub2k18" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					</ul>
                 </div>
             </div>
         </div>
     </section>
-
-</footer>
 	
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 

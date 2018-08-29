@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
+
 <head>
 </head>
 <?php
-		$servername = "127.0.0.1";
-		$username = "admin";
-		$password = "d*AX&)3tS4p6+^}<";
+		$servername = "localhost";
+		$username = "root";
+		$password = "SomethingUncreative";
+//		$username = "admin";
+//		$password = "d*AX&)3tS4p6+^}<";
 
 		$conn = new mysqli($servername, $username, $password);
 		if ($conn-> connect_error) {

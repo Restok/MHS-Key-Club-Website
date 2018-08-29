@@ -57,6 +57,11 @@ body{
 	left:50%;
 	top:40%;
 }
+.headingtxt .subtxt{
+	font-size:30px;
+	left:50%;
+	top:20%;
+}
 #navSection{
 		transition:all 700ms ease;
 
@@ -748,11 +753,14 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 
 }
 @media (max-width: 466px){
-
 	.call{
 		width:110px;
 		height: 35px;
 
+		
+	}
+		.txtadj{
+		font-size:2rem !important;
 	}
 	.endtxt{
 
@@ -796,7 +804,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 
 @media (max-width: 371px){
 	.txtadj{
-		font-size:1.5rem !important;
+		font-size: 1.5rem !important;
 	}
 	.join{
 		width:130px;

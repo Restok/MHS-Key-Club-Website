@@ -1,3 +1,5 @@
+<?php include("C:\\xampp\\htdocs\\Unnamed Site 2\\password_protect.php"); ?>
+
 <!doctype html>
 <html>
 <head>
@@ -9,7 +11,6 @@
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
 <link href="css/asset/parallax.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Merriweather:300,400,700,900|Montserrat:300,400,500,600,700,800,900|Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,300i,400,500,600,700,800,900|Roboto:300,300i,400,500,700,900" rel="stylesheet">
-
 <!-- all fonts css -->
 <link rel="stylesheet" href="css/theme.fonts.css">
 	<style>

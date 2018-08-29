@@ -70,7 +70,7 @@
 								<!--NAVIGATION BAR-->
 	
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id = "not-in-view" style = "opacity: 1;">
-  <a class="navbar-brand" href="#"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "100"></span></a>
+  <a class="navbar-brand" href="#"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150"></span></a>
   <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -78,13 +78,13 @@
     <ul class="navbar-nav ml-auto navTop resizeNav" id = "navSection">
 
       <li class="nav-item active bg-transparent">
-        <a class="nav-link navtext-color" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link navtext-color" href="index.html">Home <span class="sr-only">(current)</span></a>
 		</li>
       <li class="nav-item">
         <a class="nav-link navtext-color" href="about.html">About</a>
       </li>
 			      <li class="nav-item">
-        <a class="nav-link navtext-color" href="">Contact</a>
+        <a class="nav-link navtext-color" href="contact.html">Contact</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle navtext-color" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,9 +92,9 @@
         </a>
 		  
         <div class="dropdown-menu navtext-color" style = "background-color:#032940" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item navtext-color" href="events.php">Events</a>
-          <a class="dropdown-item navtext-color" href="#">Picture</a>
-          <a class="dropdown-item navtext-color" href="#">Leaderboard</a>
+          <a class="dropdown-item navtext-color" href="maintenance.html">Events</a>
+          <a class="dropdown-item navtext-color" href="pictures.php">Picture</a>
+          <a class="dropdown-item navtext-color" href="maintenance.html">Leaderboard</a>
           <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideRight">Join Club</a>
 
         </div>
@@ -112,7 +112,6 @@
 	</div>
 
 <!--	------------------INTRO BOX------------->
-
 	<b class="headingtxt text-center">Join the largest international volunteer organization for students.</b>
 
 	
@@ -129,16 +128,16 @@
 	
 
 	<a href = "pictures.php"><div id="op3" class = "menu moption3"><span class = "navtxt">Pictures</span></div></a>
-	<div id= "op4" class = "menu moption4"><span class = "navtxt">Leaderboard</span></div>
-	    </div>
+	<a href = "maintenance.html"><div id= "op4" class = "menu moption4"><span class = "navtxt">Leaderboard</span></div>
+	    </div></a>
 
 </div>
 <div class = "break-line"></div>
-<!--<div class = "animation-element"></div>-->
+<!--<div class = "g-element"></div>-->
 
 	<!--background:linear-gradient(white, #dbf4fc)-->
 	
-		 <div class="modal fade ABmodal_transition ABmodal_slideRight ABmodal_commons" tabindex="-1" role="dialog">
+	<div class="modal fade ABmodal_transition ABmodal_slideRight ABmodal_common mt-5" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <button type="button" class="close align_center_center" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
@@ -148,8 +147,8 @@
                     <div class="form_header text-center">
                         <h4 class="fw_700 text-uppercase color_ff">Request Membership</h4>
                     </div>
-
-                    <form action="approval-pending.php" class = "" method="post">
+					<p class ="text-center mx-5 mt-5 padding:0"><em>This is only for students of Millennium High School! An officer will approve your request as soon as they see it.<br/>Note that you can attend key club meetings without being officially registered here.</em></p>
+                    <form action="approval-pending.php" class = "mb-5" method="post">
 
                         <div class="input_group fname">
                             <input type="text" name="fname" placeholder="First Name">
@@ -181,6 +180,7 @@
 		</div>
 
         </div>
+
 <!-- ----------------------------THE TWO BOXES-----------------------!-->
 <div class = "container-fluid justify-content-center about" style = "display:flex;background-image:url(img/bg.png);background-position: center; background-size:contain;">
 	<div class = "container">
@@ -226,7 +226,7 @@
                                 <p class="text-capitalize color_ff">Countries with Key Club</p>
                             </li>
                             <li>
-                                <h2 class="color_ff pos_relative d_inline">00</h2>
+                                <h2 class="color_ff pos_relative d_inline">50+</h2>
                                 <p class="text-capitalize color_ff">Members at MHS</p>
                             </li>
                         </ul>
@@ -295,14 +295,14 @@
 
 				<section class="pos_relative" style = "height: 700px; background:url(img/kcpics/IMG_6525.JPG) no-repeat fixed top center / cover;">
 					<div class = "container float-right pos_relative " style = "z-index:3">
-					<h1 class = "endtxt float-right mr-5 animation-element bounce-up" style = " z-index:2; margin-top:8rem">Begin your adventure with key club now.</h1>
-					<button class="call float-right mr-5 clean-button animation-element bounce-up" style = "z-index: 2; margin-top: 5rem">Go</button>
+					<h1 class = "endtxt float-right mr-5 s" style = " z-index:2; margin-top:8rem">Begin your adventure with key club now.</h1>
+					<button class="call float-right mr-5 clean-button " style = "z-index: 2; margin-top: 5rem" data-toggle="modal" data-target=".ABmodal_slideRight">Go</button>
 					</div>
 				 	<div class = "overlay snip_square" style = "z-index: 1"></div>
 
 					</section>
 			<div class="shortcode_section_title text-center pb_10 pt_20 pos_relative" style = "background-color: #032940">
-				<h2 class="lato color_10 mb_20" style = "font-size:25px;color:white">We meet every monday at the Tiger's Den.</h2>
+<!--				<h2 class="lato color_10 mb_20" style = "font-size:25px;color:white">We meet every monday at the Tiger's Den.</h2>-->
 			</div>
 		
 		<footer class="footer_widget3 footer_widget5 dark">
@@ -312,10 +312,10 @@
                     <div class="single_widget widget1 justify-content-center">
                         <h2 class="title_20 widget_title">CONTACT INFO</h2>
                         <div class="contact_address">
-                            <p class="address"><i class="flaticon-placeholder"></i><span class="text-uppercase">ADDRESS:</span> ???</p>
-                            <p class="phone"><i class="flaticon-phone-call"></i><span class="text-uppercase">Phone:</span> ????</p>
-                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> ????</p>
-                            <p class="web"><i class="flaticon-internet"></i><span class="text-uppercase">WEbsite:</span> <a href="#">mhskey.club</a></p>
+                            <p class="address"><i class="flaticon-placeholder"></i><span class="text-uppercase">ADDRESS:</span> 14802 W Wigwam Blvd, Goodyear, AZ 85395</p>
+s
+                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> mhskeyclub2k18@gmail.com</p>
+                            <p class="web"><i class="flaticon-internet"></i><span class="text-uppercase">Website:</span> <a href="https://mhskey.club">mhskey.club</a></p>
                         </div>
                     </div>
                 </div>
@@ -324,9 +324,9 @@
                     <div class="single_widget widget2 justify-content-center">
                         <h2 class="title_20 widget_title">Links</h2>
                         <ul class="quick_link">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-							<li><</li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+							<li></li>
                         </ul>
                     </div>
                 </div>
@@ -337,20 +337,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="copyright">Copyright 2018?? </p>
+                    <p class="copyright">Copyright 2018...?</p>
                 </div>
                 <div class="col-md-4">
                     <ul class="social_link d_inline pull-right">
-                        <li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-
+                        <li><a href="https://www.instagram.com/mhskeyclub2k18/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/mhskeyclub2k18" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					</ul>
                 </div>
             </div>
         </div>
     </section>
-		</div>
 
-</div>
 
 <!--
 <div class = "container about2" style = "background-color:#6a859c;left: 50%;transform: translateX(-50%);">

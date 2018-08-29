@@ -1,3 +1,5 @@
+<?php include("C:\\xampp\\htdocs\\Unnamed Site 2\\password_protect.php"); ?>
+
 <!doctype html>
 <html>
 <head>
