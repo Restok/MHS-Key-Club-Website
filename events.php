@@ -227,7 +227,6 @@
     <!--owl carousel js-->
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/navscroll.js"></script>
-	<script type="text/javascript" src="js/jquery.easeScroll.js"></script>
 	
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 
