@@ -412,7 +412,6 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 	background-color:#F3F3F3;
 	margin:2.5%;
 	padding:2.5%;
-	font-size:3rem;
 	text-align: center;
 	max-width:80%;
 }
@@ -749,6 +748,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 
 }
 @media (max-width: 466px){
+
 	.call{
 		width:110px;
 		height: 35px;
@@ -795,7 +795,9 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 90%);
 }
 
 @media (max-width: 371px){
-
+	.txtadj{
+		font-size:1.5rem !important;
+	}
 	.join{
 		width:130px;
 		height: 30px;

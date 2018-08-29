@@ -201,6 +201,9 @@
                         <div class="input_group lname">
                             <input type="text" name="lname" placeholder="Last Name">
                         </div>
+						<div class="input_group code">
+                            <input type="number" name="code" placeholder="Member Code">
+                        </div>
 
 
 

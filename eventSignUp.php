@@ -4,14 +4,14 @@
 		$eventNumber = $_POST['enumber'];
 		$firstName = $_POST['fname'];
 		$lastName = $_POST['lname'];
-		$selectedShift = '0';
+		$code = $_POST['code'];
 		include 'connection.php';
 		$userExists = false;
 		$success = false;
 		$errorMessage = "";
 		mysqli_select_db($conn, 'key-club-database');
 
-		$sqlQuery = "SELECT COUNT(id) FROM `members` WHERE fname = '$firstName' AND lname = '$lastName';";
+		$sqlQuery = "SELECT COUNT(id) FROM `members` WHERE fname = '$firstName' AND lname = '$lastName' AND code = '$code';";
 
 		if($result = $conn->query($sqlQuery)){
 

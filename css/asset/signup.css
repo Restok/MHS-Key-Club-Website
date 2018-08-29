@@ -24,6 +24,9 @@
 .signup_form_common .input_group.password:before{
     content: "\f2fc";
 }
+.signup_form_common .input_group.code:before{
+    content: "\f005";
+}
 .signup_form_common .input_group > input {
     border: medium none;
     height: 100%;
