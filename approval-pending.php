@@ -5,7 +5,7 @@
 	$email = $_POST['email'];
 	$year = $_POST['year'];
 	$sql = "INSERT INTO `pending-members` (`id`, `fname`, `lname`, `email`, `year`) VALUES ('', '$fname', '$lname', '$email', '$year');";
-	mysqli_select_db($conn,"key-club-database");
+	mysqli_select_db($conn,"keyclubdatabase");
 
 	if(!$conn->query($sql)){
 		echo 'Something went wrong! Please try again later' . mysqli_error($conn);
