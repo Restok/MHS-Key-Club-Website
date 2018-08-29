@@ -1,7 +1,7 @@
 <?php
 	include 'connection.php';
 	foreach ($_POST as $name => $value) {
-		mysqli_select_db($conn,"key-club-database");
+		mysqli_select_db($conn,"keyclubdatabase");
 		
 		if($name!="approveall"){
 			$id = (int)$name;

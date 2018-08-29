@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Carousel</title>
+    <title>MHS Key Club - Gallery</title>
 
     <!--favicon icon-->
     <link rel="icon" href="images/favicon.png">
@@ -141,6 +141,49 @@ blueberries
 	  </ul>
   </div>
 </nav>
+		<div class="modal fade ABmodal_transition ABmodal_slideRight ABmodal_common mt-5" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close align_center_center" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+
+                <!--content start-->
+                <div class="signup_form_common signup_form4 register bg_color_ff">
+                    <div class="form_header text-center">
+                        <h4 class="fw_700 text-uppercase color_ff">Request Membership</h4>
+                    </div>
+					<p class ="text-center mx-5 mt-5 padding:0"><em>This is only for students of Millennium High School! An officer will approve your request as soon as they see it. Please use your school gmail when signing up.<br/>Note that you can attend key club meetings without being officially registered here.</em></p>
+                    <form action="approval-pending.php" class = "mb-5" method="post">
+
+                        <div class="input_group fname">
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="input_group lname">
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+						
+						<div class="input_group email">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+						
+						<div class="input_group">
+
+						 <select name="year" class ="input_group" style = "border:none">
+						  <option value="freshman">Freshman</option>
+						  <option value="sophomore">Sophomore</option>
+						  <option value="junior">Junior</option>
+						  <option value="senior">Senior</option>
+						</select> 
+                        </div>
+						<button type="submit" class="transition_3s text-uppercase mt_20">Send request</button>
+
+                    </form>
+                </div>
+                <!--content end-->
+            </div>
+		</div>
+
+        </div>
     <section class="carousel_section" style = "background-color: #DFDFDF; margin-top: 5.5rem;">
         <div class="container">
             <div class="row">

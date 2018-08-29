@@ -4,7 +4,7 @@
 	$fname = $_POST['first-name'];
 	$lname = $_POST['last-name'];
 	$email = $_POST['email'];
-	mysqli_select_db($conn,"key-club-database");
+	mysqli_select_db($conn,"keyclubdatabase");
 	$sql = "INSERT INTO `members` (`id`, `fname`, `lname`, `gmail`, `hours`) VALUES ('', '$fname', '$lname', '$email', '');";
 
 

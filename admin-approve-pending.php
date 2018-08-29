@@ -53,7 +53,7 @@
 	<tbody>
 		<?php
 		include 'connection.php';
-		mysqli_select_db($conn,"key-club-database");
+		mysqli_select_db($conn,"keyclubdatabase");
 
 		$sql = "SELECT id, fname, lname, email, year FROM `pending-members`";
 
