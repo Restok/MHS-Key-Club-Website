@@ -4,7 +4,7 @@
 	$lname = $_POST['lname'];
 	$email = $_POST['email'];
 	$year = $_POST['year'];
-	$sql = "INSERT INTO `pending-members` (`id`, `fname`, `lname`, `email`, `year`) VALUES ('', '$fname', '$lname', '$email', '$year');";
+	$sql = "INSERT INTO `pending-members` (`id`, `fname`, `lname`, `email`, `year`) VALUES (NULL, '$fname', '$lname', '$email', '$year');";
 	mysqli_select_db($conn,"keyclubdatabase");
 
 	if(!$conn->query($sql)){
@@ -18,6 +18,6 @@
 
 ?>
 <br>
-<a style = "color:#3E3E3E"href = "index.html">
+<a style = "color:#3E3E3E" href = "index.html">
         Go back
 </a>

@@ -5,10 +5,10 @@
 </head>
 <?php
 		$servername = "localhost";
-		$username = "root";
-		$password = "SomethingUncreative";
-//		$username = "admin";
-//		$password = "d*AX&)3tS4p6+^}<";
+//		$username = "root";
+//		$password = "SomethingUncreative";
+		$username = "admin";
+		$password = "d*AX&)3tS4p6+^}<";
 
 		$conn = new mysqli($servername, $username, $password);
 		if ($conn-> connect_error) {

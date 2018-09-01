@@ -187,7 +187,7 @@
                 <!--content start-->
                 <div class="signup_form_common signup_form4 register bg_color_ff">
                     <div class="form_header text-center">
-                        <h4 class="fw_700 text-uppercase color_ff">Sign Up</h4>
+                        <h4 class="fw_700 text-uppercase color_ff">Event Sign Up</h4>
                     </div>
 
                     <form action="eventSignUp.php" method="post">
