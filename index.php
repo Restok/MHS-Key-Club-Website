@@ -40,6 +40,8 @@
     <!-- style css -->
 <link rel="stylesheet" href="css/shortcode-style.css">
 <link rel="stylesheet" href="css/asset/parallax.css">
+<link rel="stylesheet" href="css/asset/carousel.css">
+
 <link rel="stylesheet" href="css/asset/footer.css">
 <link rel="stylesheet" href="css/asset/introBox.css">
 <link rel="stylesheet" href="css/asset/buttons.css">
@@ -114,7 +116,7 @@
 <!--	------------------INTRO BOX------------->
 	<b class="headingtxt text-center">Join the largest international volunteer organization for students.</b>
 
-	
+	</div>
 <div class = "header" style = "opacity:0.9">
 	
 	<img src="img/click-here-arrow-02.png" id = "clickpls" class = "menu mcenter clickpls mctrl"  alt="Click here">
@@ -180,131 +182,153 @@
 
         </div>
 
-<!-- ----------------------------THE TWO BOXES-----------------------!-->
-<div class = "container-fluid justify-content-center about" style = "display:flex;background-image:url(img/bg.png);background-position: center; background-size:contain;">
-	<div class = "container">
-  <div class = "my-sad-lifes-purpose-is-just-to-make-the-navigation-bar-fade-in-when-its-supposed-to"></div>
-	<div class = "row m-0 noblur justify-content-md-center" >
-		<div class = "col-lg-5 noblur">
-			<div class="col-md-12 animation-element bounce-up firstimg noblur pad shad" style = "border-radius: 4px;border: solid #2D6AB5  10px;"></div>
-		</div>
-		<div class = "col-lg-7 vcenter col-ctrl h-resize animation-element bounce-up shad newshad" style = "border: solid #2D6AB5  10px;border-radius: 4px;">
-			<div class="col-md-12 vcenter noblur txt-cont pad ">
-				<div class = "animation-element bounce-up vcenter txtadj noblur highlight" ><b>WE SPICE UP OUR COMMUNITY THROUGH VOLUNTEER WORK</b></div>
-     		</div>
-		</div>
-	</div>
-	
-	</div>
 
-<!--	style = "border-style:solid; border-width:5px; border-radius:5px;border-color:# #2D2C33;-->
-
-	
-</div>
-	
-
-<!-- ----------------------PARALLAX AND ABOUTBOX---------------------------!-->
-
-	<div class = "container-fluid bg-white box pos_relative" style ="padding:0px;">
-	
-	<section class="parallax_section parallax3 pos_relative ">
-        <div class="overlay"></div>
-        <div class="container">
+<div class = "everyThingBelow p-0 dist" style ="position:relative">
+	<section class="carousel_section newsBox" style = "">
+        <div class="container p-0">
             <div class="row">
                 <div class="col-12">
-                    <div class="parallax_content align_col_center_left ">
-                        <h2 class="color_ff animation-element bounce-up">Become a red hot chili pepper of the Southwest! </h2>
-
-                        <ul class="workshop pt_40 clearfix animation-element bounce-up">
-                            <li>
-                                <h2 class="color_ff pos_relative d_inline">+270K</h2>
-                                <p class="text-capitalize color_ff">Members Worldwide</p>
-                            </li>
-                            <li>
-                                <h2 class="color_ff pos_relative d_inline">38</h2>
-                                <p class="text-capitalize color_ff">Countries with Key Club</p>
-                            </li>
-                            <li>
-                                <h2 class="color_ff pos_relative d_inline">50+</h2>
-                                <p class="text-capitalize color_ff">Members at MHS</p>
-                            </li>
-                        </ul>
+                    <div class="abcarousel_common abcarousel2 owl-carousel">
+                        	<?php
+						$dir = "img/gallery/home/*";
+							$images = glob( $dir );
+							//extract only the name of the file without the extension and save in an array named $find
+							foreach( $images as $image ):
+								echo "<div class='carousel_item' style = 'overflow:hidden'><img src='" . $image . "' /></div>";
+							endforeach;
+						?>
                     </div>
-                    <!--/wrapper-->
                 </div>
             </div>
         </div>
     </section>
-		
-		
-		<div class="shortcode_section_title text-center mb_60 mt_70 pos_relative">
-				<h2 class="lato color_10 text-uppercase mb_20 animation-element bounce-up">Why Join Key Club?</h2>
-				<span class="d_block pos_relative"></span>
+<!-- ----------------------------THE TWO BOXES-----------------------!-->
+	<div class = "container-fluid justify-content-center about margin-space" style = "display:flex;background-image:url(img/bg.png);background-position: center; background-size:contain;">
+		<div class = "container">
+	  <div class = "my-sad-lifes-purpose-is-just-to-make-the-navigation-bar-fade-in-when-its-supposed-to"></div>
+		<div class = "row m-0 noblur justify-content-md-center" >
+			<div class = "col-lg-5 noblur">
+				<div class="col-md-12 animation-element bounce-up firstimg noblur pad shad" style = "border-radius: 4px;border: solid #2D6AB5  10px;"></div>
 			</div>
-			<section class="welcome_section welcome25 pt_100 pb_50 pos_relative">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="intro_common intro_box1 text-center transition_3s mb_40">
-								<span class="d_inline"><i class="flaticon-user-5 color_ff"></i></span>
-								<div class="intro_text">
-									<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Scholarships</h5>
-									<p class="color_ff animation-element bounce-up">Earn scholarships and boost your college application with your key club experience</p>
-								</div>
-							</div>
-						</div>
+			<div class = "col-lg-7 vcenter col-ctrl h-resize animation-element bounce-up shad newshad" style = "border: solid #2D6AB5  10px;border-radius: 4px;">
+				<div class="col-md-12 vcenter noblur txt-cont pad ">
+					<div class = "animation-element bounce-up vcenter txtadj noblur highlight" ><b>WE SPICE UP OUR COMMUNITY THROUGH VOLUNTEER WORK</b></div>
+				</div>
+			</div>
+		</div>
 
-						<!--intro-box-2--> 
+		</div>
 
-						<div class="col-lg-3 col-md-6">
-							<div class="intro_common intro_box1 text-center transition_3s mb_40">
-								<span class="d_inline"><i class="flaticon-idea-1 color_ff"></i></span>
-								<div class="intro_text">
-									<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Character</h5>
-									<p class="color_ff animation-element bounce-up">Gain leadership skills, and build positive characters for your future</p>
-								</div>
-							</div>
-						</div>
+	<!--	style = "border-style:solid; border-width:5px; border-radius:5px;border-color:# #2D2C33;-->
 
-						<!--intro-box-3-->
-						<div class="col-lg-3 col-md-6">
-							<div class="intro_common intro_box1 text-center transition_3s mb_40">
-								<span class="d_inline"><i class="flaticon-vision color_ff"></i></span>
-								<div class="intro_text">
-									<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Network</h5>
-									<p class="color_ff animation-element bounce-up">Make friends from across the world through Key Club's district and international convention</p>
-								</div>
-							</div>
-						</div>
 
-						<!--intro-box-4-->
-					<div class="col-lg-3 col-md-6">
-							<div class="intro_common intro_box1 text-center transition_3s mb_40">
-								<span class="d_inline"><i class="flaticon-presentation color_ff"></i></span>
-								<div class="intro_text">
-									<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Improve your community</h5>
-									<p class="color_ff animation-element bounce-up">Take part in the effort to better your community and the lives of those around you.</p>
-								</div>
-							</div>
+	</div>
+
+
+	<!-- ----------------------PARALLAX AND ABOUTBOX---------------------------!-->
+
+		<div class = "container-fluid bg-white pos_relative" style ="padding:0px;">
+
+		<section class="parallax_section parallax3 pos_relative ">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="parallax_content align_col_center_left ">
+							<h2 class="color_ff animation-element bounce-up">Become a red hot chili pepper of the Southwest! </h2>
+
+							<ul class="workshop pt_40 clearfix animation-element bounce-up">
+								<li>
+									<h2 class="color_ff pos_relative d_inline">+270K</h2>
+									<p class="text-capitalize color_ff">Members Worldwide</p>
+								</li>
+								<li>
+									<h2 class="color_ff pos_relative d_inline">38</h2>
+									<p class="text-capitalize color_ff">Countries with Key Club</p>
+								</li>
+								<li>
+									<h2 class="color_ff pos_relative d_inline">50+</h2>
+									<p class="text-capitalize color_ff">Members at MHS</p>
+								</li>
+							</ul>
 						</div>
-						<!--/intro box-->
+						<!--/wrapper-->
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-				<section class="pos_relative" style = "height: 700px; background:url(img/kcpics/IMG_6525.JPG) no-repeat fixed top center / cover;">
-					<div class = "container float-right pos_relative " style = "z-index:3">
-					<h1 class = "endtxt float-right mr-5 s" style = " z-index:2; margin-top:8rem">Begin your adventure with key club now.</h1>
-					<button class="call float-right mr-5 clean-button " style = "z-index: 2; margin-top: 5rem" data-toggle="modal" data-target=".ABmodal_slideRight">Go</button>
+
+			<div class="shortcode_section_title text-center mb_60 mt_70 pos_relative">
+					<h2 class="lato color_10 text-uppercase mb_20 animation-element bounce-up">Why Join Key Club?</h2>
+					<span class="d_block pos_relative"></span>
+				</div>
+				<section class="welcome_section welcome25 pt_100 pb_50 pos_relative">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-6">
+								<div class="intro_common intro_box1 text-center transition_3s mb_40">
+									<span class="d_inline"><i class="flaticon-user-5 color_ff"></i></span>
+									<div class="intro_text">
+										<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Scholarships</h5>
+										<p class="color_ff animation-element bounce-up">Earn scholarships and boost your college application with your key club experience</p>
+									</div>
+								</div>
+							</div>
+
+							<!--intro-box-2--> 
+
+							<div class="col-lg-3 col-md-6">
+								<div class="intro_common intro_box1 text-center transition_3s mb_40">
+									<span class="d_inline"><i class="flaticon-idea-1 color_ff"></i></span>
+									<div class="intro_text">
+										<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Character</h5>
+										<p class="color_ff animation-element bounce-up">Gain leadership skills, and build positive characters for your future</p>
+									</div>
+								</div>
+							</div>
+
+							<!--intro-box-3-->
+							<div class="col-lg-3 col-md-6">
+								<div class="intro_common intro_box1 text-center transition_3s mb_40">
+									<span class="d_inline"><i class="flaticon-vision color_ff"></i></span>
+									<div class="intro_text">
+										<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Network</h5>
+										<p class="color_ff animation-element bounce-up">Make friends from across the world through Key Club's district and international convention</p>
+									</div>
+								</div>
+							</div>
+
+							<!--intro-box-4-->
+						<div class="col-lg-3 col-md-6">
+								<div class="intro_common intro_box1 text-center transition_3s mb_40">
+									<span class="d_inline"><i class="flaticon-presentation color_ff"></i></span>
+									<div class="intro_text">
+										<h5 class="pt_15 pb_10 text-uppercase animation-element bounce-up color_ff">Improve your community</h5>
+										<p class="color_ff animation-element bounce-up">Take part in the effort to better your community and the lives of those around you.</p>
+									</div>
+								</div>
+							</div>
+							<!--/intro box-->
+						</div>
 					</div>
-				 	<div class = "overlay snip_square" style = "z-index: 1"></div>
+				</section>
 
-					</section>
+					<section class="pos_relative" style = "height: 700px; background:url(img/kcpics/IMG_6525.JPG) no-repeat fixed top center / cover;">
+						<div class = "container float-right pos_relative " style = "z-index:3">
+						<h1 class = "endtxt float-right mr-5 s" style = " z-index:2; margin-top:8rem">Begin your adventure with key club now.</h1>
+						<button class="call float-right mr-5 clean-button " style = "z-index: 2; margin-top: 5rem" data-toggle="modal" data-target=".ABmodal_slideRight">Go</button>
+						</div>
+						<div class = "overlay snip_square" style = "z-index: 1"></div>
+
+						</section>
+
 			<div class="shortcode_section_title text-center pb_10 pt_20 pos_relative" style = "background-color: #032940">
 <!--				<h2 class="lato color_10 mb_20" style = "font-size:25px;color:white">We meet every monday at the Tiger's Den.</h2>-->
 			</div>
-		
-		<footer class="footer_widget3 footer_widget5 dark">
+
+
+		<footer class="footer_widget3 footer_widget5 dark pos_relative">
         <div class="container justify-content-center">
             <div class="row justify-content-center">
                  <div class="col-lg-6 col-md-6 justify-content-center">
@@ -330,8 +354,9 @@ s
                     </div>
                 </div>
         </div>
+		        </div>
+	
 
-        </div>
     <section class="main_footer footer5 dark" style = "background-color:transparent">
         <div class="container">
             <div class="row">
@@ -348,8 +373,10 @@ s
         </div>
     </section>
 
-
-<!--
+</footer>
+</div>
+</div>
+	<!--
 <div class = "container about2" style = "background-color:#6a859c;left: 50%;transform: translateX(-50%);">
 		<div class = "row">
 			<div class = "col-md-6">

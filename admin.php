@@ -1,4 +1,4 @@
-<?php include("C:\\xampp\\htdocs\\Unnamed Site 2\\password_protect.php"); ?>
+<?php include("C:\\xampp\\htdocs\\Please_I-m_Tired_Just_Work\\password_protect.php"); ?>
 
 <!doctype html>
 <html>
@@ -70,7 +70,16 @@
 		<p>Email Address:</p>
 
 		<input type = "text" name = "email" class = "input-basic">
-	<br>
+		<p>Year:</p>
+
+		<div class="input-basic">
+			 <select name="year" class ="input-basic" style = "border:none">
+			  <option value="freshman">Freshman</option>
+			  <option value="sophomore">Sophomore</option>
+			  <option value="junior">Junior</option>
+			  <option value="senior">Senior</option>
+			</select> 
+		 </div>	<br>
 		<button type = "submit" class = "clean-button input-basic">Submit</button>
 
 	</div>	
@@ -106,13 +115,29 @@
 	</div>
 </form>
 <br>
-<h4><b>Gallery Manager:</b></h4>
+<h4><b>PICTURES MANAGER</b></h4>
+<div class = "homepagePics">
+	<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
+		<br>
+		<h5>Homepage Pictures (IMPORTANT: MAKE SURE THE IMAGE DIMENSIONS ARE EXACTLY 1170px x 600px): </h5>
+		<div class  = "mt-4">
+			Upload <input type="file" name="fileToUpload" id="fileToUpload">
+			<input type="hidden" name="upDir" value = "home">
+			<input type="submit" value="Upload Image" name="submit">
+
+
+		</div>
+	</form>
+
+</div>
 <div class = "slideshowPics">
 	<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
 		<br>
 		<h5>Slideshow Pictures (IMPORTANT: MAKE SURE THE IMAGE DIMENSIONS ARE EXACTLY 1170px x 600px): </h5>
 		<div class  = "mt-4">
 			Upload <input type="file" name="fileToUpload" id="fileToUpload">
+			<input type="hidden" name="upDir" value = "slide">
+
 			<input type="submit" value="Upload Image" name="submit">
 
 
@@ -141,6 +166,7 @@
 				Image Name <input type="text" name="fileToDelete" id="fileToDelete">
 				<br>
 				Select the directory:<select name="sel" style = "width:10%;min-width: 50px;">
+					  <option value=-1>Home</option>
 					  <option value=0>Slide</option>
 					  <option value=1>1</option>
 					  <option value=2>2</option>

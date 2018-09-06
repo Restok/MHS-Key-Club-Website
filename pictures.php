@@ -91,9 +91,7 @@ img {
 	.expandBtn:hover{
 		cursor: pointer;
 	}
-	img {
-    image-orientation: from-image;
-}
+
 </style>
 <div hidden>
 <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"> <symbol id="blueberries" viewbox="0 0 53.308 53.308">
@@ -116,7 +114,7 @@ blueberries
     <ul class="navbar-nav ml-auto resizeNav">
 
       <li class="nav-item active bg-transparent">
-        <a class="nav-link navtext-color" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link navtext-color" href="index.php">Home <span class="sr-only">(current)</span></a>
 		</li>
       <li class="nav-item">
         <a class="nav-link navtext-color" href="about.html">About</a>

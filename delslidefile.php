@@ -2,6 +2,9 @@
 	$fPath = "";
 	$column = $_POST['sel'];
 	switch($column){
+		case -1:
+			$fPath = "img/gallery/home/";
+			break;
 		case 0:
 			$fPath = "img/gallery/slide/";
 			break;
