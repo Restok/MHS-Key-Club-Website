@@ -66,7 +66,7 @@ Millennium High School Key Club.
 						
 						if($conn->query($sql)){
 							echo "<br />Deleted entry from the pending events table.";
-							$sql = "SELECT COUNT(*) FROM $curTable;";
+							$sql = "SELECT COUNT(*) FROM `$curTable`;";
 							if($conn->query($sql)){
 								echo "<br / > Table is empty! Attempting to delete $curTable from the database.";
 								$sql = "DROP TABLE `$curTable`";

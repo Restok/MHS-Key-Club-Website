@@ -119,7 +119,7 @@
 <div class = "homepagePics">
 	<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
 		<br>
-		<h5>Homepage Pictures (IMPORTANT: MAKE SURE THE IMAGE DIMENSIONS ARE EXACTLY 1170px x 600px): </h5>
+		<h5>Homepage Pictures (IMPORTANT: MAKE SURE THE IMAGE DIMENSIONS ARE IN THE RATIO OF 1170px x 600px): </h5>
 		<div class  = "mt-4">
 			Upload <input type="file" name="fileToUpload" id="fileToUpload">
 			<input type="hidden" name="upDir" value = "home">
@@ -133,7 +133,7 @@
 <div class = "slideshowPics">
 	<form enctype="multipart/form-data" class = "mt-5" action = 'upload.php' method = "post">
 		<br>
-		<h5>Slideshow Pictures (IMPORTANT: MAKE SURE THE IMAGE DIMENSIONS ARE EXACTLY 1170px x 600px): </h5>
+		<h5>Slideshow Pictures (IMPORTANT: MAKE SURE THE IMAGE DIMENSIONS ARE IN THE RATI OF 1170px x 600px): </h5>
 		<div class  = "mt-4">
 			Upload <input type="file" name="fileToUpload" id="fileToUpload">
 			<input type="hidden" name="upDir" value = "slide">

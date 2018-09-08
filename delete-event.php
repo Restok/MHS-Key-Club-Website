@@ -4,7 +4,7 @@
 	$eventnumber = $_POST['event-number'];
 
 		$sql = "DELETE FROM `events` WHERE `events`.`id` = '$eventnumber'";
-		mysqli_select_db($conn,"key-club-database");
+		mysqli_select_db($conn,"keyclubdatabase");
 
 		if(!$conn->query($sql)){
 			echo 'Whatever you tried to do did not work. Dont bother trying again - if it didnt work the first time it probably will not work again \n' . mysqli_error($conn);

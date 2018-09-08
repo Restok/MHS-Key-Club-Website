@@ -9,15 +9,15 @@
 
 	mysqli_select_db($conn,"keyclubdatabase");
 	
-	$sql = "INSERT INTO `members` (`id`, `code`, `fname`, `lname`, `gmail`, `year`, `hours`) VALUES ('', '$randomNumber', $fname', '$lname', '$email',`$year`, '');";
+	$sql = "INSERT INTO `members` (`id`, `code`, `fname`, `lname`, `gmail`, `year`, `hours`) VALUES ('', '$randomNumber', '$fname', '$lname', '$email','$year', '');";
 
 
 	if(!$conn->query($sql)){
-		echo 'Whatever you tried to do did not work. Dont bother trying again - if it didnt work the first time it probably will not work again' . mysqli_error($conn);
+		echo 'Whatever you tried to do did not work. Dont bother trying again - if it didnt work the first time it probably will not work again <br />' . mysqli_error($conn);
 
 	}
 	else{
-		echo '<br />Member', $fname, ' ', $lname, ' has been added! ', '<br />Email: ', $email , "<br />Year: $year";
+		echo '<br />Member ', $fname, ' ', $lname, ' has been added! ', '<br />Email: ', $email , "<br />Year: $year";
 		$formcontent= "
 <html>
 <head>

@@ -68,7 +68,7 @@
 
 				$currentTableName = $row["table_name"];
 
-				$sql = "SELECT * from $currentTableName";
+				$sql = "SELECT * from `$currentTableName`";
 				
 				// FOR EACH TABLE MAP THE RESULTS TO 
 				

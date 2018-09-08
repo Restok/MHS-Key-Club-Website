@@ -119,7 +119,7 @@
 
 			</div>
 	</div>
-	<p class = "mt-4">	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante nisl, commodo sed odio vitae, tempor dictum sapien. Donec vitae tellus vel sapien varius hendrerit. Suspendisse non sagittis lectus. Cras vitae tristique erat, sit amet iaculis ante. </p>
+	<p class = "mt-4">	Below is a list of the volunteer events that are currently available. These events make up what key club is and drive our volunteering efforts forward. If you are registered on the website and would like to sign up, click the sign up button below and fill out the form with the corresponding information.</p>
 	<hr>
 	<div class="row mt-5">
 	  <div class="col-sm-6">
@@ -175,10 +175,64 @@
 	?>
 	  
 	  </tbody>
-	</table>
 
-	<button class = "float-right clean-button" data-toggle="modal" data-target=".ABmodal_slideRight">Sign Up</button>
+	</table>
+		<button class = "clean-button pos_relative float-right" data-toggle="modal" data-target=".ABmodal_slideRight">Sign Up</button>
+
 <!--	 <li><a href="#" data-toggle="modal" data-target=".ABmodal_slideRight">Slide right</a></li>-->
+	<hr>
+	<br>
+	<h2 style = "text-align: center; margin-top:50px;">Current Sign Ups</h2>
+	<hr>
+	<?php
+		include 'connection.php';
+		mysqli_select_db($conn,"events");
+
+		$sql = "SELECT table_name FROM information_schema.tables where table_schema='events'";
+		
+		//GET ALL TABLE NAMES
+
+		if($result = $conn-> query($sql)){
+
+			//RUN AS MANY TIMES AS THE NUMBER OF TABLES.
+			
+			while($row = $result->fetch_assoc()){
+				$id = 0;
+
+				$currentTableName = $row["table_name"];
+
+				$sql = "SELECT * from `$currentTableName`";
+				$sql = "SELECT * from `$currentTableName`";
+				
+				// FOR EACH TABLE MAP THE RESULTS TO 
+				
+				if($result2 =  $conn->query($sql)){
+					echo '<h3>' . $currentTableName. '</h1> <table class="table "><thead class = "thead-light"><tr><th scope="col">#</th><th scope="col">First name</th><th scope="col">Last name</th><th scope="col">
+					</tr></thead><tbody>';
+					
+					while($row2 = $result2-> fetch_assoc()){
+						echo "<th scope = 'row'>". $row2["id"] . "</th><th scope = 'row'>". $row2["fname"]. "</th><th scope='row'>". $row2['lname']. "</th><th scope='col'></tr>";
+
+						}
+				
+					echo '
+						</tbody>
+						</table>';
+				}
+				else{
+					echo "UGHHHH";
+					echo $conn->error;
+				}
+
+			}
+		}
+		
+		else{
+			echo "oof something broke";
+			echo $conn -> error;
+		}
+		mysqli_close($conn);
+	?>
 	</div>
 	 <div class="modal fade ABmodal_transition ABmodal_slideRight ABmodal_common" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">

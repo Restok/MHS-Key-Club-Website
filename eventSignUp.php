@@ -34,6 +34,7 @@
 			if($result = $conn -> query($sqlQuery)){
 				$row = $result->fetch_assoc();
 				$eventName = $row['Event'];
+				$eventLimit = $row['limits'];
 			}
 			else{
 				echo "You dungoofed";
@@ -42,69 +43,75 @@
 
 			}
 
-			$eventName = preg_replace('/\s*/', '', $eventName);
+			$eventName = str_replace(' ', '-', $eventName);
 			// convert the string to all lowercase
 			$eventName = strtolower($eventName);
 
 			mysqli_select_db($conn, 'events');
 
-			$sqlQuery = "SELECT * FROM `$eventName`";
+			$sqlQuery = "SELECT COUNT(*) FROM `$eventName`";
 
 			if($conn->query($sqlQuery)){
-				$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`) VALUES (NULL, '$firstName', '$lastName');";
+				$count = $result -> fetch_assoc();
+				$count= $count['COUNT(*)'];
+				if($count < $eventLimit){
+					$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`) VALUES (NULL, '$firstName', '$lastName');";
 
-				if($conn->query($sqlQuery)){
+					if($conn->query($sqlQuery)){
 
-						$errorMessage = "Sign up successful!";
+							$errorMessage = "Sign up successful!";
 
-						echo $errorMessage;
-						$formcontent= "
-<html>
-<head>
-</head>
-<body>
-<div style='font-size:15px;'>
-Hi, $firstName $lastName
-<br />
-<br />
+							echo $errorMessage;
+							$formcontent= "
+	<html>
+	<head>
+	</head>
+	<body>
+	<div style='font-size:15px;'>
+	Hi, $firstName $lastName
+	<br />
+	<br />
 
-We're emailing you to let you know that you signed up for the following key club event: $eventName.
+	We're emailing you to let you know that you signed up for the following key club event: $eventName.
 
-<br />
-<br />
+	<br />
+	<br />
 
-If you did not initiate this request, please tell us so that we can change your member code to prevent this from happening again.
+	If you did not initiate this request, please tell us so that we can change your member code to prevent this from happening again.
 
-<br />
-<br />
+	<br />
+	<br />
 
-Best regards,
+	Best regards,
 
-<br />
+	<br />
 
-Millennium High School Key Club.
-</div>
-</body>
-</html>
-";
-							$mailheader = "MIME-Version: 1.0" . "\r\n";
-							$mailheader .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-							$recipient = "$email";
-							$subject = "Key Club event sign up";
-							mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Try again later.");
+	Millennium High School Key Club.
+	</div>
+	</body>
+	</html>
+	";
+								$mailheader = "MIME-Version: 1.0" . "\r\n";
+								$mailheader .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+								$recipient = "$email";
+								$subject = "Key Club event sign up";
+								mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Try again later.");
 
-					
+
+					}
+
+					else{
+						$errorMessage = "Something went wrong on our end! Please try again later.";
+
+							echo $errorMessage;
+
+						echo $conn -> error;
+
+					}
 				}
-
 				else{
-					$errorMessage = "Something went wrong on our end! Please try again later.";
-
-						echo $errorMessage;
-
-					echo $conn -> error;
-
+					echo "Sorry, but the event is already full!";
 				}
-
 			}
 			else {
 				$sqlQuery = "CREATE TABLE `events`.`$eventName` ( `id` INT(255) NOT NULL AUTO_INCREMENT , `fname` VARCHAR(255) NOT NULL , `lname` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;";
