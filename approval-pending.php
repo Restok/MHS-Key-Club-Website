@@ -18,6 +18,6 @@
 
 ?>
 <br>
-<a style = "color:#3E3E3E" href = "index.html">
+<a style = "color:#3E3E3E" href = "index.php">
         Go back
 </a>

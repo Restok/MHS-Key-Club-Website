@@ -72,7 +72,7 @@
 	</head>
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style = "box-shadow: 0 17px 25px -22px black; background-color:#2babe2">
-  <a class="navbar-brand" href="index.html"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150";></span></a>
+  <a class="navbar-brand" href="index.php"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150";></span></a>
   <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -84,7 +84,7 @@
         <a class="nav-link" href="#"></a>
       </div>
       <li class="nav-item active">
-        <a class="nav-link navtext-color" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link navtext-color" href="index.php">Home <span class="sr-only">(current)</span></a>
 		</li>
       <li class="nav-item">
         <a class="nav-link navtext-color" href="html/html/events.html">Events</a>
