@@ -1,4 +1,4 @@
-<?php include("C:\\xampp\\htdocs\\Please_I-m_Tired_Just_Work\\password_protect.php"); ?>
+<?php include("password_protect.php"); ?>
 
 <!doctype html>
 <html>

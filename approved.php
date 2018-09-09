@@ -6,7 +6,7 @@
 		if($name!="approveall"){
 			$id = (int)$name;
 
-			$sql = "SELECT fname, lname, email, year FROM `pending-members` WHERE id = $id";
+			$sql = "SELECT fname, lname, email, year FROM `pending-members` WHERE id = $id;";
 				if($result = $conn-> query($sql)){
 					if($result-> num_rows > 0){
 						$row = $result-> fetch_assoc();
@@ -15,7 +15,7 @@
 						$email = $row["email"];
 						$year = $row["year"];
 						$randomNumber = mt_rand(1000000,9999999);
-						$sql = "INSERT INTO `members` (`id`,`code`, `fname`, `lname`, `gmail`,`year`) VALUES ('', '$randomNumber','$fname', '$lname', '$email','$year');";
+						$sql = "INSERT INTO `members` (`id`,`code`, `fname`, `lname`, `gmail`,`year`) VALUES (NULL, '$randomNumber','$fname', '$lname', '$email','$year');";
 						
 						if($conn-> query($sql)){
 							echo "<br />\n".$fname . " " . $lname . " " . $email . " " . $year . " successfully inserted to database!";

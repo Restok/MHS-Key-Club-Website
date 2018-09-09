@@ -8,7 +8,7 @@
 		echo "One or more fields were left empty!";
 	}
 	else{
-	$sql = "INSERT INTO `events` (`id`, `Event`, `Date`, `Time`, `limits`) VALUES ('', '$eventname', '$eventdate', '$eventtime', $eventhours)";
+	$sql = "INSERT INTO `events` (`id`, `Event`, `Date`, `Time`, `limits`) VALUES (NULL, '$eventname', '$eventdate', '$eventtime', $eventhours)";
 		mysqli_select_db($conn,"keyclubdatabase");
 
 		if(!$conn->query($sql)){

@@ -9,7 +9,7 @@
 
 	mysqli_select_db($conn,"keyclubdatabase");
 	
-	$sql = "INSERT INTO `members` (`id`, `code`, `fname`, `lname`, `gmail`, `year`, `hours`) VALUES ('', '$randomNumber', '$fname', '$lname', '$email','$year', '');";
+	$sql = "INSERT INTO `members` (`id`, `code`, `fname`, `lname`, `gmail`, `year`, `hours`) VALUES (NULL, '$randomNumber', '$fname', '$lname', '$email','$year', '');";
 
 
 	if(!$conn->query($sql)){

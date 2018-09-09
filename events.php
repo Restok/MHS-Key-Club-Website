@@ -71,38 +71,38 @@
 	</style>
 	</head>
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style = "box-shadow: 0 17px 25px -22px black; background-color:#2babe2">
-  <a class="navbar-brand" href="index.php"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150";></span></a>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top actual-bg" style = "opacity: 1;">
+  <a class="navbar-brand" href="mhskey.club"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150"></span></a>
   <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-	
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
-	<div class="nav-item mr-auto">
-		
-        <a class="nav-link" href="#"></a>
-      </div>
-      <li class="nav-item active">
+  <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto resizeNav">
+
+      <li class="nav-item active bg-transparent">
         <a class="nav-link navtext-color" href="index.php">Home <span class="sr-only">(current)</span></a>
 		</li>
       <li class="nav-item">
-        <a class="nav-link navtext-color" href="html/html/events.html">Events</a>
+        <a class="nav-link navtext-color" href="about.html">About</a>
       </li>
-	<li class="nav-item">
-        <a class="nav-link navtext-color" href="#">Uhhhh</a>
+			      <li class="nav-item">
+        <a class="nav-link navtext-color" href="contact.html">Contact</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle navtext-color" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          Club Section
         </a>
-        <div class="dropdown-menu navtext-color" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item navtext-color" href="#">Action</a>
-          <a class="dropdown-item navtext-color" href="#">Another action</a>
-          <a class="dropdown-item navtext-color" href="#">Something else here</a>
+		  
+        <div class="dropdown-menu navtext-color" style = "background-color:#032940" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item navtext-color" href="events.php">Events</a>
+          <a class="dropdown-item navtext-color" href="pictures.php">Picture</a>
+          <a class="dropdown-item navtext-color" href="maintenance.html">Leaderboard</a>
+          <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideRight">Join Club</a>
+
         </div>
       </li>
-    </ul>
+
+	  </ul>
   </div>
 </nav>
 <body>
@@ -124,7 +124,7 @@
 	<div class="row mt-5">
 	  <div class="col-sm-6">
 		<div class="card">
-		<img class="card-img-top" src="img/kcpics/IMG_9202.jpg" alt="Card image cap">
+		<img class="card-img-top" src="img/kcpics/IMG_9202.JPG" alt="Card image cap">
 
 		  <div class="card-body">
 			<h5 class="card-title">Previous Events</h5>
@@ -272,6 +272,48 @@
             </div>
         </div>
     </div>
+	<footer class="footer_widget3 footer_widget5 dark">
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+                 <div class="col-lg-6 col-md-6 justify-content-center">
+                    <div class="single_widget widget1 justify-content-center">
+                        <h2 class="title_20 widget_title">CONTACT INFO</h2>
+                        <div class="contact_address">
+                            <p class="address"><i class="flaticon-placeholder"></i><span class="text-uppercase">ADDRESS:</span> 14802 W Wigwam Blvd, Goodyear, AZ 85395</p>
+                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> mhskeyclub2k18@gmail.com</p>
+                            <p class="web"><i class="flaticon-internet"></i><span class="text-uppercase">Website:</span> <a href="https://mhskey.club">mhskey.club</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 justify-content-center">
+                    <div class="single_widget widget2 justify-content-center">
+                        <h2 class="title_20 widget_title">Links</h2>
+                        <ul class="quick_link">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+							<li></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+        </div>
+    <section class="main_footer footer5 dark" style = "background-color:transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="copyright">Copyright 2018...?</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social_link d_inline pull-right">
+                        <li><a href="https://www.instagram.com/mhskeyclub2k18/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/mhskeyclub2k18" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
