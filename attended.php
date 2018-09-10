@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	include 'connection.php';
 	$curTable = $_POST["curTable"];
 	$maxId = $_SESSION["$curTable"];
@@ -41,7 +40,7 @@ An officer has confirmed your attendance to the following event: $curTable.
 <br />
 <br />
 
-Thank you so much! Your volunteering hours have increased by $hoursWorked, and is now at a total of $curMemberHours this year.;
+Thank you so much! Your volunteering hours have increased by $hoursWorked, and is now at a total of $curMemberHours this year.
 <br />
 <br />
 If you believe something is inaccurate, or if a mistake was made, please reply directly to this email.
@@ -54,27 +53,39 @@ Millennium High School Key Club.
 </body>
 </html>
 ";
-							$mailheader = "MIME-Version: 1.0" . "\r\n";
-							$mailheader .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+								$headers = array(
+								  'From: "keyclub messenger" <keyclub.messenger@gmail.com>' ,
+								  'Reply-To: "mhs keyclub" <millenniumkeyclub2k19@gmail.com>' ,
+								  'X-Mailer: PHP/' . phpversion() ,
+								  'MIME-Version: 1.0' ,
+								  'Content-type: text/html; charset=iso-8859-1' ,
+								);
 							$recipient = "$email";
-							$subject = "Key Club event attendance";
+							$code = rand(0, 9999999);
+
+							$subject = "Key Club event attendance no. ".$code;
+							$headers = implode( "\r\n" , $headers );
 
 
-							mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Try again later.");
 
+							mail($recipient, $subject, $formcontent, $headers) or die("Error! Try again later.");
 						$sql = "DELETE FROM `$curTable` WHERE `id`=$tableIndex";
 						
 						if($conn->query($sql)){
 							echo "<br />Deleted entry from the pending events table.";
 							$sql = "SELECT COUNT(*) FROM `$curTable`;";
-							if($conn->query($sql)){
-								echo "<br / > Table is empty! Attempting to delete $curTable from the database.";
-								$sql = "DROP TABLE `$curTable`";
-								if($conn->query($sql)){
-									echo "<br / > Table $curTable deleted successfully";
-								}
-								else{
-									echo "Failed to delete table $curTable <br / > $conn->error";
+							if($result = $conn->query($sql)){
+								$count = $result -> fetch_assoc();
+								$countentries = $count["COUNT(*)"];
+								if($countentries ==0){
+									echo "<br / > Table is empty! Attempting to delete $curTable from the database.";
+									$sql = "DROP TABLE `$curTable`";
+									if($conn->query($sql)){
+										echo "<br / > Table $curTable deleted successfully";
+									}
+									else{
+										echo "<br / >Failed to delete table $curTable <br / > $conn->error";
+									}
 								}
 
 							}
@@ -103,6 +114,7 @@ Millennium High School Key Club.
 
 	}
 	mysqli_close($conn);
+	
 	echo "<a style = 'color:#3E3E3E'href = 'event-attendance-check.php'>
         Go back
 </a>";

@@ -8,6 +8,7 @@
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
 <link href="css/events.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
 
 <link rel="stylesheet" href="css/theme.fonts.css">
 
@@ -38,11 +39,7 @@
 <link rel="stylesheet" href="css/asset/introBox.css">
 <link rel="stylesheet" href="css/asset/buttons.css">
 	
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/navscroll.js"></script>
-	<script src="js/bootstrap-4.0.0.js"></script>
-	<script src="js/popper.min.js"></script>
+
 	<style>
 /*
 		body{
@@ -52,7 +49,14 @@
 
 			
 		}
-		*/
+	*/
+		html,body
+		{
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			overflow-x: hidden; 
+		}
 		.navtext-color{
 			font-size:18px;
 		}
@@ -71,6 +75,8 @@
 	</style>
 	</head>
 
+
+<body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top actual-bg" style = "opacity: 1;">
   <a class="navbar-brand" href="mhskey.club"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150"></span></a>
   <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,8 +102,8 @@
         <div class="dropdown-menu navtext-color" style = "background-color:#032940" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item navtext-color" href="events.php">Events</a>
           <a class="dropdown-item navtext-color" href="pictures.php">Picture</a>
-          <a class="dropdown-item navtext-color" href="maintenance.html">Leaderboard</a>
-          <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideRight">Join Club</a>
+          <a class="dropdown-item navtext-color" href="leaderboard.php">Leaderboard</a>
+          <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideTop">Join Club</a>
 
         </div>
       </li>
@@ -105,9 +111,49 @@
 	  </ul>
   </div>
 </nav>
-<body>
-	
+	<div class="modal fade ABmodal_transition ABmodal_slideTop ABmodal_common mt-5" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close align_center_center" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
 
+                <!--content start-->
+                <div class="signup_form_common signup_form4 register bg_color_ff">
+                    <div class="form_header text-center">
+                        <h4 class="fw_700 text-uppercase color_ff">Request Membership</h4>
+                    </div>
+					<p class ="text-center mx-5 mt-5 padding:0"><em>This is only for students of Millennium High School! An officer will approve your request as soon as they see it. Please use your school gmail when signing up.<br/>Note that you can attend key club meetings without being officially registered here.</em></p>
+                    <form action="approval-pending.php" class = "mb-5" method="post">
+
+                        <div class="input_group fname">
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="input_group lname">
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+						
+						<div class="input_group email">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+						
+						<div class="input_group">
+
+						 <select name="year" class ="input_group" style = "border:none">
+						  <option value="freshman">Freshman</option>
+						  <option value="sophomore">Sophomore</option>
+						  <option value="junior">Junior</option>
+						  <option value="senior">Senior</option>
+						</select> 
+                        </div>
+						<button type="submit" class="transition_3s text-uppercase mt_20">Send request</button>
+
+                    </form>
+                </div>
+                <!--content end-->
+            </div>
+		</div>
+
+     </div>
 <div class="container mt-5 pt-5">
 	<div class = "row" >
 		<div class = "col-lg-3" >
@@ -125,11 +171,11 @@
 	  <div class="col-sm-6">
 		<div class="card">
 		<img class="card-img-top" src="img/kcpics/IMG_9202.JPG" alt="Card image cap">
-
+ 
 		  <div class="card-body">
 			<h5 class="card-title">Previous Events</h5>
 			<p class="card-text">Check out pictures from previous Key Club events.</p>
-			<a href="#" class="btn btn-primary">Go Now</a>
+			<a href="pictures.php" class="btn btn-primary">Go Now</a>
 		  </div>
 		</div>
 	  </div>
@@ -140,7 +186,7 @@
 		  <div class="card-body">
 			<h5 class="card-title">Sign Up</h5>
 			<p class="card-text">Sign up for an event that you would like to attend.</p>
-			<a href="#" class="btn btn-primary">Go Now</a>
+			<a class="btn btn-primary" style = "color:white;"data-toggle="modal" data-target=".ABmodal_slideRight">Go Now</a>
 		  </div>
 		</div>
 	  </div>
@@ -318,8 +364,9 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
     <!--bootstrap min js-->
-    <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-4.0.0.js"></script>
+	    <script type="text/javascript" src="js/popper.min.js"></script>
+
 
     <!--owl carousel js-->
 	<script type="text/javascript" src="js/index.js"></script>

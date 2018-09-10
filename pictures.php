@@ -12,7 +12,7 @@
     <title>MHS Key Club - Gallery</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="images/favicon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
 
     <!--google font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900|Merriweather:300,400,700,900|Montserrat:300,400,500,600,700,800,900|Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,300i,400,500,600,700,800,900|Roboto:300,300i,400,500,700,900" rel="stylesheet">
@@ -130,7 +130,7 @@ blueberries
         <div class="dropdown-menu navtext-color" style = "background-color:#032940" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item navtext-color" href="events.php">Events</a>
           <a class="dropdown-item navtext-color" href="pictures.php">Picture</a>
-          <a class="dropdown-item navtext-color" href="maintenance.html">Leaderboard</a>
+          <a class="dropdown-item navtext-color" href="leaderboard.php">Leaderboard</a>
           <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideRight">Join Club</a>
 
         </div>

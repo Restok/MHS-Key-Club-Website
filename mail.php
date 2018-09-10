@@ -14,7 +14,6 @@
 
 	mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Message not sent. Try again later.");
 
-	phpinfo();
 
 	echo "Your message has been sent!";
 

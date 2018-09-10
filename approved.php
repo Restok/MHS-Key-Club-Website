@@ -48,13 +48,20 @@ Millennium High School Key Club.
 </body>
 </html>
 ";
-							$mailheader = "MIME-Version: 1.0" . "\r\n";
-							$mailheader .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-							$recipient = "$email";
-							$subject = "Key Club membership approval";
+								$headers = array(
+								  'From: "keyclub messenger" <keyclub.messenger@gmail.com>' ,
+								  'Reply-To: "mhs keyclub" <millenniumkeyclub2k19@gmail.com>' ,
+								  'X-Mailer: PHP/' . phpversion() ,
+								  'MIME-Version: 1.0' ,
+								  'Content-type: text/html; charset=iso-8859-1' ,
+								);
+								$headers = implode( "\r\n" , $headers );
+								$code = rand(0, 9999999);
+
+								$subject = "Key Club membership approval no. " . $code;
 
 
-							mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Try again later.");
+							mail($recipient, $subject, $formcontent, $headers) or die("Error! Try again later.");
 							
 							if($conn-> query($sql)){
 								echo "<br />\n" . " Deleted corresponding entry from the pending list.";

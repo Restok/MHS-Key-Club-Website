@@ -9,8 +9,10 @@
 <meta name="author" content="">
 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 <title>MHS Key Club Home</title>
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
 <link href="css/asset/parallax.css" rel="stylesheet" type="text/css">
@@ -50,6 +52,12 @@
   <!--google font-->
 
 <style>
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 .clean-button{
 	border-style: none;
 	border-radius: 15px;
@@ -64,6 +72,9 @@
 	cursor:pointer;
 	background:linear-gradient(to bottom right, #3ad85f, #3bcc88);
 	transition: background, 500ms;
+	}
+	.body{
+		overflow: hidden;
 	}
 	</style>
 
@@ -96,7 +107,7 @@
         <div class="dropdown-menu navtext-color" style = "background-color:#032940" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item navtext-color" href="events.php">Events</a>
           <a class="dropdown-item navtext-color" href="pictures.php">Picture</a>
-          <a class="dropdown-item navtext-color" href="maintenance.html">Leaderboard</a>
+          <a class="dropdown-item navtext-color" href="leaderboard.php">Leaderboard</a>
           <a class="dropdown-item navtext-color" data-toggle="modal" data-target=".ABmodal_slideRight">Join Club</a>
 
         </div>
@@ -130,7 +141,7 @@
 	
 
 	<a href = "pictures.php"><div id="op3" class = "menu moption3"><span class = "navtxt">Pictures</span></div></a>
-	<a href = "maintenance.html"><div id= "op4" class = "menu moption4"><span class = "navtxt">Leaderboard</span></div></a>
+	<a href = "leaderboard.php"><div id= "op4" class = "menu moption4"><span class = "navtxt">Leaderboard</span></div></a>
 
 </div>
 <div class = "break-line"></div>
@@ -183,7 +194,7 @@
         </div>
 
 
-<div class = "everyThingBelow p-0 dist" style ="position:relative">
+<div class = "everyThingBelow p-0 m-0 dist" style ="position:relative">
 	<section class="carousel_section newsBox" style = "">
         <div class="container p-0">
             <div class="row">
@@ -247,7 +258,7 @@
 									<p class="text-capitalize color_ff">Countries with Key Club</p>
 								</li>
 								<li>
-									<h2 class="color_ff pos_relative d_inline">50+</h2>
+									<h2 class="color_ff pos_relative d_inline">100+</h2>
 									<p class="text-capitalize color_ff">Members at MHS</p>
 								</li>
 							</ul>
@@ -337,7 +348,7 @@
                         <div class="contact_address">
                             <p class="address"><i class="flaticon-placeholder"></i><span class="text-uppercase">ADDRESS:</span> 14802 W Wigwam Blvd, Goodyear, AZ 85395</p>
 s
-                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> mhskeyclub2k18@gmail.com</p>
+                            <p class="email"><i class="flaticon-mail"></i><span class="text-uppercase">Email:</span> millenniumkeyclub2k19@gmail.com</p>
                             <p class="web"><i class="flaticon-internet"></i><span class="text-uppercase">Website:</span> <a href="https://mhskey.club">mhskey.club</a></p>
                         </div>
                     </div>
