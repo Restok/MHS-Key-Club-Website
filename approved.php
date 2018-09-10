@@ -48,6 +48,7 @@ Millennium High School Key Club.
 </body>
 </html>
 ";
+								$recipient = "$email";
 								$headers = array(
 								  'From: "keyclub messenger" <keyclub.messenger@gmail.com>' ,
 								  'Reply-To: "mhs keyclub" <millenniumkeyclub2k19@gmail.com>' ,

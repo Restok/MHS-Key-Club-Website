@@ -91,13 +91,15 @@
 	</body>
 	</html>
 	";	
-								$headers = array(
-								  'From: "keyclub messenger" <keyclub.messenger@gmail.com>' ,
-								  'Reply-To: "mhs keyclub" <millenniumkeyclub2k19@gmail.com>' ,
-								  'X-Mailer: PHP/' . phpversion() ,
-								  'MIME-Version: 1.0' ,
-								  'Content-type: text/html; charset=iso-8859-1' ,
-								);
+						$recipient = "$email";
+
+						$headers = array(
+						  'From: "keyclub messenger" <keyclub.messenger@gmail.com>' ,
+						  'Reply-To: "mhs keyclub" <millenniumkeyclub2k19@gmail.com>' ,
+						  'X-Mailer: PHP/' . phpversion() ,
+						  'MIME-Version: 1.0' ,
+						  'Content-type: text/html; charset=iso-8859-1' ,
+						);
 						$code = rand(0, 9999999);
 						$subject = "Key club event sign up no." . $code;
 							$headers = implode( "\r\n" , $headers );
