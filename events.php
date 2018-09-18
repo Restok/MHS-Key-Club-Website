@@ -1,3 +1,4 @@
+  <a class="navbar-brand" href="index.php"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150"></span></a>
  <!DOCTYPE html>
 <html>
 <head>
@@ -77,9 +78,8 @@
 
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top actual-bg" style = "opacity: 1;">
-  <a class="navbar-brand" href="mhskey.club"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150"></span></a>
-  <button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top actual-bg" style = "opacity: 1;">  <a class="navbar-brand" href="index.php"><span class= "logo"><img src="img/MHSKeyClub-white.png" width= "150"></span></a>
+<button class="navbar-toggler " style = "border-style:none;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse"  id="navbarNavDropdown">

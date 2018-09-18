@@ -55,71 +55,82 @@
 				$count = $result -> fetch_assoc();
 				$count= $count['COUNT(*)'];
 				if($count < $eventLimit){
-					$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`) VALUES (NULL, '$firstName', '$lastName');";
-
+					$sqlQuery = "SELECT COUNT(*) FROM `$eventName` WHERE fname = '$firstName' AND lname = '$lastName'";
 					if($conn->query($sqlQuery)){
+						$count = $result -> fetch_assoc();
+						$count= $count['COUNT(*)'];
+						if($count >0){
+							$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`) VALUES (NULL, '$firstName', '$lastName');";
 
-							$errorMessage = "Sign up successful!";
+							if($conn->query($sqlQuery)){
 
-							echo $errorMessage;
-							$formcontent= "
-	<html>
-	<head>
-	</head>
-	<body>
-	<div style='font-size:15px;'>
-	Hi, $firstName $lastName
-	<br />
-	<br />
+									$errorMessage = "Sign up successful!";
 
-	We're emailing you to let you know that you signed up for the following key club event: $eventName.
+									echo $errorMessage;
+									$formcontent= "
+			<html>
+			<head>
+			</head>
+			<body>
+			<div style='font-size:15px;'>
+			Hi, $firstName $lastName
+			<br />
+			<br />
 
-	<br />
-	<br />
+			We're emailing you to let you know that you signed up for the following key club event: $eventName.
 
-	If you did not initiate this request, please tell us so that we can change your member code to prevent this from happening again.
+			<br />
+			<br />
 
-	<br />
-	<br />
+			If you did not initiate this request, please tell us so that we can change your member code to prevent this from happening again.
 
-	Best regards,
+			<br />
+			<br />
 
-	<br />
+			Best regards,
 
-	Millennium High School Key Club.
-	</div>
-	</body>
-	</html>
-	";	
-						$recipient = "$email";
+			<br />
 
-						$headers = array(
-						  'From: "keyclub messenger" <keyclub.messenger@gmail.com>' ,
-						  'Reply-To: "mhs keyclub" <millenniumkeyclub2k19@gmail.com>' ,
-						  'X-Mailer: PHP/' . phpversion() ,
-						  'MIME-Version: 1.0' ,
-						  'Content-type: text/html; charset=iso-8859-1' ,
-						);
-						$code = rand(0, 9999999);
-						$subject = "Key club event sign up no." . $code;
-							$headers = implode( "\r\n" , $headers );
+			Millennium High School Key Club.
+			</div>
+			</body>
+			</html>
+			";	
+								$recipient = "$email";
 
-							mail($recipient, $subject, $formcontent, $headers, "-f keyclub.messenger@gmail.com", "-F keyclub messenger") or die("Error! Try again later.");
+								$headers = array(
+								  'From: "keyclub messenger" <keyclub.messenger@gmail.com>' ,
+								  'Reply-To: "mhs keyclub" <millenniumkeyclub2k19@gmail.com>' ,
+								  'X-Mailer: PHP/' . phpversion() ,
+								  'MIME-Version: 1.0' ,
+								  'Content-type: text/html; charset=iso-8859-1' ,
+								);
+								$headers = implode( "\r\n" , $headers );
+								$code = rand(0, 9999999);
+								$subject = "Key Club event sign up no." . $code;
 
-					}
+									mail($recipient, $subject, $formcontent, $headers) or die("Error! Try again later.");
 
-					else{
-						$errorMessage = "Something went wrong on our end! Please try again later.";
+							}
 
-							echo $errorMessage;
+							else{
+								$errorMessage = "Something went wrong on our end! Please try again later.";
 
-						echo $conn -> error;
+									echo $errorMessage;
 
+								echo $conn -> error;
+
+							}
+						}
+						else{
+							echo "You already signed up for this event! Check the events page, and refresh, to make sure your name is in the corresponding table. If not, please contact us via the contact page!";
+						}
 					}
 				}
-				else{
-					echo "Sorry, but the event is already full!";
-				}
+						else{
+							echo "Sorry, but the event is already full!";
+						}
+					
 			}
 			else {
 				$sqlQuery = "CREATE TABLE `events`.`$eventName` ( `id` INT(255) NOT NULL AUTO_INCREMENT , `fname` VARCHAR(255) NOT NULL , `lname` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;";
@@ -163,7 +174,9 @@ Millennium High School Key Club.
 							$mailheader = "MIME-Version: 1.0" . "\r\n";
 							$mailheader .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 							$recipient = "$email";
-							$subject = "Key Club event sign up";
+							$code = rand(0, 9999999);
+							$subject = "Key Club event sign up no." . $code;
+
 							mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Try again later.");
 
 					}

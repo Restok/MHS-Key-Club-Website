@@ -8,8 +8,8 @@
 	$randomNumber = mt_rand(1000000,9999999);
 
 	mysqli_select_db($conn,"keyclubdatabase");
-	
-	$sql = "INSERT INTO `members` (`id`, `code`, `fname`, `lname`, `gmail`, `year`, `hours`) VALUES (NULL, '$randomNumber', '$fname', '$lname', '$email','$year', '');";
+
+	$sql = "INSERT INTO `members` (`id`,`code`, `fname`, `lname`, `gmail`,`year`) VALUES (NULL, '$randomNumber','$fname', '$lname', '$email','$year');";
 
 
 	if(!$conn->query($sql)){
@@ -61,4 +61,4 @@ Millennium High School Key Club.
 <br>
 <a style = "color:#3E3E3E"href = "admin.php">
         Go back
-</a>
+</a>~

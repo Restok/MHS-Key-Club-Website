@@ -5,8 +5,8 @@
 </head>
 <?php
 		$servername = "localhost";
-		$username = "root";
-		$password = "SomethingUncreative";
+		 $username = "root";
+		 $password = "SomethingUncreative";
 //		$username = "admin";
 //		$password = "d*AX&)3tS4p6+^}<";
 

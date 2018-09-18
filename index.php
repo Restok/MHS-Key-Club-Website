@@ -91,7 +91,7 @@ html,body
     <ul class="navbar-nav ml-auto navTop resizeNav" id = "navSection">
 
       <li class="nav-item active bg-transparent">
-        <a class="nav-link navtext-color" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link navtext-color" href="index.php">Home <span class="sr-only">(current)</span></a>
 		</li>
       <li class="nav-item">
         <a class="nav-link navtext-color" href="about.html">About</a>

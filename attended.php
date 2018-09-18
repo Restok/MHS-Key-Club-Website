@@ -1,13 +1,20 @@
 <?php
 	include 'connection.php';
+	session_start();
 	$curTable = $_POST["curTable"];
 	$maxId = $_SESSION["$curTable"];
+
 	for($i = 0; $i<=$maxId;$i++){
+
 		$tableIndex = $_POST["$curTable$i"];
+
 		if(isset($_POST["check$tableIndex"])){
 			mysqli_select_db($conn, "events");
+		
 			$sql = "SELECT * FROM `$curTable` WHERE id = $tableIndex";
+			
 			if($result = $conn->query($sql)){
+			
 				$row = $result ->fetch_assoc();
 				$fname = $row["fname"];
 				$lname = $row["lname"];
@@ -21,9 +28,12 @@
 					$hoursWorked = $_POST["$tableIndex$curTable"];
 					$curMemberHours +=$hoursWorked;
 					$sql = "UPDATE `members` SET `hours` = '$curMemberHours' WHERE `fname` = '$fname' AND `lname` = '$lname';";
+
 					if($result = $conn->query($sql)){
 						mysqli_select_db($conn, "events");
 						echo "<br /> $fname $lname's hours added by $hoursWorked!";
+						
+
 						
 						
 						$formcontent= "
@@ -68,12 +78,52 @@ Millennium High School Key Club.
 
 
 
-							mail($recipient, $subject, $formcontent, $headers) or die("Error! Try again later.");
+						mail($recipient, $subject, $formcontent, $headers) or die("Error! Try again later.");
 						$sql = "DELETE FROM `$curTable` WHERE `id`=$tableIndex";
 						
 						if($conn->query($sql)){
 							echo "<br />Deleted entry from the pending events table.";
+							$sqlQuery = "INSERT INTO `$curTable` (`id`, `fname`, `lname`, `hours-worked`) VALUES (NULL, '$fname', '$lname', '$hoursWorked');";
+							mysqli_select_db($conn, "pastevents");
+
+							if($conn->query($sqlQuery)){
+
+									$errorMessage = "<br />Added to attendance history.";
+
+									echo $errorMessage;
+
+							}
+							else {
+								$sqlQuery = "CREATE TABLE `pastevents`.`$curTable` ( `id` INT(255) NOT NULL AUTO_INCREMENT , `fname` VARCHAR(255) NOT NULL , `lname` VARCHAR(255) NOT NULL , `hours-worked` INT(255), PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+
+								if($conn->query($sqlQuery)){
+
+									$sqlQuery = "INSERT INTO `$curTable` (`id`, `fname`, `lname`, `hours-worked`) VALUES (NULL, '$fname', '$lname', '$hoursWorked');";
+
+									if($conn->query($sqlQuery)){
+										$errorMessage = "<br />Added to attendance history.";
+
+										echo $errorMessage;
+
+									}
+
+
+									else{
+										$errorMessage = "wtf the table was made but it couldn't insert anything to table";
+										echo $errorMessage;
+										echo $conn -> error;
+
+									}
+
+								}
+								else{
+									echo "Rip couldn't make new table.";
+								}
+							}
+							mysqli_select_db($conn, "events");
+
 							$sql = "SELECT COUNT(*) FROM `$curTable`;";
+							
 							if($result = $conn->query($sql)){
 								$count = $result -> fetch_assoc();
 								$countentries = $count["COUNT(*)"];
