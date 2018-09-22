@@ -3,7 +3,7 @@
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['msg'];
-	$formcontent="From: $name \n Message: $message";
+	$formcontent="From: $name \n $email \n Message: $message";
 	$recipient = "millenniumkeyclub2k19@gmail.com";
 	$subject = $_POST['subject'];
 	$mailheader = "From: $email \r\n";
