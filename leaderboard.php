@@ -170,6 +170,7 @@
 			$sql = "SELECT * FROM members ORDER BY hours DESC;";
 			$result = $conn-> query($sql);
 			$place = 0;
+			$placeAdd = 1;
 			$curHours = null;
 			$totalHours = 0;
 			$totalF = 0;
@@ -180,7 +181,11 @@
 				while ($row = $result-> fetch_assoc()){
 					$totalHours += $row['hours'];
 					if($curHours != $row['hours']){
-						$place+=1;
+						$place+=$placeAdd2;
+						$placeAdd2 = 1;
+					}
+					else{
+						$placeAdd2+=1;
 					}
 					switch($row["year"]){
 						case "freshman":
