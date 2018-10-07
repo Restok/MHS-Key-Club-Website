@@ -169,7 +169,7 @@
 
 			$sql = "SELECT * FROM members ORDER BY hours DESC;";
 			$result = $conn-> query($sql);
-			$place = 0;
+			$place = 1;
 			$placeAdd = 1;
 			$curHours = null;
 			$totalHours = 0;
