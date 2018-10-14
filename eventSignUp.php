@@ -60,6 +60,7 @@
 					if($conn->query($sqlQuery)){
 						$count = $result -> fetch_assoc();
 						$count= $count['COUNT(*)'];
+						echo $count;
 						if($count ==0){
 							$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`) VALUES (NULL, '$firstName', '$lastName');";
 
@@ -126,6 +127,10 @@
 						else{
 							echo "You already signed up for this event! Check the events page, and refresh, to make sure your name is in the corresponding table. If not, please contact us via the contact page!";
 						}
+					}
+					else{
+						echo "This isn't working ): <br />";
+						echo $conn->error;
 					}
 				}
 						else{
