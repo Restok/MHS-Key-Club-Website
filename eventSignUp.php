@@ -11,7 +11,7 @@
 		$errorMessage = "";
 		mysqli_select_db($conn, 'keyclubdatabase');
 
-		$sqlQuery = "SELECT COUNT(id) FROM `members` WHERE fname = '$firstName' AND lname = '$lastName' AND code = '$code';";
+		$sqlQuery = "SELECT COUNT(id) FROM keyclubdatabase.members WHERE fname = '$firstName' AND lname = '$lastName' AND code = '$code';";
 
 		if($result = $conn->query($sqlQuery)){
 			$count = $result -> fetch_assoc();
@@ -22,12 +22,12 @@
 
 
 		if($userExists){
-			$sqlQuery = "SELECT * FROM `members` WHERE fname = '$firstName' AND lname = '$lastName' AND code = '$code';";
+			$sqlQuery = "SELECT * FROM keyclubdatabase.members WHERE fname = '$firstName' AND lname = '$lastName' AND code = '$code';";
 			$result = $conn -> query($sqlQuery);
 			$row = $result -> fetch_assoc();
 			$email = $row["gmail"];
 			
-			$sqlQuery = "SELECT * FROM `events` WHERE id = $eventNumber;";
+			$sqlQuery = "SELECT * FROM keyclubdatabase.`events` WHERE id = $eventNumber;";
 
 
 
@@ -49,13 +49,14 @@
 
 			mysqli_select_db($conn, 'events');
 
-			$sqlQuery = "SELECT COUNT(*) FROM `$eventName`";
+			$sqlQuery = "SELECT COUNT(*) FROM events.`$eventName`";
 
 			if($conn->query($sqlQuery)){
+				
 				$count = $result -> fetch_assoc();
 				$count= $count['COUNT(*)'];
 				if($count < $eventLimit){
-					$sqlQuery = "SELECT COUNT(*) FROM `$eventName` WHERE fname = '$firstName' AND lname = '$lastName'";
+					$sqlQuery = "SELECT COUNT(*) FROM events.`$eventName` WHERE fname = '$firstName' AND lname = '$lastName'";
 					if($conn->query($sqlQuery)){
 						$count = $result -> fetch_assoc();
 						$count= $count['COUNT(*)'];
