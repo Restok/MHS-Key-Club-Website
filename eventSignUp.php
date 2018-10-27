@@ -58,8 +58,8 @@
 				if($count < $eventLimit){
 					$sqlQuery = "SELECT COUNT(*) FROM events.`$eventName` WHERE fname = '$firstName' AND lname = '$lastName'";
 					if($conn->query($sqlQuery)){
-						$count = $result -> fetch_assoc();
-						$count= $count['COUNT(*)'];
+						$row = $result -> fetch_assoc();
+						$count= $row['COUNT(*)'];
 						echo $count;
 						if($count ==0){
 							$sqlQuery = "INSERT INTO `$eventName` (`id`, `fname`, `lname`) VALUES (NULL, '$firstName', '$lastName');";

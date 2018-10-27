@@ -201,25 +201,53 @@
 		  <th scope="col">Event</th>
 		  <th scope="col">Date</th>
 		  <th scope="col">Time</th>
+		  <th scope="col" class = "text-center">Event Description</th>
 		</tr>
 	  </thead>
-	<tbody>
+	
+		<div class="modal fade" tabindex="-1" id = "eventDescriptions"role="dialog">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			  <div class="modal-header bg-info">
+				<h5 class="modal-title color_ff">Event Description</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<p id = "descMain" class = "font-weight-normal"></p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+		<tbody>
 		<?php
 		include 'connection.php';
 		mysqli_select_db($conn,"keyclubdatabase");
 
-		$sql = "SELECT id, Event, Date, Time FROM events";
+		$sql = "SELECT id, Event, Date, Time, description FROM events";
 
 		$result = $conn-> query($sql);
 
 		if($result-> num_rows > 0){
 			while ($row = $result-> fetch_assoc()){
-				echo "<tr><th scope = 'row'>". $row["id"]. "</th><th scope='row'>". $row['Event']. "</th><th scope='row'>". $row['Date']. "</th><th scope='row'>". $row['Time']. "</th></tr>";
+				echo "<tr><th scope = 'row'>". $row["id"]. "</th><th scope='row'>". $row['Event']. "</th><th scope='row'>". $row['Date']. "</th><th scope='row'>". $row['Time']. "</th><th scope='row'><button id = '".$row['Event']."' class = 'clean-button' data-toggle ='modal' data-target = \"#eventDescriptions\" style = 'width: 40%;height:35px;display:block;margin:auto;font-size:13px;' onclick = 'getDescription(\"" .$row["Event"]."\")'>Click here</button><p style = 'display:none;'id = 'desc-".$row["Event"]."'>".$row['description']."</p></th></tr>";
 			}
 		}
 		mysqli_close($conn);
 	?>
-	  
+	<script>
+		function getDescription(eventName){
+			var id = "desc-" + eventName;
+			var descText = document.getElementById(id).textContent;
+			console.log(id);
+			document.getElementById("descMain").textContent = descText;
+		}
+	</script>  
 	  </tbody>
 
 	</table>
