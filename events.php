@@ -71,6 +71,17 @@
 
 			}
 		}
+		@media (max-width: 457px) {
+			th{
+				font-size:12px;
+			}
+		}
+		@media (max-width: 375px) {
+			th{
+				font-size:11px;
+			}
+		}
+
 
 	
 	</style>
@@ -229,14 +240,16 @@
 		include 'connection.php';
 		mysqli_select_db($conn,"keyclubdatabase");
 
-		$sql = "SELECT id, Event, Date, Time, description FROM events";
+		$sql = "SELECT * FROM events";
 
-		$result = $conn-> query($sql);
 
-		if($result-> num_rows > 0){
+		if($result = $conn-> query($sql)){
 			while ($row = $result-> fetch_assoc()){
 				echo "<tr><th scope = 'row'>". $row["id"]. "</th><th scope='row'>". $row['Event']. "</th><th scope='row'>". $row['Date']. "</th><th scope='row'>". $row['Time']. "</th><th scope='row'><button id = '".$row['Event']."' class = 'clean-button' data-toggle ='modal' data-target = \"#eventDescriptions\" style = 'width: 40%;height:35px;display:block;margin:auto;font-size:13px;' onclick = 'getDescription(\"" .$row["Event"]."\")'>Click here</button><p style = 'display:none;'id = 'desc-".$row["Event"]."'>".$row['description']."</p></th></tr>";
 			}
+		}
+		else{
+			echo "Something oofed";
 		}
 		mysqli_close($conn);
 	?>

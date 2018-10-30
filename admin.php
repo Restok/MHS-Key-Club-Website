@@ -96,6 +96,8 @@
 		<input type = "text" name = "event-time" class = "input-basic">
 		<p>Members Limit:</p>
 		<input type = "number" name = "event-hours" class = "input-basic">
+		<p>Event Description:</p>
+		<input type = "text" name = "event-desc" class = "input-basic" style = "height:100px;">
 	<br>
 		<button type = "submit" class = "clean-button input-basic">Submit</button>
 

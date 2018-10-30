@@ -4,11 +4,12 @@
 	$eventdate = $_POST['event-date'];
 	$eventtime = $_POST['event-time'];
 	$eventhours = $_POST['event-hours'];
+	$eventdesc = $_POST['event-desc'];
 	if(empty($eventname) or empty($eventdate) or empty($eventtime)){
 		echo "One or more fields were left empty!";
 	}
 	else{
-	$sql = "INSERT INTO `events` (`id`, `Event`, `Date`, `Time`, `limits`) VALUES (NULL, '$eventname', '$eventdate', '$eventtime', $eventhours)";
+	$sql = "INSERT INTO `events` (`id`, `Event`, `Date`, `Time`, `limits`, `description`) VALUES (NULL, '$eventname', '$eventdate', '$eventtime', $eventhours, '$eventdesc')";
 		mysqli_select_db($conn,"keyclubdatabase");
 
 		if(!$conn->query($sql)){

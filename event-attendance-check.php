@@ -73,7 +73,7 @@
 				// FOR EACH TABLE MAP THE RESULTS TO 
 				
 				if($result2 =  $conn->query($sql)){
-					echo '<h1>' . $currentTableName. '</h1>	<form action = "attended.php" class = "mb-5" method = "post"><input type = "hidden" name = "curTable" value = "'.$currentTableName.'"><table class="table "><thead class = "thead-dark"><tr><th scope="col">#</th><th scope="col">First name</th><th scope="col">Last name</th><th scope="col"><input type = "number" name = "hours" onkeyup = "set(this, \''.(string)$currentTableName.'\')")"></th><th scope="col"><input type = "checkbox" name = "approvalall" onclick = "toggle(this,\''.(string)$currentTableName.'\')"></th>
+					echo '<h1>' . $currentTableName. '</h1>	<form action = "attended.php" class = "mb-5" method = "post"><input type = "hidden" name = "curTable" value = "'.$currentTableName.'"><table class="table "><thead class = "thead-dark"><tr><th scope="col">#</th><th scope="col">First name</th><th scope="col">Last name</th><th scope="col"><input type = "number" step = 0.1 name = "hours" onkeyup = "set(this, \''.(string)$currentTableName.'\')")"></th><th scope="col"><input type = "checkbox" name = "approvalall" onclick = "toggle(this,\''.(string)$currentTableName.'\')"></th>
 					</tr></thead><tbody>';
 					
 					while($row2 = $result2-> fetch_assoc()){
