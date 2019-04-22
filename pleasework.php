@@ -47,8 +47,8 @@
 		<?php
 		session_start();
 		include 'connection.php';
-		mysqli_select_db($conn,"events");
-		$sql = "SELECT table_name FROM information_schema.tables where table_schema='events'";
+		mysqli_select_db($conn,"pastevents");
+		$sql = "SELECT table_name FROM information_schema.tables where table_schema='pastevents'";
 		
 		//GET ALL TABLE NAMES
 		if($result = $conn-> query($sql)){
@@ -62,11 +62,11 @@
 				// FOR EACH TABLE MAP THE RESULTS TO 
 				
 				if($result2 =  $conn->query($sql)){
-					echo '<h1>' . $currentTableName. '</h1>	<form action = "attended.php" class = "mb-5" method = "post"><input type = "hidden" name = "curTable" value = "'.$currentTableName.'"><table class="table "><thead class = "thead-dark"><tr><th scope="col">#</th><th scope="col">First name</th><th scope="col">Last name</th><th scope="col"><input type = "number" step = 0.1 name = "hours" onkeyup = "set(this, \''.(string)$currentTableName.'\')")"></th><th scope="col"><input type = "checkbox" name = "approvalall" onclick = "toggle(this,\''.(string)$currentTableName.'\')"></th>
+					echo '<h1>' . $currentTableName. '</h1>	<form class = "mb-5" method = "post"><input type = "hidden" name = "curTable" value = "'.$currentTableName.'"><table class="table "><thead class = "thead-dark"><tr><th scope="col">#</th><th scope="col">First name</th><th scope="col">Last name</th><th scope="col"><input type = "number" step = 0.1 name = "hours" onkeyup = "set(this, \''.(string)$currentTableName.'\')")"></th><th scope="col"><input type = "checkbox" name = "approvalall" onclick = "toggle(this,\''.(string)$currentTableName.'\')"></th>
 					</tr></thead><tbody>';
 					
 					while($row2 = $result2-> fetch_assoc()){
-						echo "<input type = 'hidden' name ='$currentTableName$id' value = ".$row2['id']."><tr><th scope = 'row'>". $row2["id"] . "</th><th scope = 'row'>". $row2["fname"]. "</th><th scope='row'>". $row2['lname']. "</th><th scope='col'><input type = 'number' name = '" .$row2['id']. $currentTableName. "' class = 'hours$currentTableName'></th><th scope='col'><input type = 'checkbox' name = 'check".$row2["id"]."' class = 'checkme$currentTableName'></th></tr>";
+						echo "<input type = 'hidden' name ='$currentTableName$id' value = ".$row2['id']."><tr><th scope = 'row'>". $row2["id"] . "</th><th scope = 'row'>". $row2["fname"]. "</th><th scope='row'>". $row2['lname']. "</th><th scope='col'>. $row2['hours-worked'].</th></tr>";
 						$_SESSION["$currentTableName"] = $id;
 						$id+=1;
 						}
@@ -74,7 +74,6 @@
 					echo '
 						</tbody>
 						</table>
-						<button class = "float-right clean-button" type = "submit">Approve all checked</button>
 						</form>
 						';
 				}
