@@ -6,46 +6,15 @@
 
 <meta charset="utf-8">
 <title>Untitled Document</title>
-<style>
-	
-	.clean-button{
-		border-style: none;
-		border-radius: 15px;
-		background:linear-gradient(to bottom right, #40ef69, #3bdb90);
-		transition: background, 500ms;
-		padding:10px;
-	}
-	.clean-button:hover{
-		cursor:pointer;
-		background:linear-gradient(to bottom right, #3ad85f, #3bcc88);
-		transition: background, 500ms;
-	}
-</style>
+
 </head>
 
 <body>
-<script>
-	function toggle(source, tableName) {
-		var className = "checkme"+ tableName;
-		checkboxes = document.getElementsByClassName(className);
-		for(var i=0, n=checkboxes.length;i<n;i++) {
-			checkboxes[i].checked = source.checked;
-		}
-	}
-	function set(source, tableName){
-		var className = "hours"+ tableName;
-		inputs = document.getElementsByClassName(className);
-		console.log(source.value)
-		for(var i=0, n=inputs.length;i<n;i++) {
-			inputs[i].value = source.value;
-		}
-	}
-</script>
+
 
 	<div class = "container mt-5">
 
 		<?php
-		session_start();
 		include 'connection.php';
 		mysqli_select_db($conn,"pastevents");
 		$sql = "SELECT table_name FROM information_schema.tables where table_schema='pastevents'";
@@ -62,19 +31,19 @@
 				// FOR EACH TABLE MAP THE RESULTS TO 
 				
 				if($result2 =  $conn->query($sql)){
-					echo '<h1>' . $currentTableName. '</h1>	<form class = "mb-5" method = "post"><input type = "hidden" name = "curTable" value = "'.$currentTableName.'"><table class="table "><thead class = "thead-dark"><tr><th scope="col">#</th><th scope="col">First name</th><th scope="col">Last name</th><th scope="col">Hours Worked</th></th>
+					echo '<h1>' . $currentTableName. '</h1>	<table class="table "><thead class = "thead-dark"><tr><th scope="col">#</th><th scope="col">First name</th><th scope="col">Last name</th><th scope="col">Hours Worked</th></th>
 					</tr></thead><tbody>';
 					
 					while($row2 = $result2-> fetch_assoc()){
-						echo "<input type = 'hidden' name ='$currentTableName$id' value = ".$row2['id']."><tr><th scope = 'row'>". $row2["id"] . "</th><th scope = 'row'>". $row2["fname"]. "</th><th scope='row'>". $row2['lname']. "</th><th scope='col'>. $row2['hours-worked'].</th></tr>";
-						$_SESSION["$currentTableName"] = $id;
-						$id+=1;
+						echo "<tr><th scope = 'row'>". $row2["id"] . "</th><th scope = 'row'>". 
+						$row2["fname"]. "</th><th scope='row'>". $row2['lname']. "</th><th scope='col'>. 
+						$row2['hours-worked'].</th></tr>";
+
 						}
 				
 					echo '
 						</tbody>
 						</table>
-						</form>
 						';
 				}
 				else{
