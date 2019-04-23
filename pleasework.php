@@ -35,9 +35,7 @@
 					</tr></thead><tbody>';
 					
 					while($row2 = $result2-> fetch_assoc()){
-						echo "<tr><th scope = 'row'>". $row2["id"] . "</th><th scope = 'row'>". 
-						$row2["fname"]. "</th><th scope='row'>". $row2['lname']. "</th><th scope='col'>. 
-						$row2['hours-worked'].</th></tr>";
+						echo "<tr><th scope = 'row'>". $row2["id"] . "</th><th scope = 'row'>". $row2["fname"]. "</th><th scope='row'>". $row2['lname']. "</th><th scope='col'>". $row2['hours-worked']."</th></tr>";
 
 						}
 				
